@@ -30,32 +30,13 @@ const IndexPage = ({ data }) => (
           </p>
         </div>
         <div className="column is-4 is-offset-1">
-          <Img fixed="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg" />
+          <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=400" />
           
         </div>
       </div>
       </Container>
     </Hero.Body>
-  </Section>
-    <Masonry className="showcase">
-      {data.allDatoCmsWork.edges.map(({ node: work }) => (
-        <div key={work.id} className="showcase__item">
-          <figure className="card">
-            <Link to={`/works/${work.slug}`} className="card__image">
-              <Img fluid={work.coverImage.fluid} />
-            </Link>
-            <figcaption className="card__caption">
-              <h6 className="card__title">
-                <Link to={`/works/${work.slug}`}>{work.title}</Link>
-              </h6>
-              <div className="card__description">
-                <p>{work.excerpt}</p>
-              </div>
-            </figcaption>
-          </figure>
-        </div>
-      ))}
-    </Masonry>
+  </Section>    
 </div>
 )
 
@@ -63,14 +44,14 @@ export default IndexPage
 
 export const query = graphql`
   query IndexQuery {
-    allDatoCmsWork(sort: { fields: [position], order: ASC }) {
+    allDatoCmsPage(filter: {slug: {eq: "index"}}) {
       edges {
         node {
           id
           title
           slug
           excerpt
-          coverImage {
+          featuredMedia {
             fluid(maxWidth: 450, imgixParams: { fm: "jpg", auto: "compress" }) {
               ...GatsbyDatoCmsSizes
             }
