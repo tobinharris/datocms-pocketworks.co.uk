@@ -3,38 +3,39 @@ import { Link, graphql } from 'gatsby'
 import Masonry from 'react-masonry-component'
 import "../styles/index.sass";
 import "../styles/app.sass";
-import {Section, Container, Navbar, Brand} from 'react-bulma-components';
+import {Section, Container, Brand, Hero} from 'react-bulma-components';
 import Img from 'gatsby-image'
-
+import '@fortawesome/fontawesome-free/css/all.css'
+import SiteNav from '../components/navbar'
 
 //import Layout from "../components/layout"
 
 const IndexPage = ({ data }) => (
 <div>
-  <Navbar>
-    <Navbar.Brand>
-      <Navbar.Item renderAs="a" href="/">
-          <img src="https://www.datocms-assets.com/20955/1579120310-secondary-logo-small-v3.png"></img>
-      </Navbar.Item>      
-    </Navbar.Brand>
-  </Navbar>
-  <Section size="medium" className="hero">
-    <Container>
-    <div class="columns">
-      <div class="column is-5 is-offset-1">
-        <h1 class="title is-size-1">We develop mobile apps to make light work of business.</h1>
-        <p>
-          <a class="button is-primary is-rounded is-large">Tell me more</a>&nbsp;&nbsp;
-          <Link to="/about" className="button is-info is-rounded is-outlined is-large">Contact us</Link>
-        </p>
-        <p><br/>Or learn more <a href="/about">about us</a>.</p>
+  <SiteNav></SiteNav>
+  <Section className="hero">
+    <Hero.Body>
+      <Container>
+      <div className="columns">
+        <div className="column is-6 is-offset-0">
+          <br/><br/>
+          <h1 className="title is-size-1">We develop mobile apps to make light work of business.</h1>
+          <p>            
+            <Link to="/work" className="button is-primary is-rounded is-large is-flex-mobile">Learn more</Link>&nbsp;&nbsp;
+            <Link to="/about" className="button is-info is-rounded is-outlined is-large is-flex-mobile">Get in touch</Link>
+          </p>
+          <br/>
+          <p className="is-size-5">
+            <span className="icon has-text-danger"><i className="fas fa-heart"></i></span> Helping Veezu achieve 14,000,000 taxi bookings
+          </p>
+        </div>
+        <div className="column is-4 is-offset-1">
+          <Img fixed="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg" />
+          
+        </div>
       </div>
-      <div class="column is-4 is-offset-1">
-        <img src="https://pocketworks.co.uk/wp-content/uploads/2019/08/Hero-Image-Padding-e1566211830226.png" style={{position: 'relative',top: '-4rem'}} />
-        
-      </div>
-    </div>
-    </Container>
+      </Container>
+    </Hero.Body>
   </Section>
     <Masonry className="showcase">
       {data.allDatoCmsWork.edges.map(({ node: work }) => (
