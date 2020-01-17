@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import "../styles/index.sass";
 import "../styles/app.sass";
-import {Section, Container, Brand, Hero} from 'react-bulma-components';
+import {Section, Container, Brand, Hero, Columns} from 'react-bulma-components';
 import Img from 'gatsby-image'
 import '@fortawesome/fontawesome-free/css/all.css'
 import SiteNav from '../components/navbar'
