@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import "../styles/index.sass";
 import "../styles/app.sass";
 import Layout from '../components/layout'
+import BlogCard from '../components/blog-card'
 import {Section, Card, Container, Brand, Hero, Columns} from 'react-bulma-components';
 import Img from 'gatsby-image'
 import '@fortawesome/fontawesome-free/css/all.css'
@@ -63,27 +64,7 @@ const IndexPage = ({ data }) => (
       <Columns.Column className="is-1"></Columns.Column>
       {data.posts.edges.map(({ node: article }) => (      
       <Columns.Column className="is-3">
-      <Card className="is-blog">
-          <div class="card-image">
-           
-                {article.featuredMedia ? (
-                <Img fluid={article.featuredMedia.fluid} className=""></Img>
-                ) : (
-                    <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=250" />  
-                )
-            }            
-           
-          </div>
-          <Card.Content>
-          <p class="tag"><time datetime={article.date}>{article.date}</time></p>
-          <Link to={'blog/' + article.slug}>{article.title}</Link>
-
-        
-          </Card.Content>
-          <Card.Footer className="is-hidden">
-            <ArrowLink className="card-footer-item" to={'blog/' + article.slug }>Read full article</ArrowLink>
-          </Card.Footer>
-      </Card>
+        <BlogCard article={article}></BlogCard>
       </Columns.Column>
       ))}
       </Columns>
