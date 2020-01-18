@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import "../styles/index.sass";
 import "../styles/app.sass";
+import Layout from '../components/layout'
 import {Section, Container, Brand, Hero, Columns} from 'react-bulma-components';
 import Img from 'gatsby-image'
 import '@fortawesome/fontawesome-free/css/all.css'
@@ -10,7 +11,7 @@ import SiteNav from '../components/navbar'
 //import Layout from "../components/layout"
 
 const IndexPage = ({ data }) => (
-<div>
+<Layout>
   <SiteNav></SiteNav>
   <Section className="hero">
     <Hero.Body>
@@ -45,7 +46,7 @@ const IndexPage = ({ data }) => (
       </Container>
     </Hero.Body>
   </Section>    
-</div>
+</Layout>
 )
 
 export default IndexPage

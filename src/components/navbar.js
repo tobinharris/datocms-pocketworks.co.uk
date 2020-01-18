@@ -3,6 +3,7 @@ import "../styles/app.sass";
 
 import { Link, graphql } from 'gatsby'
 import Element from 'react-bulma-components/lib/components/element';
+import Footer from 'react-bulma-components/lib/components/footer';
 import Hero from 'react-bulma-components/lib/components/hero';
 import Icon from 'react-bulma-components/lib/components/icon';
 import Level from 'react-bulma-components/lib/components/level';
@@ -11,6 +12,7 @@ import Button from 'react-bulma-components/lib/components/button';
 import Section from 'react-bulma-components/lib/components/section';
 import Navbar from 'react-bulma-components/lib/components/navbar';
 import Tag from 'react-bulma-components/lib/components/tag';
+import Tile from 'react-bulma-components/lib/components/tile';
 import Tabs from 'react-bulma-components/lib/components/tabs';
 import Container from 'react-bulma-components/lib/components/container';
 import Columns from 'react-bulma-components/lib/components/columns';
