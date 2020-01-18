@@ -7,14 +7,14 @@ import ArrowLink from '../components/link-with-arrow'
 
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
-const Work = ({ data: { about } }) => (
+const Services = ({ data: { about } }) => (
     <div>
         <SiteNav></SiteNav>
         <div className="tabs is-medium is-centered">
             <ul>
-                <li className="is-active"><a>Customer Loyalty</a></li>
+                <li><Link to="/work">Customer Loyalty</Link></li>
                 <li><Link to="/workforce-productivity">Work Productivity</Link></li>
-                <li><Link to="/services">Services &amp; Packages</Link></li>
+                <li className="is-active"><a>Services &amp; Packages</a></li>
 
             </ul>
         </div>
@@ -27,7 +27,7 @@ const Work = ({ data: { about } }) => (
                     <div className="columns">
                         <div className="column is-6 is-offset-1">
                             <h1 className="title is-size-1 is-size-2-mobile">
-                            Creating loyal <span class="has-text-primary">mobile customers.</span> 
+                            Everything you need for <span class="has-text-primary">mobile success.</span> 
                             </h1>
                             <p className="is-size-5">
                                 We understand the challenges in giving your mobile customers a simple and convenient experience.
@@ -36,7 +36,7 @@ const Work = ({ data: { about } }) => (
 
                         </div>
                         <div className="column is-4">
-                        <img src="https://www.datocms-assets.com/20955/1579120489-customerexperienceillustrationpocketworks.png?fm=jpg&w=450"></img>
+                        <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=450"></img>
                         </div>
                     </div>
                     <hr />
@@ -140,10 +140,10 @@ const Work = ({ data: { about } }) => (
     </div>
 )
 
-export default Work
+export default Services
 
 export const query = graphql`
-  query WorkPageQuery {
+  query ServicesPageQuery {
     about: datoCmsPage(slug: {eq: "work"}) {
       
           seoMetaTags {

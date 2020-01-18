@@ -7,13 +7,13 @@ import ArrowLink from '../components/link-with-arrow'
 
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
-const Work = ({ data: { about } }) => (
+const WorkforceProductivity = ({ data: { about } }) => (
     <div>
         <SiteNav></SiteNav>
         <div className="tabs is-medium is-centered">
             <ul>
-                <li className="is-active"><a>Customer Loyalty</a></li>
-                <li><Link to="/workforce-productivity">Work Productivity</Link></li>
+                <li><Link to="/work">Customer Loyalty</Link></li>
+                <li className="is-active"><a>Work Productivity</a></li>
                 <li><Link to="/services">Services &amp; Packages</Link></li>
 
             </ul>
@@ -27,16 +27,16 @@ const Work = ({ data: { about } }) => (
                     <div className="columns">
                         <div className="column is-6 is-offset-1">
                             <h1 className="title is-size-1 is-size-2-mobile">
-                            Creating loyal <span class="has-text-primary">mobile customers.</span> 
+                            Helping <span class="has-text-primary">mobile teams</span> get more done. 
                             </h1>
                             <p className="is-size-5">
-                                We understand the challenges in giving your mobile customers a simple and convenient experience.
-                                Working with us, you'll be guided through a process that gets your mobile ideas implemented whilst keeping your customer center stage.
+                                Digital transformation initiatives need buy-in from leadership, management and the workforce. 
+                                Be it on site, on the road or in the game, our process ensures you consider the needs of you the whole organisation whilst raising the bar with modern mobile and cloud technologies.
                             </p>
 
                         </div>
                         <div className="column is-4">
-                        <img src="https://www.datocms-assets.com/20955/1579120489-customerexperienceillustrationpocketworks.png?fm=jpg&w=450"></img>
+                        <img src="https://www.datocms-assets.com/20955/1579120484-digital-business.png?fm=jpg&w=350"></img>
                         </div>
                     </div>
                     <hr />
@@ -46,12 +46,12 @@ const Work = ({ data: { about } }) => (
         <Section>
             <Container>
                 <Columns className="content">
-                    <Columns.Column className="is-4">
-                        <img src="https://www.datocms-assets.com/20955/1579120572-veezu-mockup.png?w=450&fm=jpg"></img>
+                    <Columns.Column className="is-4 has-text-right">
+                        <img src="https://www.datocms-assets.com/20955/1579120585-premier-league-mockup.png?w=330&fm=jpg"></img>
                     </Columns.Column>
                     <Columns.Column className="is-6 is-offset-1">
-                        <img src="https://www.datocms-assets.com/20955/1579120597-veezu-logo.png"></img>
-                        <h2 className="is-top-marginless">Supporting growth from zero to <span className="has-text-info">6 million mobile bookings</span> a year.</h2>
+                        <img src="https://www.datocms-assets.com/20955/1579120361-pgmol-logo-white.png"></img>
+                        <h2 className="is-top-marginless">Raising the game for <span className="has-text-info">Premier League</span> referees.</h2>
                         <p><ArrowLink to="/#test" className="is-size-4 has-text-info">Read the case study</ArrowLink></p>
                     </Columns.Column>
                 </Columns>
@@ -140,10 +140,10 @@ const Work = ({ data: { about } }) => (
     </div>
 )
 
-export default Work
+export default WorkforceProductivity
 
 export const query = graphql`
-  query WorkPageQuery {
+  query WorkforcePageQuery {
     about: datoCmsPage(slug: {eq: "work"}) {
       
           seoMetaTags {
