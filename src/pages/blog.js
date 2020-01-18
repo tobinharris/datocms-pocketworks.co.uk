@@ -69,7 +69,7 @@ export default BlogPage
 
 export const query = graphql`
   query BlogQuery {
-    posts: allDatoCmsArticle(limit: 16) {
+    posts: allDatoCmsArticle(limit: 16, sort: {fields: [date], order: DESC}) {
       edges {
         node {
           id
