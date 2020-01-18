@@ -27,11 +27,11 @@ const Work = ({ data: { about } }) => (
                     <div className="columns">
                         <div className="column is-6 is-offset-1">
                             <h1 className="title is-size-1 is-size-2-mobile">
-                            Creating loyal <span class="has-text-primary">mobile customers.</span> 
+                            Creating loyal <span class="has-text-primary">mobile customers</span>.
                             </h1>
                             <p className="is-size-5">
-                                We understand the challenges in giving your mobile customers a simple and convenient experience.
-                                Working with us, you'll be guided through a process that gets your mobile ideas implemented whilst keeping your customer center stage.
+                                We understand the challenges in giving your mobile customers a simple and convenient experience with your brand.
+                                Working with us, you'll be guided through a a process that leads to apps that attract and retain customers.
                             </p>
 
                         </div>
@@ -47,9 +47,9 @@ const Work = ({ data: { about } }) => (
             <Container>
                 <Columns className="content">
                     <Columns.Column className="is-4">
-                        <img src="https://www.datocms-assets.com/20955/1579120572-veezu-mockup.png?w=450&fm=jpg"></img>
+                        <img src="https://www.datocms-assets.com/20955/1579120572-veezu-mockup.png?w=400&fm=jpg"></img>
                     </Columns.Column>
-                    <Columns.Column className="is-6 is-offset-1">
+                    <Columns.Column className="is-6 is-offset-0">
                         <img src="https://www.datocms-assets.com/20955/1579120597-veezu-logo.png"></img>
                         <h2 className="is-top-marginless">Supporting growth from zero to <span className="has-text-info">6 million mobile bookings</span> a year.</h2>
                         <p><ArrowLink to="/#test" className="is-size-4 has-text-info">Read the case study</ArrowLink></p>
@@ -63,7 +63,7 @@ const Work = ({ data: { about } }) => (
                         <p><ArrowLink to="/#test" className="is-size-4 has-text-success">Read the case study</ArrowLink></p>                        
                     </Columns.Column>
                     <Columns.Column className="is-5">
-                        <img src="https://www.datocms-assets.com/20955/1579120579-travelodge-mockup.png?w=450&fm=jpg"></img>
+                        <img src="https://www.datocms-assets.com/20955/1579120579-travelodge-mockup.png?w=400&fm=jpg"></img>
                     </Columns.Column>
                 </Columns>                
             </Container>

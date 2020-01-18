@@ -23,39 +23,33 @@ import '@fortawesome/fontawesome-free/css/all.css'
 
 //import Layout from "../components/layout"
 
-const SiteNav = ({ data }) => (
-<Navbar className="is-spaced">
+function SiteNav(props){
+  return (<Navbar className="is-spaced">
     <Navbar.Brand>      
       <Navbar.Item renderAs="span">
       <Link to="/">
+        {props.className == 'is-light' ? (
+        <img src="https://www.datocms-assets.com/20955/1579120308-secondary-logo-white-v3.png"/>       
+        ) : (
         <img src="https://www.datocms-assets.com/20955/1579120310-secondary-logo-small-v3.png"/>       
+        )}
       </Link>           
       </Navbar.Item>      
     </Navbar.Brand>
-
-    <Navbar.Menu className="is-hidden">
-      <Navbar.Container>
-        <Navbar.Item renderAs="span"><Link to="/">Home</Link></Navbar.Item>
-        <Navbar.Item renderAs="span"><Link to="/about">About</Link></Navbar.Item>
-        <Navbar.Item dropdown hoverable>
-          <Navbar.Link>Work</Navbar.Link>
-          <Navbar.Dropdown boxed>
-            
-            <Navbar.Item><Link to="/work">Customer Loyalty</Link></Navbar.Item>
-            <Navbar.Item to="/work">Work Productivity</Navbar.Item>            
-            <Navbar.Divider></Navbar.Divider>
-            <Navbar.Item><Link to="/blog/heneghans-selects-pocketworks-to-support-its-growth">Services &amp; Packages</Link></Navbar.Item>
-            <Navbar.Item><Link to="/blog/heneghans-selects-pocketworks-to-support-its-growth">Technology</Link></Navbar.Item>            
-          </Navbar.Dropdown>
-        </Navbar.Item>
-        <Navbar.Item><Link to="/">Contact</Link></Navbar.Item>
-        <Navbar.Item><Link to="/">Careers</Link></Navbar.Item>
+    
+    <Navbar.Menu className="nav-right">
+      <Navbar.Container>                
+        <Navbar.Item className={props.className} renderAs="span"><Link to="/work">Work</Link></Navbar.Item>
+        <Navbar.Item className={props.className} renderAs="span"><Link to="/about">About</Link></Navbar.Item>
+        <Navbar.Item className={props.className} renderAs="span"><Link to="/blog">Blog</Link></Navbar.Item>
+        <Navbar.Item className={props.className} renderAs="span"><Link to="/contact">Contact</Link></Navbar.Item>        
       </Navbar.Container>
     </Navbar.Menu>
 
     
 
   </Navbar>
-)
+  )
+}
 
 export default SiteNav;

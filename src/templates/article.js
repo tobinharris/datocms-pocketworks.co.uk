@@ -8,10 +8,10 @@ import SiteNav from '../components/navbar'
 export default ({ data }) => (
   <div>
 
-    <Hero className="has-bg-image is-medium is-success blog-hero" style={{ backgroundImage: "url(" + (data.datoCmsArticle.featuredMedia ? data.datoCmsArticle.featuredMedia.fluid.src : '' )+ "&fit=facearea&w=1000&h=300&facepad=7.0)" }} id="blog-hero">
+    <Hero className="has-bg-image is-medium  is-success blog-hero" style={{ backgroundImage: "url(" + (data.datoCmsArticle.featuredMedia ? data.datoCmsArticle.featuredMedia.fluid.src : '' )+ "&fit=facearea&w=1000&h=300&facepad=7.0)" }} id="blog-hero">
       <div class="background-overlay">
         <Hero.Head>
-          <SiteNav></SiteNav>
+          <SiteNav className="is-light"></SiteNav>
         </Hero.Head>
         <Container>
           <Hero.Body>
@@ -40,7 +40,9 @@ export default ({ data }) => (
           </Columns.Column>
           <Columns.Column className="is-size-6">          
             <h4>By {data.datoCmsArticle.author.name}</h4>
-            <p><i>{data.datoCmsArticle.author.role} at app development specialist, Pocketworks</i></p>            
+            <p><i>{data.datoCmsArticle.author.role} at app development specialist, Pocketworks
+            <br/>{data.datoCmsArticle.date}</i>
+            </p>            
           </Columns.Column>          
         </Columns>
         <hr/>

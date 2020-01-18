@@ -68,6 +68,10 @@ export const query = graphql`
               ...GatsbyDatoCmsSizes
             }
           }
+          author{
+              name
+              slug
+          }
         }
       }
     }
