@@ -2,7 +2,7 @@ import React from 'react'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
-import { Section, Container } from 'react-bulma-components'
+import { Section, Container, Columns } from 'react-bulma-components'
 import SiteNav from '../components/navbar'
 
 export default ({ data }) => (
@@ -10,9 +10,12 @@ export default ({ data }) => (
   <SiteNav></SiteNav>
   <Section>
     <Container className="content">
+      <Columns>
+      <Columns.Column className="is-6 is-offset-3">
       <h1>{data.datoCmsArticle.title}</h1>
       <div dangerouslySetInnerHTML={{__html: data.datoCmsArticle.content}}></div>
-      
+      </Columns.Column>
+      </Columns>
     </Container>
   </Section>
   </div>

@@ -33,8 +33,8 @@ const BlogPage = ({ data }) => (
       <Columns>
       {data.posts.edges.map(({ node: article }) => (      
       <Columns.Column className="is-3 is-multiline">
-      <Card>
-          <div class="card-image">
+      <Card className="is-blog">
+          <div className="card-image">
            
                 {article.featuredMedia ? (
                 <Img fluid={article.featuredMedia.fluid}></Img>
@@ -47,8 +47,8 @@ const BlogPage = ({ data }) => (
           <Card.Content>
           <Link to={'blog/' + article.slug}>{article.title}</Link>
 
-          <div class="content is-size-6">
-            {article.excerpt}            
+          <div className="content is-size-6">
+          <div className="excerpt" dangerouslySetInnerHTML={{__html: article.excerpt}}></div>
             <br/>
             <p class="tag"><time datetime={article.date}>{article.date}</time></p>
           </div>

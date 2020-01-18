@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import "../styles/index.sass";
 import "../styles/app.sass";
 import Layout from '../components/layout'
-import {Section, Container, Brand, Hero, Columns} from 'react-bulma-components';
+import {Section, Card, Container, Brand, Hero, Columns} from 'react-bulma-components';
 import Img from 'gatsby-image'
 import '@fortawesome/fontawesome-free/css/all.css'
 import SiteNav from '../components/navbar'
@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => (
             <Link to="/about" className="button is-link is-leafy is-outlined is-large is-flex-mobile">Get in touch</Link>
           </p>
           <br/><br/>
-          <div className="level is-size-3 is-mobile">
+          <div className="level is-size-3 is-mobile is-hidden">
             <div class="level-item">
               <span className="icon has-text-success">
               <i class="fas fa-smile-beam"></i>
@@ -39,13 +39,52 @@ const IndexPage = ({ data }) => (
             </div>
           </div>
         </div>
-        <div className="column is-5">
+        <div className="column is-4">
           <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=450" />          
         </div>
       </div>
+      <hr/>
       </Container>
     </Hero.Body>
   </Section>    
+  <Section className="is-small">
+    <Container className="content">
+      <div className="has-text-centered">
+        <h3>Happening at Pocketworks... </h3>
+        <br/>
+      </div>
+    <Columns className="is-multiline is-centered">
+      <Columns.Column className="is-1"></Columns.Column>
+      {data.posts.edges.map(({ node: article }) => (      
+      <Columns.Column className="is-3">
+      <Card className="is-blog">
+          <div class="card-image">
+           
+                {article.featuredMedia ? (
+                <Img fluid={article.featuredMedia.fluid} className=""></Img>
+                ) : (
+                    <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=250" />  
+                )
+            }            
+           
+          </div>
+          <Card.Content>
+          <p class="tag"><time datetime={article.date}>{article.date}</time></p>
+          <Link to={'blog/' + article.slug}>{article.title}</Link>
+
+          <div className="content is-size-6">
+          <div className="excerpt" dangerouslySetInnerHTML={{__html: article.excerpt}}></div>
+            
+            <br/>
+            
+          </div>
+          </Card.Content>
+      </Card>
+      </Columns.Column>
+      ))}
+      </Columns>
+    </Container>
+  </Section>
 </Layout>
 )
 
@@ -58,6 +97,22 @@ export const query = graphql`
         node {
           id
           title
+          slug
+          excerpt
+          featuredMedia {
+            fluid(maxWidth: 450, imgixParams: { fm: "jpg", auto: "compress" }) {
+              ...GatsbyDatoCmsSizes
+            }
+          }
+        }
+      }
+    }
+    posts: allDatoCmsArticle(limit: 3, sort: {fields: [date], order: DESC}){
+      edges {
+        node {
+          id
+          title
+          date
           slug
           excerpt
           featuredMedia {

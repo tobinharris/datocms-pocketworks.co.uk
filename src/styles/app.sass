@@ -58,7 +58,7 @@
     font-display: auto
 
 
-h1, h1.title, h2, h2.title
+h1, h1.title, h2, h2.title, h3, h3.title
     font-family: "Circular Bold", sans serif    
     font-weigth: 700
     //line-height: 3.4rem
@@ -75,3 +75,29 @@ h1, h1.title, h2, h2.title
     margin-top: 0.5rem
 
   
+.card.is-blog
+    border-radius: 0px 0px 40px 0px
+    height: 450px
+    overflow: hidden
+    .card-content
+        border-top: 6px solid $green
+        
+        a
+            max-length: 1em
+            overflow: hidden
+            text-overflow: ellipsis
+            display: block
+
+    .excerpt
+        max-height: 150px
+        overflow: hidden
+        text-overflow: clip            
+
+    .card-image
+        height: 170px
+
+        img
+            max-height: 170px
+    
+    
+    
