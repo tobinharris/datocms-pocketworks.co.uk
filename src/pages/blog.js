@@ -32,18 +32,23 @@ const BlogPage = ({ data }) => (
         </div>
       </div>
       <Columns>
-      {data.posts.edges.map(({ node: article }) => (      
-      <Columns.Column className="is-3 is-multiline">
-        <BlogCard article={article}></BlogCard>
-      </Columns.Column>
-      ))}
+        <Columns.Column className="is-offset-1 is-10">
+            <Columns className="is-centered">
+                {data.posts.edges.map(({ node: article }) => (      
+                <Columns.Column className="is-4 is-multiline">
+                    <BlogCard article={article}></BlogCard>
+                </Columns.Column>
+                ))}
+            </Columns>
+        </Columns.Column>      
       </Columns>
 
       
       </Container>
     </Hero.Body>
-  </Section>    
+  </Section>  
 </Layout>
+
 )
 
 export default BlogPage

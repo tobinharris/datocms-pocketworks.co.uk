@@ -8,18 +8,19 @@ function BlogCard(props){
     return (
     <Card className="is-blog">
         <div class="card-image">
-
+            <Link to={'blog/' + props.article.slug}>
             {props.article.featuredMedia ? (
                 <Img fluid={props.article.featuredMedia.fluid} className=""></Img>
             ) : (
                     <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=250" />
                 )
             }
+            </Link>
 
         </div>
         <Card.Content>
-            <p class="tag"><time datetime={props.article.date}>{props.article.date}</time></p>
-            <Link to={'blog/' + props.article.slug}>{props.article.title}</Link>
+            <p className="is-size-7"><time datetime={props.article.date}>{props.article.date}</time></p>
+            <h3><Link to={'blog/' + props.article.slug}>{props.article.title}</Link></h3>
 
 
         </Card.Content>
