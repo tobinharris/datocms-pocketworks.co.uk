@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
   <Section className="hero">
     <Hero.Body>
       <Container>
-      <div className="columns">
+      <div className="columns ">
         <div className="column is-5 is-offset-1">
           
           <h1 className="title is-size-1 is-size-3-mobile">
@@ -23,24 +23,23 @@ const IndexPage = ({ data }) => (
             </h1>
             
           <p>            
-            <Link to="/work" className="button is-primary is-rounded is-large is-flex-mobile">Learn more</Link>&nbsp;&nbsp;
-            <Link to="/about" className="button is-info is-rounded is-outlined is-large is-flex-mobile">Get in touch</Link>
+            <Link to="/work" className="button is-primary is-leafy is-large is-flex-mobile">What we do</Link>&nbsp;&nbsp;
+            <Link to="/about" className="button is-link is-leafy is-outlined is-large is-flex-mobile">Get in touch</Link>
           </p>
-          <br/>
+          <br/><br/>
           <div className="level is-size-3 is-mobile">
             <div class="level-item">
-              <span className="icon has-text-danger">
+              <span className="icon has-text-success">
               <i class="fas fa-smile-beam"></i>
               </span> 
             </div>
-
           
-            <div className="level-item" className="is-size-5">
-              Quick fact - in 2019, we helped Veezu achieve over <Link to="/">14 million mobile taxi bookings</Link>.             
+            <div className="level-item" className="is-size-6">
+              In 2019, we proudly helped Veezu achieve over <Link to="/">14 million mobile taxi bookings</Link>.             
             </div>
-            </div>
+          </div>
         </div>
-        <div className="column is-6 is-hidden-mobile">
+        <div className="column is-6">
           <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=500" />          
         </div>
       </div>

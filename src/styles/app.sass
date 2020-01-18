@@ -1,6 +1,8 @@
-@import '~react-bulma-components/dist/react-bulma-components.min.css'
-@import '~react-bulma-components/src/index.sass'
 @import '../_variables.sass'
+@import '~react-bulma-components/src/index.sass'
+@import '~react-bulma-components/dist/react-bulma-components.min.css'
+
+@import '~react-bulma-components/src/components/utils.sass'
 
 @font-face 
     font-family: "Circular Book"
@@ -25,8 +27,21 @@
     src:url("https://www.datocms-assets.com/20955/1579120326-circularstd-bolditalic.otf) format('truetype'), url(https://pocketworks.co.uk/wp-content/uploads/2019/11/CircularStd-BoldItalic.otf) format('opentype');font-display: auto;}@font-face { font-family:Circular Book;src:url(https://pocketworks.co.uk/wp-content/uploads/2019/11/CircularStd-Book.otf) format('opentype');font-display: auto;}@font-face { font-family:Circular Book Italic;src:url(https://pocketworks.co.uk/wp-content/uploads/2019/11/CircularStd-BookItalic.otf) format('opentype');font-display: auto;}@font-face { font-family:DM Sans Bold;src:url(https://pocketworks.co.uk/wp-content/uploads/2019/11/DMSans-Bold.ttf) format('truetype');font-display: auto;}@font-face { font-family:DM Sans Bold Italic;src:url(https://pocketworks.co.uk/wp-content/uploads/2019/11/DMSans-BoldItalic.ttf) format('truetype');font-display: auto;}@font-face { font-family:DM Sans Regular;src:url(https://pocketworks.co.uk/wp-content/uploads/2019/11/DMSans-Regular.ttf) format('truetype');font-display: auto;}@font-face { font-family:DM Sans Regular Italic;src:url(https://pocketworks.co.uk/wp-content/uploads/2019/11/DMSans-Italic.ttf") format('truetype')
     font-display: auto
 
-.hero
-    h1, h1.title
-        font-family: "Circular Bold"    
-        font-weigth: 800
+
+h1, h1.title, h2, h2.title
+    font-family: "Circular Bold"    
+    font-weigth: 700
+    //line-height: 3.4rem
+    letter-spacing: -1px
+    //padding-bottom: 2rem
+
+.content h2
+    font-size: 2.8rem
+
+.button.is-leafy
+    border-radius: 20px 0 20px 0
+
+.content h2.is-top-marginless
+    margin-top: 0.5rem
+
   
