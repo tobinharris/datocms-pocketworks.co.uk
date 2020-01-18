@@ -77,12 +77,15 @@ h1, h1.title, h2, h2.title, h3, h3.title
   
 .card.is-blog
     border-radius: 0px 0px 40px 0px
-    height: 450px
-    overflow: hidden
+    height: 400px
+    display: flex
+    flex-direction: column
+   
     .card-content
         border-top: 6px solid $green
         
         a
+            @extend h3
             max-length: 1em
             overflow: hidden
             text-overflow: ellipsis
@@ -91,7 +94,13 @@ h1, h1.title, h2, h2.title, h3, h3.title
     .excerpt
         max-height: 150px
         overflow: hidden
+
         text-overflow: clip            
+
+    .card-footer
+        top: auto
+        margin-top: auto        
+        border-top: none
 
     .card-image
         height: 170px

@@ -7,6 +7,7 @@ import {Section, Card, Container, Brand, Hero, Columns} from 'react-bulma-compon
 import Img from 'gatsby-image'
 import '@fortawesome/fontawesome-free/css/all.css'
 import SiteNav from '../components/navbar'
+import ArrowLink from '../components/link-with-arrow';
 
 //import Layout from "../components/layout"
 
@@ -43,6 +44,11 @@ const IndexPage = ({ data }) => (
           <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=450" />          
         </div>
       </div>
+      <div className="columns">
+        <div class="column is-offset-1 is-10">
+      <img src="https://www.datocms-assets.com/20955/1579120367-clients.png?fm=jpg"></img>
+      </div>
+      </div>
       <hr/>
       </Container>
     </Hero.Body>
@@ -50,7 +56,7 @@ const IndexPage = ({ data }) => (
   <Section className="is-small">
     <Container className="content">
       <div className="has-text-centered">
-        <h3>Happening at Pocketworks... </h3>
+        <h3>Some recent posts from the blog.</h3>
         <br/>
       </div>
     <Columns className="is-multiline is-centered">
@@ -72,13 +78,11 @@ const IndexPage = ({ data }) => (
           <p class="tag"><time datetime={article.date}>{article.date}</time></p>
           <Link to={'blog/' + article.slug}>{article.title}</Link>
 
-          <div className="content is-size-6">
-          <div className="excerpt" dangerouslySetInnerHTML={{__html: article.excerpt}}></div>
-            
-            <br/>
-            
-          </div>
+        
           </Card.Content>
+          <Card.Footer className="is-hidden">
+            <ArrowLink className="card-footer-item" to={'blog/' + article.slug }>Read full article</ArrowLink>
+          </Card.Footer>
       </Card>
       </Columns.Column>
       ))}
