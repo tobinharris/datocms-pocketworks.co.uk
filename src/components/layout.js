@@ -36,13 +36,7 @@ const TemplateWrapper = ({ children }) => {
                         <p>
                         <Link to="tel:0113 466 0302">0113 466 0302</Link>
                         <br/><Link to="mailto:hello@pocketworks.co.uk">hello@pocketworks.co.uk</Link>                        
-                        </p>
-                        <h4>Company</h4>                        
-                        <ul>
-                            <li><Link to="/about">About</Link></li>
-                            <li><Link to="/about">Approach</Link></li>
-                            <li><Link to="/blog">Blog &amp; News</Link></li>
-                        </ul>
+                        </p>                        
                     </Columns.Column>
                     <Columns.Column className="is-3">
                         <h4>Work</h4>
@@ -63,6 +57,12 @@ const TemplateWrapper = ({ children }) => {
                         </ul>
                     </Columns.Column>
                     <Columns.Column className="is-3">
+                    <h4>Company</h4>                        
+                        <ul>
+                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/about">Careers</Link></li>
+                            <li><Link to="/blog">Blog</Link></li>
+                        </ul>
                         <h4>Packages</h4>
                         <ul>
                         <li><Link to="/services">Light Discovery</Link></li>

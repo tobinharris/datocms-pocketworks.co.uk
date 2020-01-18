@@ -37,14 +37,14 @@ function SiteNav(props){
       </Navbar.Item>      
     </Navbar.Brand>
     
-    <Navbar.Menu className="nav-right">
+    <div className="navbar-end">
       <Navbar.Container>                
         <Navbar.Item className={props.className} renderAs="span"><Link to="/work">Work</Link></Navbar.Item>
         <Navbar.Item className={props.className} renderAs="span"><Link to="/about">About</Link></Navbar.Item>
         <Navbar.Item className={props.className} renderAs="span"><Link to="/blog">Blog</Link></Navbar.Item>
         <Navbar.Item className={props.className} renderAs="span"><Link to="/contact">Contact</Link></Navbar.Item>        
       </Navbar.Container>
-    </Navbar.Menu>
+    </div>
 
     
 

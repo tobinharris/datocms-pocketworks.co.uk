@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => (
           </h2>
 
               <p>
-                <Link to="/work" className="button is-primary is-leafy is-large is-flex-mobile">What we do</Link>&nbsp;&nbsp;
+                <Link to="/work" className="button is-primary is-leafy is-large is-flex-mobile">View Work</Link>&nbsp;&nbsp;
             <Link to="/about" className="button is-link is-leafy is-outlined is-large is-flex-mobile">Get in touch</Link>
               </p>
 
@@ -102,7 +102,7 @@ export const query = graphql`
           slug
           excerpt
           featuredMedia {
-            fluid(maxWidth: 450, imgixParams: { fm: "jpg", auto: "compress" }) {
+            fluid(maxWidth: 450, imgixParams: {h:"200px", w:"340px", fit: "clip", fm: "jpg", auto: "compress" }) {
               ...GatsbyDatoCmsSizes
             }
           }
