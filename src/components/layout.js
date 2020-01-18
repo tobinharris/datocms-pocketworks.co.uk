@@ -29,15 +29,19 @@ const TemplateWrapper = ({ children }) => {
             {children}
             <Footer>
                 <Columns className="content is-size-6">
-                    <Columns.Column className="is-3 is-offset-1">
+                    <Columns.Column className="is-3 is-offset-2">
                         
-                        <h4>Location</h4>                        
-                        <p>Pocketworks<br/>Ground Floor, Monarch House<br/>Queen Street, Leeds, LS1 2TW</p>
                         <h4>Contact</h4>                        
-                        <ul>                        
-                        <li><Link to="tel:0113 466 0302">Leeds, 0113 466 0302</Link></li>
-                        <li><Link to="mailto:hello@pocketworks.co.uk">hello@pocketworks.co.uk</Link></li>
-                        <li><Link to="/contact">See contact details</Link></li>
+                        <p>Pocketworks<br/>Ground Floor, Monarch House<br/>Queen Street, Leeds, LS1 2TW</p>                        
+                        <p>
+                        <Link to="tel:0113 466 0302">0113 466 0302</Link>
+                        <br/><Link to="mailto:hello@pocketworks.co.uk">hello@pocketworks.co.uk</Link>                        
+                        </p>
+                        <h4>Company</h4>                        
+                        <ul>
+                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/about">Approach</Link></li>
+                            <li><Link to="/blog">Blog &amp; News</Link></li>
                         </ul>
                     </Columns.Column>
                     <Columns.Column className="is-3">

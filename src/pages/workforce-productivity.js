@@ -27,11 +27,10 @@ const WorkforceProductivity = ({ data: { about } }) => (
                     <div className="columns">
                         <div className="column is-6 is-offset-1">
                             <h1 className="title is-size-1 is-size-2-mobile">
-                            Helping <span class="has-text-primary">mobile teams</span> get more done. 
+                            Helping <span class="has-text-primary">mobile staff</span> get more done. 
                             </h1>
-                            <p className="is-size-5">
-                                Digital transformation initiatives need buy-in from leadership, management and the workforce. 
-                                Be it on site, on the road or in the game, our process ensures you consider the needs of you the whole organisation whilst raising the bar with modern mobile and cloud technologies.
+                            <p className="is-size-5">                                
+                                Be it on-site, on-the-road or in-the-game, our process ensures you automate and simplify work whilst considering the needs of all stakeholders.
                             </p>
 
                         </div>
@@ -74,15 +73,15 @@ const WorkforceProductivity = ({ data: { about } }) => (
                 <hr/>
                     <Columns className="">
                         <Columns.Column className="is-3 is-offset-1">
-                            <img src="https://www.datocms-assets.com/20955/1579120437-anna.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"></img>
+                            <img src="https://www.datocms-assets.com/20955/1579120440-tom.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"></img>
                         </Columns.Column>
                         <Columns.Column className="is-6 ">
                             <br /><br /><br />
                             <p className="is-size-4">
-                                "One of the biggest challenges our clients face is discovering customer pain points. Once you understand those, it's much easier to design a solution that meets their needs."
+                                "One of the biggest challenges our clients face is: Do I build or buy a workforce solution (or a bit of both)? I help them look at the 5-year picture so they can make an informed decision."
 
                             </p>
-                            <p class="tag is-medium is-success">Anna, Digital Product Designer</p>
+                            <p class="tag is-medium is-success">Tom, Mobile Strategy Specialist</p>
 
                         </Columns.Column>
                     </Columns>
@@ -95,22 +94,22 @@ const WorkforceProductivity = ({ data: { about } }) => (
                 <Container className="content">
                     <Columns>
                     <Columns.Column className="is-offset-1 is-10 has-text-centered">
-                        <h2>Our <span className="has-text-success">approach</span> to creating customer-centric apps</h2>
+                        <h2>Our <span className="has-text-info">approach</span> to improving efficiency with apps</h2>
                         <br/><br/>
                     </Columns.Column>
                     </Columns>
                     <Columns className="">
                         <Columns.Column className="is-3 is-offset-2">
-                            <h3>User Research</h3>
-                            <p>Ever wondered how your customers think? User research helps you find the answers. It enables you to understand the pain points and desires of your customers. Our UX team carry out user interviews, focus groups, surveys and other research activities. All this awesome insight improves the design of your product.</p>
+                            <h3>Design</h3>
+                            <p>Your service offering starts before your app is downloaded, and continues after employees use your app. We look at the big picture so we can be sure everything fits together nicely and staff get the tools they really need. We'll take a good look at what your doing and design an app or platform that puts people at the centre..</p>
                         </Columns.Column>
                         <Columns.Column className="is-3">
-                            <h3>Service Design</h3>
-                            <p>Your service offering starts before your app is downloaded, and continues after customers use your app. We look at the big picture so we can be sure everything fits together nicely and customers have an easy time interacting with your business. We'll take a good look at what your doing and design a service that puts customers at the centre.</p>
+                            <h3>Development</h3>
+                            <p>From native mobile apps on iOS and Android, to PWAs and beyond. There can be a lot of pieces to put in place; web portals, databases, APIs and integrations. Your organisation needs to be agile and ready for the future, which is where software architecture comes into play. Microservices? API-first? React? No-code? We'll architect and deliver all the building blocks needed to launch a successful app..</p>
                         </Columns.Column>
                         <Columns.Column className="is-3">
-                            <h3>App Design</h3>
-                            <p>You know when you're using a well-designed app. It feels simple. Delightful, even. It anticipates your next move and still works even when you have flakey phone reception. Our UX and UI team care about these things. And because we're mobile specialists, we know how to design an app that feels like an app should.</p>
+                            <h3>Rollout</h3>
+                            <p>Getting a well design and engeineered digital tool into peoples hands is often just the the beginning. To get the real value from any IT investment you need to monitor and improve. We can help. User feedback, measuring against KPIs, or making sure it's live 24x7? We'll help you do all that so you can keep it secure, healthy and moving in the right direction.</p>
                         </Columns.Column>
                     </Columns>
                     <Columns>

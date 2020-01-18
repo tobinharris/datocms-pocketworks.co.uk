@@ -18,7 +18,7 @@ const Services = ({ data: { about } }) => (
 
             </ul>
         </div>
-        <Section className="hero">
+        <Section className="hero is-small">
             <Hero.Body>
                 <Container className="content">
 
@@ -30,59 +30,90 @@ const Services = ({ data: { about } }) => (
                             Everything you need for <span class="has-text-primary">mobile success.</span> 
                             </h1>
                             <p className="is-size-5">
-                                We understand the challenges in giving your mobile customers a simple and convenient experience.
-                                Working with us, you'll be guided through a process that gets your mobile ideas implemented whilst keeping your customer center stage.
+                                The hardest part about building digital products is getting the right people and skills around the table.
+                                User Research, User Interface, Dev, Test etc. You get the idea. Working with us, you'll have a cross functional team from day one that can ask the right questions and produce the right solutions.
                             </p>
 
                         </div>
                         <div className="column is-4">
-                        <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=450"></img>
+                            <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=450"></img>
                         </div>
                     </div>
-                    <hr />
+
+                    
+                    
                 </Container>
             </Hero.Body>
         </Section>
-        <Section>
-            <Container>
-                <Columns className="content">
-                    <Columns.Column className="is-4">
-                        <img src="https://www.datocms-assets.com/20955/1579120572-veezu-mockup.png?w=450&fm=jpg"></img>
-                    </Columns.Column>
-                    <Columns.Column className="is-6 is-offset-1">
-                        <img src="https://www.datocms-assets.com/20955/1579120597-veezu-logo.png"></img>
-                        <h2 className="is-top-marginless">Supporting growth from zero to <span className="has-text-info">6 million mobile bookings</span> a year.</h2>
-                        <p><ArrowLink to="/#test" className="is-size-4 has-text-info">Read the case study</ArrowLink></p>
-                    </Columns.Column>
-                </Columns>
-                <img src="https://www.datocms-assets.com/20955/1579120592-link.png?w=1800"></img>
-                <Columns className="content">
-                    <Columns.Column className="is-6 is-offset-1 content">
-                        <img src="https://www.datocms-assets.com/20955/1579120601-travelodge-logo.png"></img>
-                        <h2 className="is-top-marginless">Prototyping <span className="has-text-success">new customer experiences</span> in hotel booking.</h2>
-                        <p><ArrowLink to="/#test" className="is-size-4 has-text-success">Read the case study</ArrowLink></p>                        
-                    </Columns.Column>
-                    <Columns.Column className="is-5">
-                        <img src="https://www.datocms-assets.com/20955/1579120579-travelodge-mockup.png?w=450&fm=jpg"></img>
-                    </Columns.Column>
-                </Columns>                
-            </Container>
-        </Section>
+
         <Hero className="">
+            <Hero.Body>
+                <Container className="content">
+                    <Columns>
+                    <Columns.Column className="is-offset-1 is-10 has-text-centered">
+                        <h2>The <span className="has-text-success">services &amp; packages</span> we offer</h2>
+                        <br/><br/>
+                    </Columns.Column>
+                    </Columns>
+                    <Columns className="">
+                        <Columns.Column className="is-3 is-offset-2">
+                            <h3>Light Discovery</h3>
+                            <p className="is-size-6">1-2 weeks, typically £1,500-£4,000</p>
+                            <p>Spend half a day with our team and take your app ideas forward in leaps and bounds. Explore your strategy, validate ideas, create roadmaps, service blueprints and understand costs. It's preceded by some preparation calls and preliminary research tasks.</p>
+                        </Columns.Column>
+                        <Columns.Column className="is-3">
+                            <h3>Research Sprints</h3>
+                            <p className="is-size-6">2-4 weeks, typically £6,000-£12,000</p>
+                            <p>Answer the important questions. Receive competitor research, user research, technical research to find the gaps and test key assumptions. The goal is to gain insight and tackle the major risks in your business plan. Includes Light Discovery.</p>
+                        </Columns.Column>
+                        <Columns.Column className="is-3">
+                            <h3>App Prototypes</h3>
+                            <p className="is-size-6">3-6 weeks, typically £8,000-£20,000</p>
+                            <p>Prototype your ideas and test them on real people. We iterate until we're confident we have a product that will work. By the end of this, you're ready to design and develop a working app. Includes Light Discovery and Research sprint.</p>
+                        </Columns.Column>
+                    </Columns>
+
+                    <Columns className="">
+                        <Columns.Column className="is-3 is-offset-2">
+                            <h3>Strategic Consultation</h3>
+                            <p className="is-size-6">1-2 weeks, typically £1,500-£4,000</p>
+                            <p>If you're a production director or CxO looking to get a grip on your roadmap, we can review your situation and offer a fresh perspective. We advise on topics such as: getting stakeholder buy-in, specifications, technical strategies and emerging trends.</p>
+                        </Columns.Column>
+                        <Columns.Column className="is-3">
+                            <h3>Product Review</h3>
+                            <p className="is-size-6">2-4 weeks, typically £6,000-£12,000</p>
+                            <p>If you suspect your existing app or PWA could be improved we can look at it with fresh eyes and suggest improvements. This can include: looking at your analytics to discover potential issues, a code review or an evaluation of the user experience.</p>
+                        </Columns.Column>
+                        <Columns.Column className="is-3">
+                            <h3>App Development</h3>
+                            <p className="is-size-6">3-6 weeks, typically £8,000-£20,000</p>
+                            <p>This builds upon our research and prototyping process. We'll design and develop your app across web, iPhone and Android. We'll conduct user testing along the way to make sure it's well received. Then launch it to your customers or staff.</p>
+                        </Columns.Column>
+                    </Columns>
+
+                    <Columns>
+                    <Columns.Column className="is-offset-2 is-8 has-text-centered">
+                    <p><br/><Link to="/" className="button is-primary is-leafy is-medium is-primary">Ready to start? Let's do this!</Link></p>
+                    </Columns.Column>
+                    </Columns>
+                </Container>
+            </Hero.Body>
+        </Hero>
+        
+        <Hero className="is-small">
             <Hero.Body>
                 <Container className="content">
                 <hr/>
                     <Columns className="">
                         <Columns.Column className="is-3 is-offset-1">
-                            <img src="https://www.datocms-assets.com/20955/1579120437-anna.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"></img>
+                            <img src="https://www.datocms-assets.com/20955/1579120408-lee.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"></img>
                         </Columns.Column>
                         <Columns.Column className="is-6 ">
                             <br /><br /><br />
                             <p className="is-size-4">
-                                "One of the biggest challenges our clients face is discovering customer pain points. Once you understand those, it's much easier to design a solution that meets their needs."
-
+                                "It's easy to say it, but our true goal is to create long-term win-win partnerships with our clients. We want everyone around the table to be motivated to get the best results possible."
                             </p>
-                            <p class="tag is-medium is-success">Anna, Digital Product Designer</p>
+                            <p class="tag is-medium is-success">Lee, Head of Customer Parterships</p>
 
                         </Columns.Column>
                     </Columns>
