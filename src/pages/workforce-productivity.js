@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import SiteNav from '../components/navbar'
 import ArrowLink from '../components/link-with-arrow'
 import TeamQuote from '../components/team-quote'
+import CaseStudyHero from '../components/case-study-hero'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
 const WorkforceProductivity = ({ data: { about } }) => (
@@ -24,7 +25,7 @@ const WorkforceProductivity = ({ data: { about } }) => (
 
 
 
-                    <div className="columns">
+                    <div className="columns is-tablet">
                         <div className="column is-6 is-offset-1">
                             <h1 className="title is-size-1 is-size-2-mobile">
                             Helping <span class="has-text-primary">mobile staff</span> get more done. 
@@ -44,27 +45,20 @@ const WorkforceProductivity = ({ data: { about } }) => (
         </Hero>
         <Section>
             <Container>
-                <Columns className="content">
-                    <Columns.Column className="is-4 has-text-right">
-                        <img src="https://www.datocms-assets.com/20955/1579120585-premier-league-mockup.png?w=330&fm=jpg"></img>
-                    </Columns.Column>
-                    <Columns.Column className="is-6 is-offset-1">
-                        <img src="https://www.datocms-assets.com/20955/1579120361-pgmol-logo-white.png"></img>
-                        <h2 className="is-top-marginless">Raising the game for <span className="has-text-info">Premier League</span> referees.</h2>
-                        <p><ArrowLink to="/#test" className="is-size-4 has-text-info">Read the case study</ArrowLink></p>
-                    </Columns.Column>
-                </Columns>
+            <CaseStudyHero 
+                    className="has-text-info"
+                    logo="https://www.datocms-assets.com/20955/1579120361-pgmol-logo-white.png" 
+                    mainImage="https://www.datocms-assets.com/20955/1579120585-premier-league-mockup.png?w=330&fm=jpg" 
+                    titleHtml="Raising the game for <span class='has-text-info'>Premier League</span> referees." 
+                    to="/#test" />
                 <img src="https://www.datocms-assets.com/20955/1579120592-link.png?w=1800"></img>
-                <Columns className="content">
-                    <Columns.Column className="is-6 is-offset-1 content">
-                        <img src="https://www.datocms-assets.com/20955/1579120601-travelodge-logo.png"></img>
-                        <h2 className="is-top-marginless">Prototyping <span className="has-text-success">new customer experiences</span> in hotel booking.</h2>
-                        <p><ArrowLink to="/#test" className="is-size-4 has-text-success">Read the case study</ArrowLink></p>                        
-                    </Columns.Column>
-                    <Columns.Column className="is-5">
-                        <img src="https://www.datocms-assets.com/20955/1579120579-travelodge-mockup.png?w=450&fm=jpg"></img>
-                    </Columns.Column>
-                </Columns>                
+                <CaseStudyHero 
+                    className="has-text-success"
+                    flipped
+                    logo="https://www.datocms-assets.com/20955/1579120601-travelodge-logo.png" 
+                    mainImage="https://www.datocms-assets.com/20955/1579120579-travelodge-mockup.png?w=400&fm=jpg" 
+                    titleHtml="Prototyping <span class='has-text-success'>new customer experiences</span> in hotel booking." 
+                    to="/#test" />
             </Container>
         </Section>
 

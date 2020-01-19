@@ -22,7 +22,7 @@ const Work = ({ data: { about } }) => (
         <Hero className="is-small">
             <Hero.Body>
                 <Container className="content">
-                    <div className="columns">
+                    <div className="columns is-tablet">
                         <div className="column is-6 is-offset-1">
                             <h1 className="title is-size-1 is-size-2-mobile">                            
                             Creating loyal <span class="has-text-primary">mobile customers</span>.
@@ -43,12 +43,14 @@ const Work = ({ data: { about } }) => (
         <Section>
             <Container>
                 <CaseStudyHero 
+                    className="has-text-info"
                     logo="https://www.datocms-assets.com/20955/1579120597-veezu-logo.png" 
                     mainImage="https://www.datocms-assets.com/20955/1579120572-veezu-mockup.png?w=400&fm=jpg" 
                     titleHtml="Supporting growth from zero to <span class='has-text-info'>6 million mobile bookings</span> a year." 
                     to="/#test" />
                 <img src="https://www.datocms-assets.com/20955/1579120592-link.png?w=1800"></img>
                 <CaseStudyHero 
+                    className="has-text-success"
                     flipped
                     logo="https://www.datocms-assets.com/20955/1579120601-travelodge-logo.png" 
                     mainImage="https://www.datocms-assets.com/20955/1579120579-travelodge-mockup.png?w=400&fm=jpg" 
