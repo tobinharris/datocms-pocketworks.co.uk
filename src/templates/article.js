@@ -18,7 +18,7 @@ export default ({ data }) => (
             <Container className="content">
               <Columns>
                 <Columns.Column className="is-offset-2 is-8 has-text-centered">
-                  <h1 className="title is-size-1">{data.datoCmsArticle.title}</h1>
+                  <h1 className="title is-size-1 is-size-3-mobile">{data.datoCmsArticle.title}</h1>
                   
                 </Columns.Column>
               </Columns>
@@ -29,7 +29,7 @@ export default ({ data }) => (
     </Hero>
     <Section>
       <Container className="content">
-        <Columns className="is-mobile">          
+        <Columns className="is-flex">          
           <Columns.Column className="is-offset-3 is-1">            
             {data.datoCmsArticle.author.mainImage ? (
               <Img fluid={data.datoCmsArticle.author.mainImage.fluid }></Img>
