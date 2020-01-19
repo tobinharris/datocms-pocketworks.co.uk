@@ -124,16 +124,24 @@ h1, h1.title, h2, h2.title, h3, h3.title
 .navbar-item 
     a
         color: $dark
+    
+    a.is-active
+        border-bottom: 1px solid $link
+        color: $link
 
-    a::visited
-        color: $dark
+    // a::visited
+    //     color: $dark
 
 .navbar-item.is-light
     a
         color: $light
     
-    a::visited
-        color: $light
+    a.is-active
+        color: $link-invert
+        border-bottom: 1px solid $link-invert
+
+    // a::visited
+    //     color: $light
 
 
 div.article

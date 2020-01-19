@@ -14,6 +14,15 @@ import SiteNav from '../components/navbar'
 const BlogPage = ({ data }) => (
 <Layout>
   <SiteNav></SiteNav>
+  <div className="tabs is-medium is-centered">
+      <ul>
+          <li className="is-active"><a>Latest</a></li>          
+          <li><Link to="#">Strategy</Link></li>
+          <li><Link to="#">Design</Link></li>
+          <li><Link to="#">Technology</Link></li>
+          <li><Link to="#">Us</Link></li>
+      </ul>
+  </div>
   <Section className="hero">
     <Hero.Body>
       <Container>

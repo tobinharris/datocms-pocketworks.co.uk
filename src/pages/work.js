@@ -10,7 +10,7 @@ import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components
 
 const Work = ({ data: { about } }) => (
     <div>
-        <SiteNav></SiteNav>
+        <SiteNav></SiteNav>        
         <div className="tabs is-medium is-centered">
             <ul>
                 <li className="is-active"><a>Customer Loyalty</a></li>
@@ -25,7 +25,7 @@ const Work = ({ data: { about } }) => (
                     <div className="columns is-tablet">
                         <div className="column is-6 is-offset-1">
                             <h1 className="title is-size-1 is-size-2-mobile">                            
-                            Creating loyal <span class="has-text-primary">mobile customers</span>.
+                            Wooing your <span class="has-text-primary">mobile customers</span>.
                             </h1>
                             <p className="is-size-5">
                             These days, customers expect convenience. One-tap purchasing, speedy bookings and effortless checkout. If you get this right, you'll woo customers in and then earn their loyalty. That's the best mobile strategy.

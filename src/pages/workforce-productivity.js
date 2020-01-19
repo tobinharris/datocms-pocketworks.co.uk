@@ -28,7 +28,7 @@ const WorkforceProductivity = ({ data: { about } }) => (
                     <div className="columns is-tablet">
                         <div className="column is-6 is-offset-1">
                             <h1 className="title is-size-1 is-size-2-mobile">
-                            Helping <span class="has-text-primary">mobile staff</span> get more done. 
+                            Superpowers for your <span class="has-text-primary">mobile workforce</span>. 
                             </h1>
                             <p className="is-size-5">                                
                             Mobile is a great way to improve how employees work. Whether it be on-site, in-store or on-the-road. We help organisations design and launch mobile solutions that speed up work. The upshot is reduced operating costs and happier staff.
@@ -36,7 +36,7 @@ const WorkforceProductivity = ({ data: { about } }) => (
 
                         </div>
                         <div className="column is-4">
-                        <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=450"></img>
+                        <img src="https://www.datocms-assets.com/20955/1579120475-jump.png?fm=jpg&w=500"></img>
                         </div>
                     </div>
                     <hr />

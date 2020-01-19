@@ -28,15 +28,26 @@ const TemplateWrapper = ({ children }) => {
           <div>
             {children}
             <Footer>
-                <Columns className="content is-size-6">
+                <Columns className="content is-size-6 is-centered">
                     <Columns.Column className="is-3 is-offset-2">
                         
                         <h4>Contact</h4>                        
-                        <p>Pocketworks<br/>Ground Floor, Monarch House<br/>Queen Street, Leeds, LS1 2TW</p>                        
+                        <p>Pocketworks Mobile Ltd<br/>Ground Floor, Monarch House<br/>Queen Street, Leeds, LS1 2TW</p>                        
                         <p>
-                        <Link to="tel:0113 466 0302">0113 466 0302</Link>
-                        <br/><Link to="mailto:hello@pocketworks.co.uk">hello@pocketworks.co.uk</Link>                        
+                        <a href="tel:0113 466 0302">0113 466 0302</a>
+                        <br/><a href="mailto:hello@pocketworks.co.uk">hello@pocketworks.co.uk</a>                        
                         </p>                        
+                        <p>
+                          <a href=""><span className="icon is-medium has-text-dark"><i class="fab fa-twitter"></i></span></a>
+                          <a href=""><span className="icon is-medium has-text-dark"><i class="fab fa-linkedin-in"></i></span></a>
+                          <a href=""><span className="icon is-medium has-text-dark"><i class="fab fa-dribbble"></i></span></a>
+                          <a href=""><span className="icon is-medium has-text-dark"><i class="fab fa-github"></i></span></a>                          
+                        </p>
+                        <p><span className="icon has-text-dark"><i class="fas fa-copyright"></i></span> 2020 Pocketworks Mobile Ltd</p>
+                        
+                        <p>
+                        Pocketworks is a UK registered company no. <a href="https://beta.companieshouse.gov.uk/company/08041956">08041956</a>. VAT registration 136641417. 
+                        </p>
                     </Columns.Column>
                     <Columns.Column className="is-3">
                         <h4>Work</h4>
@@ -60,7 +71,7 @@ const TemplateWrapper = ({ children }) => {
                     <h4>Company</h4>                        
                         <ul>
                             <li><Link to="/about">About</Link></li>
-                            <li><Link to="/about">Careers</Link></li>
+                            <li><Link to="/careers">Careers</Link></li>
                             <li><Link to="/blog">Blog</Link></li>
                         </ul>
                         <h4>Packages</h4>
