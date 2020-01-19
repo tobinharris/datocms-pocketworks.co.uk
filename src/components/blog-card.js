@@ -7,17 +7,22 @@ import ArrowLink from '../components/link-with-arrow'
 function BlogCard(props){
     return (
     <Card className="is-blog">
-        <div class="card-image">
-            <Link to={'blog/' + props.article.slug}>
-            {props.article.featuredMedia ? (
-                <Img fluid={props.article.featuredMedia.fluid} className=""></Img>
-            ) : (
-                    <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=250" />
-                )
-            }
-            </Link>
-
-        </div>
+        
+        <Link to={'blog/' + props.article.slug}>
+                {props.article.featuredMedia ? (
+                <div class="card-image">
+                    
+                      <Img fluid={props.article.featuredMedia.fluid}/>
+                    
+                </div>                    
+                ) : (
+                        <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=250" />
+                    )
+                }
+                </Link>
+        
+        
+        
         <Card.Content>
             <p className="is-uppercase is-size-7">Blog By {props.article.author.name}, <time datetime={props.article.date}>{props.article.date}</time></p>
             <h3><Link to={'blog/' + props.article.slug}>{props.article.title}</Link></h3>
