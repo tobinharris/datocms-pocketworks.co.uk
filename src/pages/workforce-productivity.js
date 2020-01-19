@@ -4,7 +4,7 @@ import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
 import SiteNav from '../components/navbar'
 import ArrowLink from '../components/link-with-arrow'
-
+import TeamQuote from '../components/team-quote'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
 const WorkforceProductivity = ({ data: { about } }) => (
@@ -67,28 +67,13 @@ const WorkforceProductivity = ({ data: { about } }) => (
                 </Columns>                
             </Container>
         </Section>
-        <Hero className="">
-            <Hero.Body>
-                <Container className="content">
-                <hr/>
-                    <Columns className="">
-                        <Columns.Column className="is-3 is-offset-1">
-                            <img src="https://www.datocms-assets.com/20955/1579120440-tom.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"></img>
-                        </Columns.Column>
-                        <Columns.Column className="is-6 ">
-                            <br /><br /><br />
-                            <p className="is-size-4">
-                                "One of the biggest challenges our clients face is: Do I build or buy a workforce solution (or a bit of both)? I help them look at the 5-year picture so they can make an informed decision."
 
-                            </p>
-                            <p class="tag is-medium is-success">Tom, Mobile Strategy Specialist</p>
-
-                        </Columns.Column>
-                    </Columns>
-                    <hr/>
-                </Container>
-            </Hero.Body>
-        </Hero>
+        <TeamQuote
+            quote="Our clients often ask: Do I build or buy? I help them look at the 5-year picture so they can make an informed decision." 
+            imgSrc="https://www.datocms-assets.com/20955/1579120440-tom.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"
+            who="Tom, Mobile Strategy Specialist"
+            /> 
+       
         <Hero className="">
             <Hero.Body>
                 <Container className="content">

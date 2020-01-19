@@ -4,6 +4,7 @@ import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
 import SiteNav from '../components/navbar'
 import ArrowLink from '../components/link-with-arrow'
+import TeamQuote from '../components/team-quote'
 
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
@@ -99,27 +100,12 @@ const Services = ({ data: { about } }) => (
             </Hero.Body>
         </Hero>
         
-        <Hero className="is-small">
-            <Hero.Body>
-                <Container className="content">
-                <hr/>
-                    <Columns className="">
-                        <Columns.Column className="is-3 is-offset-1">
-                            <img src="https://www.datocms-assets.com/20955/1579120408-lee.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"></img>
-                        </Columns.Column>
-                        <Columns.Column className="is-6 ">
-                            <br /><br /><br />
-                            <p className="is-size-4">
-                                "It's easy to say it, but our true goal is to create long-term win-win partnerships with our clients. We want everyone around the table to be motivated to get the best results possible."
-                            </p>
-                            <p class="tag is-medium is-success">Lee, Head of Customer Parterships</p>
-
-                        </Columns.Column>
-                    </Columns>
-                    <hr/>
-                </Container>
-            </Hero.Body>
-        </Hero>
+        <TeamQuote
+            quote="It's easy to say it, but our true goal is to create long-term win-win partnerships with our clients. We want everyone around the table to be motivated to get the best results possible." 
+            imgSrc="https://www.datocms-assets.com/20955/1579120408-lee.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"
+            who="Lee, Head of Customer Parterships"
+            /> 
+        
         <Hero className="">
             <Hero.Body>
                 <Container className="content">

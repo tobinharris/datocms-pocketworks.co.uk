@@ -4,7 +4,7 @@ import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
 import SiteNav from '../components/navbar'
 import ArrowLink from '../components/link-with-arrow'
-
+import TeamQuote from '../components/team-quote'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
 const Work = ({ data: { about } }) => (
@@ -67,28 +67,11 @@ const Work = ({ data: { about } }) => (
                 </Columns>                
             </Container>
         </Section>
-        <Hero className="">
-            <Hero.Body>
-                <Container className="content">
-                <hr/>
-                    <Columns className="">
-                        <Columns.Column className="is-3 is-offset-1">
-                            <img src="https://www.datocms-assets.com/20955/1579120437-anna.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"></img>
-                        </Columns.Column>
-                        <Columns.Column className="is-6 ">
-                            <br /><br /><br />
-                            <p className="is-size-4">
-                                "One of the biggest challenges our clients face is discovering customer pain points. Once you understand those, it's much easier to design a solution that meets their needs."
-
-                            </p>
-                            <p class="tag is-medium is-success">Anna, Digital Product Designer</p>
-
-                        </Columns.Column>
-                    </Columns>
-                    <hr/>
-                </Container>
-            </Hero.Body>
-        </Hero>
+        <TeamQuote
+            quote="One of the biggest challenges our clients face is discovering customer pain points. Once you understand those, it's much easier to design a solution that meets their needs." 
+            imgSrc="https://www.datocms-assets.com/20955/1579120437-anna.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"
+            who="Anna, Digital Product Designer"
+            />        
         <Hero className="">
             <Hero.Body>
                 <Container className="content">
