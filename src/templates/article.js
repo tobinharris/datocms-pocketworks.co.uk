@@ -6,9 +6,9 @@ import { Hero, Section, Container, Columns, Level } from 'react-bulma-components
 import SiteNav from '../components/navbar'
 
 export default ({ data }) => (
-  <div>
+  <div className="article">
 
-    <Hero className="has-bg-image is-medium  is-success blog-hero" style={{ backgroundImage: "url(" + (data.datoCmsArticle.featuredMedia ? data.datoCmsArticle.featuredMedia.fluid.src : '' )+ "&fit=facearea&w=1000&h=300&facepad=7.0)" }} id="blog-hero">
+    <Hero className="has-bg-image is-large is-success blog-hero" style={{ backgroundImage: "url(" + (data.datoCmsArticle.featuredMedia ? data.datoCmsArticle.featuredMedia.fluid.src : '' )+ "&fit=facearea&w=1000&h=500&facepad=7.0)" }} id="blog-hero">
       <div class="background-overlay">
         <Hero.Head>
           <SiteNav className="is-light"></SiteNav>
@@ -70,7 +70,7 @@ export const query = graphql`
       content 
       featuredMedia {
         url
-        fluid(maxWidth: 1000, imgixParams: { fm: "jpg", auto: "compress" }) {
+        fluid(maxWidth: 1024, imgixParams: {fm: "jpg", auto: "compress" }) {
           ...GatsbyDatoCmsSizes
         }
       }
