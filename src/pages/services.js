@@ -18,7 +18,7 @@ const Services = ({ data: { about } }) => (
 
             </ul>
         </div>
-        <Section className="hero is-small">
+        <Hero className="is-small">
             <Hero.Body>
                 <Container className="content">
 
@@ -30,8 +30,7 @@ const Services = ({ data: { about } }) => (
                             Everything you need for <span class="has-text-primary">mobile success.</span> 
                             </h1>
                             <p className="is-size-5">
-                                The hardest part about building digital products is getting the right people and skills around the table.
-                                User Research, User Interface, Dev, Test etc. You get the idea. Working with us, you'll have a cross functional team from day one that can ask the right questions and produce the right solutions.
+                            Not every business has digital roots. A little advice and guidance can go a long way toward helping you gain confidence. Our clients hire us to help them build strategies, roadmaps and mobile-first digital products .
                             </p>
 
                         </div>
@@ -44,7 +43,7 @@ const Services = ({ data: { about } }) => (
                     
                 </Container>
             </Hero.Body>
-        </Section>
+        </Hero>
 
         <Hero className="">
             <Hero.Body>
@@ -64,7 +63,7 @@ const Services = ({ data: { about } }) => (
                         <Columns.Column className="is-3">
                             <h3>Research Sprints</h3>
                             <p className="is-size-6">2-4 weeks, typically £6,000-£12,000</p>
-                            <p>Answer the important questions. Receive competitor research, user research, technical research to find the gaps and test key assumptions. The goal is to gain insight and tackle the major risks in your business plan. Includes Light Discovery.</p>
+                            <p>Answer the important questions about competitors, customer pain points and technical feasibility. Find the gaps and test your key assumptions. The goal is to gain insight and tackle the major risks in your business plan. Includes Light Discovery.</p>
                         </Columns.Column>
                         <Columns.Column className="is-3">
                             <h3>App Prototypes</h3>
@@ -76,17 +75,17 @@ const Services = ({ data: { about } }) => (
                     <Columns className="">
                         <Columns.Column className="is-3 is-offset-2">
                             <h3>Strategic Consultation</h3>
-                            <p className="is-size-6">1-2 weeks, typically £1,500-£4,000</p>
-                            <p>If you're a production director or CxO looking to get a grip on your roadmap, we can review your situation and offer a fresh perspective. We advise on topics such as: getting stakeholder buy-in, specifications, technical strategies and emerging trends.</p>
+                            <p className="is-size-6">2-8 hours, typically £1,500-£4,000</p>
+                            <p>For CxOs looking for a fresh outside perspective. Have a technical roadmap that needs checking over? Or need some advice on a board presentation? We advise on topics such as: getting stakeholder buy-in, specifications, technical strategies and emerging trends.</p>
                         </Columns.Column>
                         <Columns.Column className="is-3">
-                            <h3>Product Review</h3>
-                            <p className="is-size-6">2-4 weeks, typically £6,000-£12,000</p>
-                            <p>If you suspect your existing app or PWA could be improved we can look at it with fresh eyes and suggest improvements. This can include: looking at your analytics to discover potential issues, a code review or an evaluation of the user experience.</p>
+                            <h3>App Review</h3>
+                            <p className="is-size-6">1 week, typically £2,000-£3,000</p>
+                            <p>If you suspect your existing app or PWA could be improved, we can look at it with fresh eyes and suggest improvements. This can include: looking at your analytics to discover potential issues, a code review or an evaluation of the user experience.</p>
                         </Columns.Column>
                         <Columns.Column className="is-3">
                             <h3>App Development</h3>
-                            <p className="is-size-6">3-6 weeks, typically £8,000-£20,000</p>
+                            <p className="is-size-6">3-12 months, typically £50,000-£1m</p>
                             <p>This builds upon our research and prototyping process. We'll design and develop your app across web, iPhone and Android. We'll conduct user testing along the way to make sure it's well received. Then launch it to your customers or staff.</p>
                         </Columns.Column>
                     </Columns>
