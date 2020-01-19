@@ -18,7 +18,7 @@ const WorkforceProductivity = ({ data: { about } }) => (
 
             </ul>
         </div>
-        <Section className="hero">
+        <Hero className="is-small">
             <Hero.Body>
                 <Container className="content">
 
@@ -30,7 +30,7 @@ const WorkforceProductivity = ({ data: { about } }) => (
                             Helping <span class="has-text-primary">mobile staff</span> get more done. 
                             </h1>
                             <p className="is-size-5">                                
-                                Be it on-site, on-the-road or in-the-game, our process ensures you automate and simplify work whilst considering the needs of all stakeholders.
+                            Mobile is a great way to improve how employees work. Whether it be on-site, in-store or on-the-road. We help organisations design and launch mobile solutions that speed up work. The upshot is reduced operating costs and happier staff.
                             </p>
 
                         </div>
@@ -41,7 +41,7 @@ const WorkforceProductivity = ({ data: { about } }) => (
                     <hr />
                 </Container>
             </Hero.Body>
-        </Section>
+        </Hero>
         <Section>
             <Container>
                 <Columns className="content">

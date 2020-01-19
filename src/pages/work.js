@@ -18,7 +18,7 @@ const Work = ({ data: { about } }) => (
 
             </ul>
         </div>
-        <Section className="hero">
+        <Hero className="is-small">
             <Hero.Body>
                 <Container className="content">
 
@@ -26,12 +26,11 @@ const Work = ({ data: { about } }) => (
 
                     <div className="columns">
                         <div className="column is-6 is-offset-1">
-                            <h1 className="title is-size-1 is-size-2-mobile">
+                            <h1 className="title is-size-1 is-size-2-mobile">                            
                             Creating loyal <span class="has-text-primary">mobile customers</span>.
                             </h1>
                             <p className="is-size-5">
-                                We understand the challenges in giving your mobile customers a simple and convenient experience with your brand.
-                                Working with us, you'll be guided through a a process that leads to apps that attract and retain customers.
+                            These days, customers expect convenience. One-tap purchasing, speedy bookings and effortless checkout. If you get this right, you'll woo customers in and then earn their loyalty. That's the best mobile strategy.
                             </p>
 
                         </div>
@@ -42,7 +41,7 @@ const Work = ({ data: { about } }) => (
                     <hr />
                 </Container>
             </Hero.Body>
-        </Section>
+        </Hero>
         <Section>
             <Container>
                 <Columns className="content">

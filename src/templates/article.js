@@ -29,7 +29,7 @@ export default ({ data }) => (
     </Hero>
     <Section>
       <Container className="content">
-        <Columns>          
+        <Columns className="is-mobile">          
           <Columns.Column className="is-offset-3 is-1">            
             {data.datoCmsArticle.author.mainImage ? (
               <Img fluid={data.datoCmsArticle.author.mainImage.fluid }></Img>
@@ -38,7 +38,7 @@ export default ({ data }) => (
             )}
             
           </Columns.Column>
-          <Columns.Column className="is-size-6">          
+          <Columns.Column className="is-5 is-size-6">          
             <h4>By {data.datoCmsArticle.author.name}</h4>
             <p><i>{data.datoCmsArticle.author.role} at app development specialist, Pocketworks
             <br/>{data.datoCmsArticle.date}</i>
