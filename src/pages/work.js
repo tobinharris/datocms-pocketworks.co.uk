@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import SiteNav from '../components/navbar'
 import ArrowLink from '../components/link-with-arrow'
 import TeamQuote from '../components/team-quote'
+import CaseStudyHero from '../components/case-study-hero'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
 const Work = ({ data: { about } }) => (
@@ -21,9 +22,6 @@ const Work = ({ data: { about } }) => (
         <Hero className="is-small">
             <Hero.Body>
                 <Container className="content">
-
-
-
                     <div className="columns">
                         <div className="column is-6 is-offset-1">
                             <h1 className="title is-size-1 is-size-2-mobile">                            
@@ -44,27 +42,18 @@ const Work = ({ data: { about } }) => (
         </Hero>
         <Section>
             <Container>
-                <Columns className="content">
-                    <Columns.Column className="is-4">
-                        <img src="https://www.datocms-assets.com/20955/1579120572-veezu-mockup.png?w=400&fm=jpg"></img>
-                    </Columns.Column>
-                    <Columns.Column className="is-6 is-offset-0">
-                        <img src="https://www.datocms-assets.com/20955/1579120597-veezu-logo.png"></img>
-                        <h2 className="is-top-marginless">Supporting growth from zero to <span className="has-text-info">6 million mobile bookings</span> a year.</h2>
-                        <p><ArrowLink to="/#test" className="is-size-4 has-text-info">Read the case study</ArrowLink></p>
-                    </Columns.Column>
-                </Columns>
+                <CaseStudyHero 
+                    logo="https://www.datocms-assets.com/20955/1579120597-veezu-logo.png" 
+                    mainImage="https://www.datocms-assets.com/20955/1579120572-veezu-mockup.png?w=400&fm=jpg" 
+                    titleHtml="Supporting growth from zero to <span class='has-text-info'>6 million mobile bookings</span> a year." 
+                    to="/#test" />
                 <img src="https://www.datocms-assets.com/20955/1579120592-link.png?w=1800"></img>
-                <Columns className="content">
-                    <Columns.Column className="is-6 is-offset-1 content">
-                        <img src="https://www.datocms-assets.com/20955/1579120601-travelodge-logo.png"></img>
-                        <h2 className="is-top-marginless">Prototyping <span className="has-text-success">new customer experiences</span> in hotel booking.</h2>
-                        <p><ArrowLink to="/#test" className="is-size-4 has-text-success">Read the case study</ArrowLink></p>                        
-                    </Columns.Column>
-                    <Columns.Column className="is-5">
-                        <img src="https://www.datocms-assets.com/20955/1579120579-travelodge-mockup.png?w=400&fm=jpg"></img>
-                    </Columns.Column>
-                </Columns>                
+                <CaseStudyHero 
+                    flipped
+                    logo="https://www.datocms-assets.com/20955/1579120601-travelodge-logo.png" 
+                    mainImage="https://www.datocms-assets.com/20955/1579120579-travelodge-mockup.png?w=400&fm=jpg" 
+                    titleHtml="Prototyping <span class='has-text-success'>new customer experiences</span> in hotel booking." 
+                    to="/#test" />
             </Container>
         </Section>
         <TeamQuote

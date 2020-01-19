@@ -36,7 +36,7 @@ const Services = ({ data: { about } }) => (
 
                         </div>
                         <div className="column is-4">
-                            <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=450"></img>
+                            <img src="https://www.datocms-assets.com/20955/1579120484-digital-business.png?fm=jpg&w=350"></img>
                         </div>
                     </div>
 
