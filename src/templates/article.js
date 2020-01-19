@@ -18,7 +18,7 @@ export default ({ data }) => (
             <Container className="content">
               <Columns>
                 <Columns.Column className="is-offset-2 is-8 has-text-centered">
-                  <h1 className="title is-size-1 is-size-3-mobile">{data.datoCmsArticle.title}</h1>
+                  <h1 className="title is-size-1 is-size-2-tablet is-size-3-mobile">{data.datoCmsArticle.title}</h1>
                   
                 </Columns.Column>
               </Columns>
@@ -29,8 +29,8 @@ export default ({ data }) => (
     </Hero>
     <Section>
       <Container className="content">
-        <Columns className="is-flex">          
-          <Columns.Column className="is-offset-3 is-1">            
+        <Columns className="is-flex-mobile">          
+          <Columns.Column className="is-offset-2 is-1">            
             {data.datoCmsArticle.author.mainImage ? (
               <Img fluid={data.datoCmsArticle.author.mainImage.fluid }></Img>
             ) : (
@@ -38,9 +38,9 @@ export default ({ data }) => (
             )}
             
           </Columns.Column>
-          <Columns.Column className="is-5 is-size-6">          
+          <Columns.Column className="is-6 is-size-6">          
             <h4>By {data.datoCmsArticle.author.name}</h4>
-            <p><i>{data.datoCmsArticle.author.role} at app development specialist, Pocketworks
+            <p><i>{data.datoCmsArticle.author.role} at Pocketworks, app development specialists.
             <br/>{data.datoCmsArticle.date}</i>
             </p>            
           </Columns.Column>          
