@@ -29,9 +29,9 @@ function SiteNav(props){
       <Navbar.Item renderAs="span">
       <Link to="/">
         {props.className == 'is-light' ? (
-        <img src="https://www.datocms-assets.com/20955/1579120308-secondary-logo-white-v3.png"/>       
+        <img src={props.fullLogo ? "https://www.datocms-assets.com/20955/1579120308-secondary-logo-white-v3.png": "https://www.datocms-assets.com/20955/1579431602-secondary-logo-small-square-white-v3a.png"}/>       
         ) : (
-        <img src="https://www.datocms-assets.com/20955/1579120310-secondary-logo-small-v3.png"/>       
+        <img src={props.fullLogo ? "https://www.datocms-assets.com/20955/1579120310-secondary-logo-small-v3.png" : "https://www.datocms-assets.com/20955/1579431570-secondary-logo-small-square-v3a.png"}/>       
         )}
       </Link>           
       </Navbar.Item>      

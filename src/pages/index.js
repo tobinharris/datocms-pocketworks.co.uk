@@ -14,7 +14,7 @@ import ArrowLink from '../components/link-with-arrow';
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SiteNav></SiteNav>
+    <SiteNav fullLogo="true"></SiteNav>
     <Hero className="is-medium">
       <Hero.Body>
         <Container>
