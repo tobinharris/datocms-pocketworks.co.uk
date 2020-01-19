@@ -75,7 +75,7 @@ const TemplateWrapper = ({ children }) => {
                         </ul>
                     </Columns.Column>
                 </Columns>
-            </Footer>
+            </Footer>            
          </div>         
         )}
       />

@@ -51,7 +51,7 @@ const Services = ({ data: { about } }) => (
                 <Container className="content">
                     <Columns>
                     <Columns.Column className="is-offset-1 is-10 has-text-centered">
-                        <h2>The <span className="has-text-success">services &amp; packages</span> we offer</h2>
+                        <h2 className="is-size-3-mobile">The <span className="has-text-success">services &amp; packages</span> we offer</h2>
                         <br/><br/>
                     </Columns.Column>
                     </Columns>
@@ -111,7 +111,7 @@ const Services = ({ data: { about } }) => (
                 <Container className="content">
                     <Columns>
                     <Columns.Column className="is-offset-1 is-10 has-text-centered">
-                        <h2>Our <span className="has-text-success">approach</span> to creating customer-centric apps</h2>
+                        <h2 className="is-size-3-mobile">Our <span className="has-text-success">approach</span> to creating customer-centric apps</h2>
                         <br/><br/>
                     </Columns.Column>
                     </Columns>

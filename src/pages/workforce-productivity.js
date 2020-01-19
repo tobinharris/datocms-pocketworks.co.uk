@@ -48,7 +48,7 @@ const WorkforceProductivity = ({ data: { about } }) => (
             <CaseStudyHero 
                     className="has-text-info"
                     logo="https://www.datocms-assets.com/20955/1579120361-pgmol-logo-white.png" 
-                    mainImage="https://www.datocms-assets.com/20955/1579120585-premier-league-mockup.png?w=330&fm=jpg" 
+                    mainImage="https://www.datocms-assets.com/20955/1579449491-pgmo-mockup.jpeg?w=400&fm=jpg" 
                     titleHtml="Raising the game for <span class='has-text-info'>Premier League</span> referees." 
                     to="/#test" />
                 <img src="https://www.datocms-assets.com/20955/1579120592-link.png?w=1800"></img>
@@ -71,14 +71,14 @@ const WorkforceProductivity = ({ data: { about } }) => (
         <Hero className="">
             <Hero.Body>
                 <Container className="content">
-                    <Columns>
-                    <Columns.Column className="is-offset-1 is-10 has-text-centered">
-                        <h2>Our <span className="has-text-info">approach</span> to improving efficiency with apps</h2>
+                    <Columns className="is-centered">
+                    <Columns.Column className="is-10 has-text-centered">
+                        <h2 className="is-size-3-mobile">Our <span className="has-text-info">approach</span> to improving efficiency with apps</h2>
                         <br/><br/>
                     </Columns.Column>
                     </Columns>
-                    <Columns className="">
-                        <Columns.Column className="is-3 is-offset-2">
+                    <Columns className="is-centered">
+                        <Columns.Column className="is-3">
                             <h3>Design</h3>
                             <p>Your service offering starts before your app is downloaded, and continues after employees use your app. We look at the big picture so we can be sure everything fits together nicely and staff get the tools they really need. We'll take a good look at what your doing and design an app or platform that puts people at the centre..</p>
                         </Columns.Column>

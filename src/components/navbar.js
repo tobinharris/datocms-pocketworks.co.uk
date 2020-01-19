@@ -34,20 +34,22 @@ function SiteNav(props){
         <img src={props.fullLogo ? "https://www.datocms-assets.com/20955/1579120310-secondary-logo-small-v3.png" : "https://www.datocms-assets.com/20955/1579431570-secondary-logo-small-square-v3a.png"}/>       
         )}
       </Link>           
-      </Navbar.Item>      
+      </Navbar.Item>   
+      <Navbar.Burger data-target="site-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </Navbar.Burger>      
     </Navbar.Brand>
     
-    <div className="navbar-end">
-      <Navbar.Container>                
+    <div id="site-menu" className="navbar-menu navbar-end">
+      
         <Navbar.Item className={props.className} renderAs="span"><Link to="/work">Work</Link></Navbar.Item>
         <Navbar.Item className={props.className} renderAs="span"><Link to="/about">About</Link></Navbar.Item>
         <Navbar.Item className={props.className} renderAs="span"><Link to="/blog">Blog</Link></Navbar.Item>
         <Navbar.Item className={props.className} renderAs="span"><Link to="/contact">Contact</Link></Navbar.Item>        
-      </Navbar.Container>
+      
     </div>
-
-    
-
   </Navbar>
   )
 }

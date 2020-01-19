@@ -66,14 +66,14 @@ const Work = ({ data: { about } }) => (
         <Hero className="">
             <Hero.Body>
                 <Container className="content">
-                    <Columns>
-                    <Columns.Column className="is-offset-1 is-10 has-text-centered">
-                        <h2>Our <span className="has-text-success">approach</span> to creating customer-centric apps</h2>
+                    <Columns className="is-centered">
+                    <Columns.Column className="is-10 has-text-centered">
+                        <h2 className="is-size-3-mobile">Our <span className="has-text-success">approach</span> to creating customer-centric apps</h2>
                         <br/><br/>
                     </Columns.Column>
                     </Columns>
-                    <Columns className="">
-                        <Columns.Column className="is-3 is-offset-2">
+                    <Columns className="is-centered">
+                        <Columns.Column className="is-3">
                             <h3>User Research</h3>
                             <p>Ever wondered how your customers think? User research helps you find the answers. It enables you to understand the pain points and desires of your customers. Our UX team carry out user interviews, focus groups, surveys and other research activities. All this awesome insight improves the design of your product.</p>
                         </Columns.Column>
