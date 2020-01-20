@@ -51,14 +51,15 @@ const IndexPage = ({ data }) => (
               <img src="https://www.datocms-assets.com/20955/1579120367-clients.png?fm=jpg"></img>
             </div>
           </div>
-
         </Container>
       </Hero.Body>
 
     </Hero>
+    <hr/>
     <Section className="is-small">
       <Container className="content">
-        <Columns>
+        
+        <Columns className="is-centered">
           <Columns.Column className="is-offset-1 is-10">
 
             <Columns className="is-multiline is-centered">
