@@ -96,8 +96,8 @@ const Technologies = ({ data: { about } }) => (
         </Hero>
         
         <TeamQuote
-            quote="Thre's a lot of cool tech out there, it's easy to get sucked in. The main thing is keeping it simple and picking the right tools for the job." 
-            imgSrc="https://www.datocms-assets.com/20955/1579120423-matt.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"
+            quote="Thre's a lot of cool tech out there, it's easy to get sucked in. The important thing is keeping it simple and picking the right tools for the job." 
+            imgSrc="https://www.datocms-assets.com/20955/1579120423-matt.jpg?fm=png&w=300&fit=facearea&facepad=2.5&mask=ellipse&duotone=0000C5,72B9FA&duotone-alpha=100"
             who="Matej, Full Stack Developer"
             /> 
         
@@ -131,22 +131,8 @@ const Technologies = ({ data: { about } }) => (
                     </Columns>
                 </Container>
             </Hero.Body>
-        </Hero>
-        <Section>
-            <Container className="has-text-centered">
-                <Columns>
-                    <Columns.Column className="is-10 is-offset-1">
-                    <img src="https://www.datocms-assets.com/20955/1579120367-clients.png?fm=jpg"></img>
-                    </Columns.Column>
-                </Columns>
-                
-            </Container>
-        </Section>
-        <Section>
-            <Container className="has-text-centered">
-                <ArrowLink to="/" className="is-info">Next: Workforce Productivity</ArrowLink>
-            </Container>
-        </Section>
+        </Hero>        
+        
 
     </div>
 )
