@@ -48,7 +48,7 @@ const Work = ({ data: { about } }) => (
                     logo="https://www.datocms-assets.com/20955/1579120597-veezu-logo.png" 
                     mainImage="https://www.datocms-assets.com/20955/1579120572-veezu-mockup.png?w=400&fm=jpg" 
                     titleHtml="Supporting growth from zero to <span class='has-text-info'>6 million mobile bookings</span> a year." 
-                    to="/#test" />
+                    to="/case-studies/veezu-taxi-booking-mobile-apps" />
                 <img src="https://www.datocms-assets.com/20955/1579120592-link.png?w=1800"></img>
                 <CaseStudyHero 
                     className="has-text-success"
@@ -56,7 +56,7 @@ const Work = ({ data: { about } }) => (
                     logo="https://www.datocms-assets.com/20955/1579120601-travelodge-logo.png" 
                     mainImage="https://www.datocms-assets.com/20955/1579120579-travelodge-mockup.png?w=400&fm=jpg" 
                     titleHtml="Prototyping <span class='has-text-success'>new customer experiences</span> in hotel booking." 
-                    to="/#test" />
+                    to="/case-studies/travelodge-prototypes" />
             </Container>
         </Section>
         <TeamQuote

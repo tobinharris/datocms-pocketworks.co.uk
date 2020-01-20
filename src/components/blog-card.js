@@ -24,7 +24,7 @@ function BlogCard(props){
         
         
         <Card.Content>
-            <p className="is-uppercase is-size-7">Blog By {props.article.author.name}, <time datetime={props.article.date}>{props.article.date}</time></p>
+            <p className="is-uppercase is-size-7"><span class="has-text-success">Blog</span> {props.article.author.name}, <time datetime={props.article.date}>{props.article.date}</time></p>
             <h3><Link to={'blog/' + props.article.slug}>{props.article.title}</Link></h3>
 
 

@@ -50,7 +50,7 @@ const WorkforceProductivity = ({ data: { about } }) => (
                     logo="https://www.datocms-assets.com/20955/1579120361-pgmol-logo-white.png" 
                     mainImage="https://www.datocms-assets.com/20955/1579449491-pgmo-mockup.jpeg?w=400&fm=jpg" 
                     titleHtml="Raising the game for <span class='has-text-info'>Premier League</span> referees." 
-                    to="/#test" />
+                    to="/case-studies/pgmol" />
                 <img src="https://www.datocms-assets.com/20955/1579120592-link.png?w=1800"></img>
                 <CaseStudyHero 
                     className="has-text-success"
@@ -58,7 +58,7 @@ const WorkforceProductivity = ({ data: { about } }) => (
                     logo="https://www.datocms-assets.com/20955/1579120601-travelodge-logo.png" 
                     mainImage="https://www.datocms-assets.com/20955/1579120579-travelodge-mockup.png?w=400&fm=jpg" 
                     titleHtml="Prototyping <span class='has-text-success'>new customer experiences</span> in hotel booking." 
-                    to="/#test" />
+                    to="/case-studies/pgmol" />
             </Container>
         </Section>
 

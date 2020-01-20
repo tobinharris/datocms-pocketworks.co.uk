@@ -76,7 +76,7 @@ h1, h1.title, h2, h2.title, h3, h3.title
     font-size: 1.0em
     padding: 1.3em
 
-.content h2.is-top-marginless
+.content h2.is-top-marginless, h1.title.is-top-marginless
     margin-top: 0.5rem
 
   
@@ -144,9 +144,13 @@ h1, h1.title, h2, h2.title, h3, h3.title
     //     color: $light
 
 
-div.article
+div.article, div.case-study
     .background-overlay
         border-bottom: 12px solid $green
+    
+    blockquote
+        
+        
 
 div.page.is-dark        
     background-color: $grey-darker
