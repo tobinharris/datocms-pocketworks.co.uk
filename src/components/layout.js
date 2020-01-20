@@ -26,6 +26,9 @@ const TemplateWrapper = ({ children }) => {
         `}
         render={data => (
           <div>
+            <HelmetDatoCms
+            favicon={data.datoCmsSite.faviconMetaTags}            
+            />
             {children}
             <Footer>
                 <Columns className="content is-size-6 is-centered">
