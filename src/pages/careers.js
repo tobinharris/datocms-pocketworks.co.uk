@@ -18,7 +18,7 @@ const Careers = ({ data: { about } }) => (
 
     <Hero className="is-small">
       <Hero.Body>
-        <Container class="content">
+        <Container class="container content">
           <Columns>
             <Columns.Column className="is-offset-1 is-5">
               <h1 class="title is-size-1 is-size-3-mobile">Join the <span className="has-text-success">rebellion</span>. </h1>

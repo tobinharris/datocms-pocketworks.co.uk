@@ -7,6 +7,7 @@
 # TODO
 
 * Ask Emmanuelle for IT'S A TRAPP
+* How to make all H1s is-size-2-mobile without having to do it explicitly?
 * Team Member Page
 * Case Study Page
 * Copy Case Studies Accross

@@ -7,9 +7,10 @@ import ArrowLink from '../components/link-with-arrow'
 import TeamQuote from '../components/team-quote'
 import CaseStudyHero from '../components/case-study-hero'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
+import Layout from '../components/layout'
 
 const Work = ({ data: { about } }) => (
-    <div>
+    <Layout>
         <SiteNav></SiteNav>        
         <div className="tabs is-medium is-centered">
             <ul>
@@ -110,7 +111,7 @@ const Work = ({ data: { about } }) => (
             </Container>
         </Section>
 
-    </div>
+    </Layout>
 )
 
 export default Work
