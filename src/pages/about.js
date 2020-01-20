@@ -23,7 +23,7 @@ const About = ({ data: { about } }) => (
         <Container class="container content">
           <Columns className="is-tablet">
             <Columns.Column className="is-6 is-offset-1">            
-             <h1 class="title is-size-1 is-size-2-mobile">Delivering on mobile <span className="has-text-primary">since 2012</span>.</h1>
+             <h1 class="title is-size-1 is-size-2-mobile">Delivering mobile success <span className="has-text-primary">since 2012</span>.</h1>
              <p class="is-size-4">We are a digital product studio committed to helping organisations <span className="">use mobile technology to make life easier for their customers and staff</span>. The upshot for our clients is <Link to="/workforce-productivity">increased productivity</Link> and a <Link to="/work">growing, more loyal customer base</Link>.</p>
             </Columns.Column>
             <Columns.Column className="is-4">
