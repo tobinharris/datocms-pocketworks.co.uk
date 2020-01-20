@@ -93,7 +93,7 @@ const Services = ({ data: { about } }) => (
 
                     <Columns>
                     <Columns.Column className="is-offset-2 is-8 has-text-centered">
-                    <p><br/><Link to="/" className="button is-primary is-leafy is-medium is-primary">Ready to start? Let's do this!</Link></p>
+                    <p><br/><Link to="/contact" className="button is-primary is-leafy is-medium is-primary">Book a package</Link></p>
                     </Columns.Column>
                     </Columns>
                 </Container>

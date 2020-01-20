@@ -39,22 +39,27 @@ const About = ({ data: { about } }) => (
             who="Tobin, Founder and Managing Director"
             /> 
     <Section>
-      <Container class="content">
-        <h2 className="has-text-centered">Our <span class="has-text-primary">Story</span></h2>
+      <div class="content">
+        
         <Columns className="is-centered">
-        <Columns.Column className="is-half">
+        <Columns.Column className="is-5 is-offset-1">
+        <h2 className="">Our <span class="has-text-primary">Story</span></h2>
         <p>Our company was founded by Tobin Harris in 2012 when he noticed that most business apps were failing to reach their true potential. As a mobile expert and advocate, Tobin wanted to give companies a better chance at success.</p>
         <p>Since starting the company 8 years ago, our first three apps are still in use today, one transacting over £90m a year, and all are still under active development at Pocketworks.</p>
         <p>This is what success looks like to us - helping our clients make good choices, invest wisely and ultimately make their customers and staff more productive in some way or another.</p>
         <hr/>
-        <div className="has-text-centered">
+        <div className="">
           <Link className="button is-medium is-leafy is-primary" to="/contact">Questions? Get in touch</Link>
         </div>
+        </Columns.Column>
+        <Columns.Column className="is-offset-1 is-4 is-vertically-centered">
+          
+          <img src="https://www.datocms-assets.com/20955/1579120771-dscf7651fotor.jpg?compress=auto&w=700&h=700&fit=crop&mask=ellipse"></img>
         </Columns.Column>
         </Columns>
         
 
-      </Container>
+      </div>
     </Section>
   </Layout>
 )

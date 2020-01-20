@@ -20,17 +20,24 @@ const Contact = ({ data: { about } }) => (
                         <a href="tel:0113 466 0302">0113 466 0302</a>
                         <br/><a href="mailto:hello@pocketworks.co.uk">hello@pocketworks.co.uk</a>
                         </p>
-                        <p>Pocketworks<br/>Ground Floor, Monarch House<br/>Queen Street, Leeds, LS1 2TW</p>                            
-                        <p>
-                            <span class="icon"><i class="fas fa-car"></i></span> Paid parking on the street directly outside. 
+                        <p>Pocketworks<br/>Ground Floor, Monarch House<br/>Queen Street, Leeds, LS1 2TW
                         </p>
                         <p>
-                            <span class="icon"><i class="fas fa-subway"></i></span> 5 minute walk from Leeds train station.
-                            </p>
+                          <span class="icon"><i class="fas fa-car"></i></span><a className="" href="https://goo.gl/maps/RMW3cCNdmCACSMKdA"> Find us on the map</a>
+                        </p>                            
+                        <p>
+                            <span class="icon"><i class="fas fa-parking"></i></span> Paid parking on the street directly outside. 
+                        </p>
+                        <p>
+                          <span class="icon"><i class="fas fa-subway"></i></span> 5 minute walk from Leeds train station.
+                        </p>
+                        <p>
+                          <span class="icon has-text-danger"><i class="fab fa-galactic-republic"></i></span> Looking to join the team? Check out our <Link to="/careers">careers page</Link>.
+                        </p>
                         
             </Columns.Column>
             <Columns.Column className="is-5">
-                <img src="https://www.datocms-assets.com/20955/1579120498-culture.png?fm=jpg&compress=auto&w=500"></img>
+                <img src="https://www.datocms-assets.com/20955/1579120475-jump.png?fm=jpg&compress=auto&w=500"></img>
             </Columns.Column>
           </Columns>
         </Container>

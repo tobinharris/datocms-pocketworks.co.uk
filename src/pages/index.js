@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => (
           </h2>
 
               <p>
-                <Link to="/work" className="button is-primary is-leafy is-large is-flex-mobile">View Work</Link>&nbsp;&nbsp;
+                <Link to="/work" className="button is-primary is-leafy is-large is-flex-mobile">How we help</Link>&nbsp;&nbsp;
             <Link to="/contact" className="button is-link is-leafy is-outlined is-large is-flex-mobile">Get in touch</Link>
               </p>
 
