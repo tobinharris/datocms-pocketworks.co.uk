@@ -6,10 +6,11 @@
 
 # TODO
 
-* Ask Emmanuelle for IT'S A TRAPP
+* Ask Emmanuelle for IT'S A TRAPP [WIP]
 * How to make all H1s is-size-2-mobile without having to do it explicitly?
 * Team Member Page
 * Case Study Page
+* Favicon
 * Copy Case Studies Accross
   * PGMO
   * Veezu
@@ -21,8 +22,9 @@
 * Check font sizes on mobile
 * Any way to make font sizes more consistant?
 * Add DMSans font
-* Finish home page
+* Finish Home Page
 * Sort out Meta data and Twitter Card
+* Separate blog category pages
 
 * Fix sucky mobile rendering
 * Add Google Tracking Pixels?
@@ -51,6 +53,9 @@
   * DNS
   * Google Search 
 
+RELEASE 2
+
+* Slider with individual call to actions to relevant landing page
 
 
 # Gatsby Portfolio Website
