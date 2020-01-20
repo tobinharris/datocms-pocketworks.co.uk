@@ -1,3 +1,57 @@
+# Pocketworks Website
+
+* Built on Gatsby
+* Headless is https://www.datocms.com
+* Hosting is Netlify
+
+# TODO
+
+* Ask Emmanuelle for IT'S A TRAPP
+* Team Member Page
+* Case Study Page
+* Copy Case Studies Accross
+  * PGMO
+  * Veezu
+  * Energenie
+  * Fresenius
+  * Asda
+* Create Case Studies
+  * Travelodge
+* Check font sizes on mobile
+* Any way to make font sizes more consistant?
+* Add DMSans font
+* Finish home page
+* Sort out Meta data and Twitter Card
+
+* Fix sucky mobile rendering
+* Add Google Tracking Pixels?
+* Add Inspectlet?
+* Add Hotjar?
+* Add Google Analytics
+* Add Google Verification file?
+* Add Search Console script
+* Rewrites
+  * /clients                -> /work
+  * /case-studies/slug      -> /work/case-studies/slug
+  * /perspectives           -> /blog
+  * /404 to blog/slug       -> exists, otherwise 404
+  * /services               -> /work/services
+  * /why-pocketworks        -> /about/story
+  
+  * /startups               -> ???
+  * /digital-transformation -> /work/workforce-producitivity
+  * /agencies               -> ???
+
+* Check SEO won't totally tank
+* Find better BB8??
+* Add contact form??
+
+* Push Live
+  * DNS
+  * Google Search 
+
+
+
 # Gatsby Portfolio Website
 
 This repo contains a static website written with [GatsbyJS](https://www.gatsbyjs.org/), integrated with content coming from [DatoCMS](https://www.datocms.com).
