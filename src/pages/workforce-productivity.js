@@ -16,7 +16,7 @@ const WorkforceProductivity = ({ data: { about } }) => (
                 <li><Link to="/work">Customer Loyalty</Link></li>
                 <li className="is-active"><a>Work Productivity</a></li>
                 <li><Link to="/services">Services &amp; Packages</Link></li>
-
+                <li><Link to="/technologies">The Tech</Link></li>
             </ul>
         </div>
         <Hero className="is-small">
@@ -30,7 +30,7 @@ const WorkforceProductivity = ({ data: { about } }) => (
                             <h1 className="title is-size-1 is-size-2-mobile">
                             Superpowers for your <span class="has-text-primary">mobile workforce</span>. 
                             </h1>
-                            <p className="is-size-5">                                
+                            <p className="is-size-4">                                
                             Mobile is a great way to improve how employees work. Whether it be on-site, in-store or on-the-road. We help organisations design and launch mobile solutions that speed up work. The upshot is reduced operating costs and happier staff.
                             </p>
 

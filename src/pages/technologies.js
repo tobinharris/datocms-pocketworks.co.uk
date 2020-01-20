@@ -8,18 +8,18 @@ import TeamQuote from '../components/team-quote'
 
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
-const Services = ({ data: { about } }) => (
-    <div>
-        <SiteNav></SiteNav>
+const Technologies = ({ data: { about } }) => (
+    <div className="page is-dark">        
+        <Hero className="is-small is-dark">
+        <SiteNav className="is-light"></SiteNav>
         <div className="tabs is-medium is-centered">
             <ul>
                 <li><Link to="/work">Customer Loyalty</Link></li>
                 <li><Link to="/workforce-productivity">Work Productivity</Link></li>
-                <li className="is-active"><a>Services &amp; Packages</a></li>
-                <li><Link to="/technologies">The Tech</Link></li>
+                <li><Link to="/services">Services &amp; Packages</Link></li>
+                <li className="is-active"><a>The Tech</a></li>
             </ul>
         </div>
-        <Hero className="is-small">
             <Hero.Body>
                 <Container className="content">
 
@@ -28,15 +28,15 @@ const Services = ({ data: { about } }) => (
                     <div className="columns is-tablet">
                         <div className="column is-6 is-offset-1">
                             <h1 className="title is-size-1 is-size-2-mobile">
-                            Everything you need for <span class="has-text-primary">mobile success.</span> 
+                            The <span class="has-text-info">tech</span> we use to deliver awesome apps and web platforms
                             </h1>
                             <p className="is-size-4">
-                            Not every business has digital roots. A little advice and guidance can go a long way toward helping you gain confidence. Our clients hire us to help them build strategies, roadmaps and mobile-first digital products .
+                            For all you CTO's, CDO's and technical folks... We're a full-stack digital team who focus mostly on software platforms where mobile is hugely important to the success of the business.
                             </p>
 
                         </div>
-                        <div className="column is-4">
-                            <img src="https://www.datocms-assets.com/20955/1579120484-digital-business.png?fm=jpg&w=350"></img>
+                        <div className="column is-offset-0 is-4">
+                            <img src="https://www.datocms-assets.com/20955/1579512858-bb8.png?w=350"></img>
                         </div>
                     </div>
 
@@ -48,52 +48,47 @@ const Services = ({ data: { about } }) => (
 
         <Hero className="">
             <Hero.Body>
-                <Container className="content">
+                <Container className="content has-text-light">
                     <Columns>
                     <Columns.Column className="is-offset-1 is-10 has-text-centered">
-                        <h2 className="is-size-3-mobile">The <span className="has-text-success">services &amp; packages</span> we offer</h2>
+                        <h2 className="is-size-3-mobile">Our <span className="has-text-info">appraoch</span></h2>
                         <br/><br/>
                     </Columns.Column>
                     </Columns>
                     <Columns className="">
                         <Columns.Column className="is-3 is-offset-2">
-                            <h3>Light Discovery</h3>
-                            <p className="is-size-6">1-2 weeks, typically £1,500-£4,000</p>
-                            <p>Spend half a day with our team and take your app ideas forward in leaps and bounds. Explore your strategy, validate ideas, create roadmaps, service blueprints and understand costs. It's preceded by some preparation calls and preliminary research tasks.</p>
+                            <h3>Design Thinking</h3>                            
+                            <p>When creating any digital product, we use a combination of design-thinking and agile delivery. This is because we believe these globally accepted best practices give you the best shot of creating a product that actually gets results.</p>
                         </Columns.Column>
                         <Columns.Column className="is-3">
-                            <h3>Research Sprints</h3>
-                            <p className="is-size-6">2-4 weeks, typically £6,000-£12,000</p>
-                            <p>Answer the important questions about competitors, customer pain points and technical feasibility. Find the gaps and test your key assumptions. The goal is to gain insight and tackle the major risks in your business plan. Includes Light Discovery.</p>
+                            <h3>Agile</h3>                            
+                            <p>Unlike many software houses, we strive for the core principles of agile set out in the agile manifesto, which encourages collaboration, flexible project planning and doing the simplest thing that works.</p>
                         </Columns.Column>
                         <Columns.Column className="is-3">
-                            <h3>App Prototypes</h3>
-                            <p className="is-size-6">3-6 weeks, typically £8,000-£20,000</p>
-                            <p>Prototype your ideas and test them on real people. We iterate until we're confident we have a product that will work. By the end of this, you're ready to design and develop a working app. Includes Light Discovery and Research sprint.</p>
+                            <h3>Mobile Development</h3>
+                            <p>We recommend native apps because they're the gold standard for a slick user experience. This means we use Java and Swift. We're also using Google Flutter for cross platform apps, but the jury is still out on this.</p>
+                            
                         </Columns.Column>
                     </Columns>
 
                     <Columns className="">
                         <Columns.Column className="is-3 is-offset-2">
-                            <h3>Strategic Consultation</h3>
-                            <p className="is-size-6">2-8 hours, typically £1,500-£4,000</p>
-                            <p>For CxOs looking for a fresh outside perspective. Have a technical roadmap that needs checking over? Or need some advice on a board presentation? We advise on topics such as: getting stakeholder buy-in, specifications, technical strategies and emerging trends.</p>
+                            <h3>Unit Testing</h3>                            
+                            <p>We underpin our apps with just enough unit tests to give us confidence we don't break things when we refactor. We use Git Flow for managing branches and releases in different environments.</p>
                         </Columns.Column>
                         <Columns.Column className="is-3">
-                            <h3>App Review</h3>
-                            <p className="is-size-6">1 week, typically £2,000-£3,000</p>
-                            <p>If you suspect your existing app or PWA could be improved, we can look at it with fresh eyes and suggest improvements. This can include: looking at your analytics to discover potential issues, a code review or an evaluation of the user experience.</p>
+                            <h3>Web Apps &amp; PWAs</h3>                            
+                            <p>We prefer ReactJS for any non-trivial front-end web sites, admin portals and data dashboards. Underpinned by Elixir + Phoenix on the server side. We also have a lot of Ruby on Rails experience. We plan for scalability and security as appropriate, not being fans of premature optimisation.</p>
                         </Columns.Column>
                         <Columns.Column className="is-3">
-                            <h3>App Development</h3>
-                            <p className="is-size-6">3-12 months, typically £50,000-£1m</p>
-                            <p>This builds upon our research and prototyping process. We'll design and develop your app across web, iPhone and Android. We'll conduct user testing along the way to make sure it's well received. Then launch it to your customers or staff.</p>
+                            <h3>Databases &amp; API's</h3>                            
+                            <p>We have data expertise in-house, working on some high-scale solutions capturing millions or records a day. Postgres is our current favourite SQL DB, scaled vertically with a replica for read-heavy use cases. We have experience with CouchDB for distributed databases. For integrating web sites to apps, we like RESTful API's with appropriate caching mechanisms, and are also exploring GraphQL.</p>
                         </Columns.Column>
                     </Columns>
 
                     <Columns>
                     <Columns.Column className="is-offset-2 is-8 has-text-centered">
-                    <p><br/><Link to="/" className="button is-primary is-leafy is-medium is-primary">Ready to start? Let's do this!</Link></p>
+                    <p><br/><Link to="/" className="button is-info is-outlined is-leafy is-medium">Want to talk tech?</Link></p>
                     </Columns.Column>
                     </Columns>
                 </Container>
@@ -101,9 +96,9 @@ const Services = ({ data: { about } }) => (
         </Hero>
         
         <TeamQuote
-            quote="It's easy to say it, but our true goal is to create long-term win-win partnerships with our clients. We want everyone around the table to be motivated to get the best results possible." 
-            imgSrc="https://www.datocms-assets.com/20955/1579120408-lee.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"
-            who="Lee, Head of Customer Parterships"
+            quote="Thre's a lot of cool tech out there, it's easy to get sucked in. The main thing is keeping it simple and picking the right tools for the job." 
+            imgSrc="https://www.datocms-assets.com/20955/1579120423-matt.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"
+            who="Matej, Full Stack Developer"
             /> 
         
         <Hero className="">
@@ -156,10 +151,10 @@ const Services = ({ data: { about } }) => (
     </div>
 )
 
-export default Services
+export default Technologies
 
 export const query = graphql`
-  query ServicesPageQuery {
+  query TechnologiesPageQuery {
     about: datoCmsPage(slug: {eq: "work"}) {
       
           seoMetaTags {

@@ -12,7 +12,7 @@ const People = ({ data: { people } }) => (
       <ul>
       <li><Link to="/about">About</Link></li>
         <li className="is-active"><a>People</a></li>
-        <li><Link to="/careers">Careers</Link></li>        
+        <li><Link to="/careers">Join Us</Link></li>        
       </ul>
     </div>
 

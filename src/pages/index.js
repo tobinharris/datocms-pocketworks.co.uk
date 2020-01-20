@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => (
 
               <p>
                 <Link to="/work" className="button is-primary is-leafy is-large is-flex-mobile">View Work</Link>&nbsp;&nbsp;
-            <Link to="/about" className="button is-link is-leafy is-outlined is-large is-flex-mobile">Get in touch</Link>
+            <Link to="/contact" className="button is-link is-leafy is-outlined is-large is-flex-mobile">Get in touch</Link>
               </p>
 
               <div className="level is-size-3 is-mobile is-hidden">

@@ -21,7 +21,12 @@ const Contact = ({ data: { about } }) => (
                         <br/><a href="mailto:hello@pocketworks.co.uk">hello@pocketworks.co.uk</a>
                         </p>
                         <p>Pocketworks<br/>Ground Floor, Monarch House<br/>Queen Street, Leeds, LS1 2TW</p>                            
-                        <p>Paid parking on the street directly outside. 5 minute walk from Leeds train station.</p>
+                        <p>
+                            <span class="icon"><i class="fas fa-car"></i></span> Paid parking on the street directly outside. 
+                        </p>
+                        <p>
+                            <span class="icon"><i class="fas fa-subway"></i></span> 5 minute walk from Leeds train station.
+                            </p>
                         
             </Columns.Column>
             <Columns.Column className="is-5">

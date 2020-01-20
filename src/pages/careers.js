@@ -12,7 +12,7 @@ const Careers = ({ data: { about } }) => (
       <ul>
       <li><Link to="/about">About</Link></li>        
         <li><Link to="/people">People</Link></li> 
-        <li className="is-active"><a>Careers</a></li>       
+        <li className="is-active"><a>Join Us</a></li>       
       </ul>
     </div>
 
@@ -21,10 +21,13 @@ const Careers = ({ data: { about } }) => (
         <Container class="content">
           <Columns>
             <Columns.Column className="is-offset-1 is-5">
-              <h1 class="title is-size-1 is-size-3-mobile">Helping organisations with their <span className="has-text-success">heavy lifting</span> since 2012. </h1>
+              <h1 class="title is-size-1 is-size-3-mobile">Join the <span className="has-text-success">rebellion</span>. </h1>
+              <p class="is-size-4">You won't be dragged into long hours, rushing stuff out the door and taking every project that comes are way. Pocketworks tries to do things a little differently<sup className="has-text-primary">1</sup>; to gain long term clients with meaningful work where the outcomes are the most important thing. </p>
+              <small><sup className="has-text-primary">1</sup> For the sake of transparency, we don't get it right every time. It's the trying that counts :)</small>
+              <br/><br/><small><sup className="has-text-primary">2</sup> If Akbar idea isn't sucky, wonder if Emanuelle could rustle up a drawing in same style as others?</small>
             </Columns.Column>
-            <Columns.Column className="is-5">
-                <img src="https://www.datocms-assets.com/20955/1579120498-culture.png?fm=jpg&compress=auto&w=500"></img>
+            <Columns.Column className="is-offset-1 is-5">
+                <img src="https://www.datocms-assets.com/20955/1579511546-akbar.jpg?fm=jpg&compress=auto&w=300"></img>
             </Columns.Column>
           </Columns>
         </Container>

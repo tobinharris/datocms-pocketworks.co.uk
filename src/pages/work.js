@@ -16,7 +16,7 @@ const Work = ({ data: { about } }) => (
                 <li className="is-active"><a>Customer Loyalty</a></li>
                 <li><Link to="/workforce-productivity">Work Productivity</Link></li>
                 <li><Link to="/services">Services &amp; Packages</Link></li>
-
+                <li><Link to="/technologies">The Tech</Link></li>
             </ul>
         </div>
         <Hero className="is-small">
@@ -27,7 +27,7 @@ const Work = ({ data: { about } }) => (
                             <h1 className="title is-size-1 is-size-2-mobile">                            
                             Wooing your <span class="has-text-primary">mobile customers</span>.
                             </h1>
-                            <p className="is-size-5">
+                            <p className="is-size-4">
                             These days, customers expect convenience. One-tap purchasing, speedy bookings and effortless checkout. If you get this right, you'll woo customers in and then earn their loyalty. That's the best mobile strategy.
                             </p>
 

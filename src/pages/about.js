@@ -14,7 +14,7 @@ const About = ({ data: { about } }) => (
       <ul>
         <li className="is-active"><a>About</a></li>
         <li><Link to="/people">People</Link></li>
-        <li><Link to="/careers">Careers</Link></li>
+        <li><Link to="/careers">Join Us</Link></li>
       </ul>
     </div>
 
