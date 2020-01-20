@@ -60,7 +60,7 @@ const IndexPage = ({ data }) => (
       <Container className="content">
         
         <Columns className="is-centered">
-          <Columns.Column className="is-offset-1 is-10">
+          <Columns.Column className="is-10">
 
             <Columns className="is-multiline is-centered">
               {data.caseStudies.edges.map(({ node: caseStudy }) => (

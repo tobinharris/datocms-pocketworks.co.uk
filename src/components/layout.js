@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import { StaticQuery, graphql } from "gatsby";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 import Footer from 'react-bulma-components/lib/components/footer';
+import Container from 'react-bulma-components/lib/components/container';
 
 import "../styles/app.sass";
 import { Section, Columns } from "react-bulma-components";
@@ -31,8 +32,9 @@ const TemplateWrapper = ({ children }) => {
             />
             {children}
             <Footer>
-                <Columns className="content is-size-6 is-centered">
-                    <Columns.Column className="is-3 is-offset-2">
+              <Container>
+                <Columns className="content is-size-6">
+                    <Columns.Column className="is-5 is-offset-1">
                         
                         <h4>Contact</h4>                        
                         <p>Pocketworks Mobile Ltd<br/>Ground Floor, Monarch House<br/>Queen Street, Leeds, LS1 2TW</p>                        
@@ -89,6 +91,7 @@ const TemplateWrapper = ({ children }) => {
                         </ul>
                     </Columns.Column>
                 </Columns>
+                </Container>
             </Footer>            
          </div>         
         )}
