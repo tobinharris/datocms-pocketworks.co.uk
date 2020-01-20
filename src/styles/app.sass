@@ -80,7 +80,7 @@ h1, h1.title, h2, h2.title, h3, h3.title
     margin-top: 0.5rem
 
   
-.card.is-blog
+.card.is-blog, .card.is-case-study
     border-radius: 0px 0px 40px 0px
     height: 450px
     //display: flex
@@ -112,7 +112,14 @@ h1, h1.title, h2, h2.title, h3, h3.title
 
         //img
           //  max-height: 170px
-    
+
+.card.is-case-study
+    .card-content
+        border-top: 6px solid $purple
+
+.has-text-purple
+    color: $purple
+
 .blog-hero
     background-size: cover
     background-repeat: no-repeat

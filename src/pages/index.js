@@ -4,6 +4,7 @@ import "../styles/index.sass";
 import "../styles/app.sass";
 import Layout from '../components/layout'
 import BlogCard from '../components/blog-card'
+import CaseStudyCard from '../components/case-study-card'
 import { Section, Card, Container, Brand, Hero, Columns } from 'react-bulma-components';
 import Img from 'gatsby-image'
 import '@fortawesome/fontawesome-free/css/all.css'
@@ -53,21 +54,26 @@ const IndexPage = ({ data }) => (
 
         </Container>
       </Hero.Body>
-      
+
     </Hero>
     <Section className="is-small">
       <Container className="content">
-        <div className="has-text-centered">
-          <h3>Some recent posts from the blog.</h3>
-          <br />
-        </div>
-        <Columns className="is-multiline is-centered">
-          
-          {data.posts.edges.map(({ node: article }) => (
-            <Columns.Column className="is-3">
-              <BlogCard article={article}></BlogCard>
-            </Columns.Column>
-          ))}
+        <Columns>
+          <Columns.Column className="is-offset-1 is-10">
+
+            <Columns className="is-multiline is-centered">
+              {data.caseStudies.edges.map(({ node: caseStudy }) => (
+                <Columns.Column className="is-4">
+                  <CaseStudyCard caseStudy={caseStudy}></CaseStudyCard>
+                </Columns.Column>
+              ))}
+              {data.posts.edges.map(({ node: article }) => (
+                <Columns.Column className="is-4">
+                  <BlogCard article={article}></BlogCard>
+                </Columns.Column>
+              ))}
+            </Columns>
+          </Columns.Column>
         </Columns>
       </Container>
     </Section>
@@ -93,7 +99,7 @@ export const query = graphql`
         }
       }
     }
-    posts: allDatoCmsArticle(limit: 3, sort: {fields: [date], order: DESC}){
+    posts: allDatoCmsArticle(limit: 4, sort: {fields: [date], order: DESC}){
       edges {
         node {
           id
@@ -112,6 +118,35 @@ export const query = graphql`
           author{
             name
             slug
+          }
+        }
+      }
+    }
+    caseStudies: allDatoCmsCasestudy(limit: 2, filter: {isFeatured: {eq: true}}){
+      edges {
+        node {
+          id
+          title          
+          slug          
+          heroBannerImage {
+            fixed(width: 350, imgixParams: {h: "300",fit: "clip", fm: "jpg", auto: "compress" }) {
+              ...GatsbyDatoCmsFixed
+            }
+            fluid(maxWidth: 800, imgixParams: {w: "1280", h: "960", fit: "crop", fm: "jpg", auto: "compress" }) {
+              ...GatsbyDatoCmsSizes
+            }
+          }
+          client{
+            companyName
+            logoLight {
+              url
+              fluid(maxWidth: 300, imgixParams: {fm: "jpg", auto: "compress" }) {
+                ...GatsbyDatoCmsSizes
+              }
+              fixed(width: 150, imgixParams: {fm: "jpg", auto: "compress" }) {
+                  ...GatsbyDatoCmsFixed
+              }
+            }
           }
         }
       }
