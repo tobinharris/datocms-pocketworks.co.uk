@@ -4,8 +4,10 @@ import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import { Hero, Section, Container, Columns, Level } from 'react-bulma-components'
 import SiteNav from '../components/navbar'
+import Layout from '../components/layout'
 
 export default ({ data }) => (
+  <Layout>
   <div className="article">
 
     <Hero className="has-bg-image is-large is-success blog-hero" style={{ backgroundImage: "url(" + (data.datoCmsArticle.featuredMedia ? data.datoCmsArticle.featuredMedia.fluid.src : '' )+ "&bri=-10&blend=http%3A%2F%2Fassets.imgix.net%2Fblog%2Fblog-blends.pdf%3Fpage%3D1%26fm%3Dpng&blend-mode=multiply&blend-w=1500&blend-h=1000&blend-fit=crop&blend-align=left,center&blend-crop=left,center&fit=facearea&w=1000&h=500&facepad=7.0)" }} id="blog-hero">
@@ -55,6 +57,7 @@ export default ({ data }) => (
       </Container>
     </Section>
   </div>
+  </Layout>
 )
 
 export const query = graphql`
