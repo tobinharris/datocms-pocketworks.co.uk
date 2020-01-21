@@ -9,9 +9,13 @@ return (
     {props.flipped ? (
     <Columns className="content">
         <Columns.Column className="is-6 is-offset-1 content">
+            { props.logo ? (
             <img src={props.logo}></img>
+            ) : (
+            <span></span>
+            )}
             <h2 className="is-top-marginless is-size-3-mobile" dangerouslySetInnerHTML={{__html: props.titleHtml}}></h2>
-            <p><ArrowLink to={props.to} className={props.className + ' is-size-4'}>Read the case study</ArrowLink></p>                        
+            <p><ArrowLink to={props.to} className={props.className + ' is-size-4'}>{ props.toText ? props.toText : 'Read the case study'}</ArrowLink></p>                        
         </Columns.Column>
         <Columns.Column className="is-4">
             <img src={props.mainImage}></img>
@@ -23,9 +27,13 @@ return (
             <img src={props.mainImage}></img>
         </Columns.Column>
         <Columns.Column className="is-6">
-        <img src={props.logo}></img>
+            { props.logo ? (
+            <img src={props.logo}></img>
+            ) : (
+            <span></span>
+            )}
             <h2 className="is-top-marginless is-size-3-mobile" dangerouslySetInnerHTML={{__html: props.titleHtml}}></h2>
-            <p><ArrowLink to={props.to} className="is-size-4 {props.className}">Read the case study</ArrowLink></p>                        
+            <p><ArrowLink to={props.to} className={props.className + ' is-size-4'}>{ props.toText ? props.toText : 'Read the case study'}</ArrowLink></p>                        
         </Columns.Column>
     </Columns>    
     )}

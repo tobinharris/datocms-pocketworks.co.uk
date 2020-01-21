@@ -5,6 +5,7 @@ import "../styles/app.sass";
 import Layout from '../components/layout'
 import BlogCard from '../components/blog-card'
 import CaseStudyCard from '../components/case-study-card'
+import CaseStudyHero from '../components/case-study-hero'
 import { Section, Card, Container, Brand, Hero, Columns } from 'react-bulma-components';
 import Img from 'gatsby-image'
 import '@fortawesome/fontawesome-free/css/all.css'
@@ -56,12 +57,34 @@ const IndexPage = ({ data }) => (
 
     </Hero>
     <hr/>
+    <Section>
+            <Container>
+                <CaseStudyHero 
+                    className="has-text-info"                    
+                    mainImage="https://www.datocms-assets.com/20955/1579120489-customerexperienceillustrationpocketworks.png?w=350&fm=jpg" 
+                    titleHtml="Improve your <span class='has-text-info'>mobile customer experience</span> and drive <span class='has-text-info'>loyalty</span>." 
+                    to="/work"
+                    toText="Examples and more info" />
+                <img src="https://www.datocms-assets.com/20955/1579120592-link.png?w=1800"></img>
+                <CaseStudyHero 
+                    className="has-text-success"
+                    flipped                    
+                    mainImage="https://www.datocms-assets.com/20955/1579120475-jump.png?w=450&fm=jpg" 
+                    titleHtml="Increase your productivity with <span class='has-text-success'>mobile working solutions.</span>" 
+                    to="/workforce-productivity"
+                    toText="Examples and more info" />
+            </Container>
+        </Section>
+        <hr/>
     <Section className="is-small">
       <Container className="content">
-        
         <Columns className="is-centered">
-          <Columns.Column className="is-10">
-
+        <Columns.Column className="is-6 ">
+        <h2 className="has-text-centered title is-size-3-mobile">Recent <span className="has-text-success">insights and case studies</span> by our team</h2>
+        </Columns.Column>
+        </Columns>
+        <Columns className="is-centered">        
+          <Columns.Column className="is-10">            
             <Columns className="is-multiline is-centered">
               {data.caseStudies.edges.map(({ node: caseStudy }) => (
                 <Columns.Column className="is-4">
@@ -75,6 +98,11 @@ const IndexPage = ({ data }) => (
               ))}
             </Columns>
           </Columns.Column>
+        </Columns>
+        <Columns className="is-centered">
+        <Columns.Column className="is-6 has-text-centered">
+        <Link to="/blog" className="button is-leafy is-success">More news from Pocketworks</Link>
+        </Columns.Column>
         </Columns>
       </Container>
     </Section>
@@ -100,7 +128,7 @@ export const query = graphql`
         }
       }
     }
-    posts: allDatoCmsArticle(limit: 4, sort: {fields: [date], order: DESC}){
+    posts: allDatoCmsArticle(limit: 1, sort: {fields: [date], order: DESC}){
       edges {
         node {
           id

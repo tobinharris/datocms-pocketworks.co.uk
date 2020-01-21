@@ -28,7 +28,7 @@ const WorkforceProductivity = ({ data: { about } }) => (
                     <div className="columns is-tablet">
                         <div className="column is-6 is-offset-1">
                             <h1 className="title is-size-1 is-size-2-mobile">
-                            Superpowers for your <span class="has-text-primary">mobile workforce.</span>
+                            Superpowers for <span class="has-text-primary">mobile workers.</span>
                             </h1>
                             <p className="is-size-4">                                
                             Mobile is a great way to improve how employees work. Whether it be on-site, in-store or on-the-road. We help organisations design and launch mobile solutions that speed up work. The upshot is reduced operating costs and happier staff.
