@@ -8,7 +8,7 @@ import SiteNav from '../components/navbar'
 export default ({ data }) => (
   <div className="article">
 
-    <Hero className="has-bg-image is-large is-success blog-hero" style={{ backgroundImage: "url(" + (data.datoCmsArticle.featuredMedia ? data.datoCmsArticle.featuredMedia.fluid.src : '' )+ "&fit=facearea&w=1000&h=500&facepad=7.0)" }} id="blog-hero">
+    <Hero className="has-bg-image is-large is-success blog-hero" style={{ backgroundImage: "url(" + (data.datoCmsArticle.featuredMedia ? data.datoCmsArticle.featuredMedia.fluid.src : '' )+ "&bri=-10&blend=http%3A%2F%2Fassets.imgix.net%2Fblog%2Fblog-blends.pdf%3Fpage%3D1%26fm%3Dpng&blend-mode=multiply&blend-w=1500&blend-h=1000&blend-fit=crop&blend-align=left,center&blend-crop=left,center&fit=facearea&w=1000&h=500&facepad=7.0)" }} id="blog-hero">
       <div class="background-overlay">
         <Hero.Head>
           <SiteNav className="is-light"></SiteNav>
@@ -18,7 +18,7 @@ export default ({ data }) => (
             <Container className="content">
               <Columns>
                 <Columns.Column className="is-offset-2 is-8 has-text-centered">
-                  <h1 className="title is-size-1 is-size-2-tablet is-size-3-mobile">{data.datoCmsArticle.title}</h1>
+                  <h1 className="title is-size-1 is-size-3-mobile">{data.datoCmsArticle.title}</h1>
                   
                 </Columns.Column>
               </Columns>
