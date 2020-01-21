@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => (
     <Hero className="is-medium">
       <Hero.Body>
         <Container>
-          <div className="columns content">
+          <div className="columns content is-vcentered">
             <div className="column is-6 is-offset-1">
 
               <h2 className="title is-size-3-mobile">

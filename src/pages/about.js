@@ -20,7 +20,7 @@ const About = ({ data: { about } }) => (
 
     <Hero className="is-small">
       <Hero.Body>
-        <Container class="container content">
+        <Container class="container content is-vcentered">
           <Columns className="is-tablet">
             <Columns.Column className="is-6 is-offset-1">            
              <h1 class="title is-size-1 is-size-2-mobile">Delivering mobile success <span className="has-text-primary">since 2012</span>.</h1>

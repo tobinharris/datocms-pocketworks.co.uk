@@ -6,30 +6,30 @@
 
 # TODO
 
-* Ask Emmanuelle for IT'S A TRAPP [WIP]
-* Home phones center valign add subtitle
-* Button spaces are off
-* Center valigned heros
-* How to make all H1s is-size-2-mobile without having to do it explicitly?
-* Team Member Page
-* Case Study Page
-  * Quotes
-  * Ask Tom if too simple?
-* Favicon
+* [WIP] Ask Emmanuelle for IT'S A TRAPP 
+* [X] Home phones center valign add subtitle
+* [ ] Button spaces are off
+* [ ] Center valigned heros
+* [ ] How to make all H1s is-size-2-mobile without having to do it explicitly?
+* [ ] Team Member Page
+* [WIP] Case Study Page
+  * [ ] Quotes
+  * [ ] Ask Tom if too simple?
+* [X] Favicon
 * Copy Case Studies Accross
   * PGMO
   * Veezu
   * Energenie
   * Fresenius
   * Asda
-* Create Case Studies
-  * Travelodge
-* Check font sizes on mobile
-* Any way to make font sizes more consistant?
-* Add DMSans font
-* Finish Home Page
-* Sort out Meta data and Twitter Card
-* Separate blog category pages
+* [ ] Create Case Studies
+  * [ ] Travelodge
+* [ ] Check font sizes on mobile
+* [ ] Any way to make font sizes more consistant?
+* [ ] Add DMSans font
+* [X] Finish Home Page
+* [ ] Sort out Meta data and Twitter Card
+* [ ] Separate blog category pages
 
 * Fix sucky mobile rendering
 * Add Google Tracking Pixels?

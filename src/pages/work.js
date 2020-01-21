@@ -24,7 +24,7 @@ const Work = ({ data: { about, caseStudies } }) => (
         <Hero className="is-small">
             <Hero.Body>
                 <Container className="content">
-                    <div className="columns is-tablet">
+                    <div className="columns is-tablet is-vcentered">
                         <div className="column is-6 is-offset-1">
                             <h1 className="title is-size-1 is-size-2-mobile">
                                 Effortless <span class="has-text-primary">customer experiences.</span>
