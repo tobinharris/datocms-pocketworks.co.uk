@@ -30,6 +30,10 @@
 * [X] Finish Home Page
 * [ ] Sort out Meta data and Twitter Card
 * [ ] Separate blog category pages
+* [ ] NDA
+* [ ] Blog show additional posts 
+* [ ] Blog show link to category page
+* [ ] Social links
 
 * Fix sucky mobile rendering
 * Add Google Tracking Pixels?
@@ -60,6 +64,7 @@
 
 RELEASE 2
 
+* Look at using query fragments
 * Slider with individual call to actions to relevant landing page
 
 

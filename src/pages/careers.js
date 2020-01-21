@@ -2,11 +2,12 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
+import Layout from '../components/layout'
 import SiteNav from '../components/navbar'
 import { Tabs, Section, Container, Brand, Hero, Columns } from 'react-bulma-components';
 
 const Careers = ({ data: { about } }) => (
-  <div>
+  <Layout>
     <SiteNav></SiteNav>
     <div className="tabs is-medium is-centered">
       <ul>
@@ -53,7 +54,7 @@ const Careers = ({ data: { about } }) => (
         </Columns>
       </Container>
     </Section>
-  </div>
+  </Layout>
 )
 
 export default Careers

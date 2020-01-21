@@ -3,10 +3,11 @@ import { graphql, Link } from 'gatsby'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
 import SiteNav from '../components/navbar'
+import Layout from '../components/layout'
 import { Tabs, Section, Container, Brand, Hero, Columns, Card } from 'react-bulma-components';
 
 const People = ({ data: { people } }) => (
-  <div>
+  <Layout>
     <SiteNav></SiteNav>
     <div className="tabs is-medium is-centered">
       <ul>
@@ -34,7 +35,7 @@ const People = ({ data: { people } }) => (
             </Columns>
         </Container>
     </Section>
-  </div>
+  </Layout>
 )
 
 export default People
