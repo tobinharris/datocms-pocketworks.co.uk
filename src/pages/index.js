@@ -44,49 +44,45 @@ const IndexPage = ({ data }) => (
               </div>
             </div>
             <div className="column is-4">
-              <Img fluid={data.page.featuredMedia.fluid}/>
+              <Img fluid={data.page.featuredMedia.fluid} />
             </div>
           </div>
-          <div className="columns is-hidden">
-            <div class="column is-offset-1 is-10">
-              <img src="https://www.datocms-assets.com/20955/1579120367-clients.png?fm=jpg"></img>
-            </div>
-          </div>
+
         </Container>
       </Hero.Body>
 
     </Hero>
-    <hr/>
+    <hr />
     <Section>
-            <Container>
-                <CaseStudyHero 
-                    className="has-text-info"                    
-                    mainImage="https://www.datocms-assets.com/20955/1579120572-veezu-mockup.png?w=400&fm=jpg" 
-                    titleHtml="Improve your <span class='has-text-info'>mobile customer experience</span> and drive <span class='has-text-info'>loyalty</span>." 
-                    excerpt="These days, customers expect convenience. One-tap purchasing, speedy bookings and effortless checkout. That kind of thing."
-                    to="/work"
-                    toText="Examples and more info" />
-                <img src="https://www.datocms-assets.com/20955/1579120592-link.png?w=1800"></img>
-                <CaseStudyHero 
-                    className="has-text-success"
-                    flipped                    
-                    mainImage="https://www.datocms-assets.com/20955/1579449491-pgmo-mockup.jpeg?w=400&fm=jpg" 
-                    titleHtml="Increase your productivity with <span class='has-text-success'>mobile working solutions.</span>" 
-                    excerpt="Mobile is a great way to improve how employees work. Whether it be on-site, in-store or on-the-road."
-                    to="/workforce-productivity"
-                    toText="Examples and more info" />
-            </Container>
-        </Section>
-        <hr/>
+      <Container>
+        <CaseStudyHero
+          className="has-text-info"
+          mainImage="https://www.datocms-assets.com/20955/1579120572-veezu-mockup.png?w=400&fm=jpg"
+          titleHtml="Improve your <span class='has-text-info'>mobile customer experience</span> and drive <span class='has-text-info'>loyalty</span>."
+          excerpt="These days, customers expect convenience. One-tap purchasing, speedy bookings and effortless checkout. That kind of thing."
+          to="/work"
+          toText="Examples and more info" />
+        <img src="https://www.datocms-assets.com/20955/1579120592-link.png?w=1800"></img>
+        <CaseStudyHero
+          className="has-text-success"
+          flipped
+          mainImage="https://www.datocms-assets.com/20955/1579449491-pgmo-mockup.jpeg?w=400&fm=jpg"
+          titleHtml="Increase your productivity with <span class='has-text-success'>mobile working solutions.</span>"
+          excerpt="Mobile is a great way to improve how employees work. Whether it be on-site, in-store or on-the-road."
+          to="/workforce-productivity"
+          toText="Examples and more info" />
+      </Container>
+    </Section>
+    <hr />
     <Section className="is-small">
       <Container className="content">
         <Columns className="is-centered">
-        <Columns.Column className="is-6 ">
-        <h2 className="has-text-centered title is-size-3-mobile">Recent <span className="has-text-success">insights and case studies</span> by our team</h2>
-        </Columns.Column>
+          <Columns.Column className="is-6 ">
+            <h2 className="has-text-centered title is-size-3-mobile">Recent <span className="has-text-success">insights and case studies</span> by our team</h2>
+          </Columns.Column>
         </Columns>
-        <Columns className="is-centered">        
-          <Columns.Column className="is-10">            
+        <Columns className="is-centered">
+          <Columns.Column className="is-10">
             <Columns className="is-multiline is-centered">
               {data.caseStudies.edges.map(({ node: caseStudy }) => (
                 <Columns.Column className="is-4">
@@ -101,10 +97,10 @@ const IndexPage = ({ data }) => (
             </Columns>
           </Columns.Column>
         </Columns>
-        <Columns className="is-centered">
-        <Columns.Column className="is-6 has-text-centered">
-        <Link to="/blog" className="button is-leafy is-success">More news from Pocketworks</Link>
-        </Columns.Column>
+        <Columns className="is-centered is-vcentered">
+          <Columns.Column className="is-6 has-text-centered">
+            <br/><Link to="/blog" className="button is-leafy is-medium is-success">More news from Pocketworks</Link>
+          </Columns.Column>
         </Columns>
       </Container>
     </Section>
