@@ -17,7 +17,7 @@ import ArrowLink from '../components/link-with-arrow';
 const IndexPage = ({ data }) => (
   <Layout>
     <SiteNav fullLogo="true"></SiteNav>
-    <Hero className="is-medium">
+    <Hero className="is-small">
       <Hero.Body>
         <Container>
           <div className="columns content is-vcentered">
@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => (
               </div>
             </div>
             <div className="column is-4">
-              <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=450" />
+              <Img fluid={data.page.featuredMedia.fluid}/>
             </div>
           </div>
           <div className="columns is-hidden">
@@ -115,9 +115,7 @@ export default IndexPage
 
 export const query = graphql`
   query IndexQuery {
-    allDatoCmsPage(filter: {slug: {eq: "index"}}) {
-      edges {
-        node {
+    page: datoCmsPage(slug: {eq: "index"}) {      
           id
           title
           slug
@@ -127,9 +125,8 @@ export const query = graphql`
               ...GatsbyDatoCmsSizes
             }
           }
-        }
-      }
-    }
+        
+    }   
     posts: allDatoCmsArticle(limit: 1, sort: {fields: [date], order: DESC}){
       edges {
         node {

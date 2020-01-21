@@ -8,7 +8,7 @@ import TeamQuote from '../components/team-quote'
 import Layout from '../components/layout'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
-const Services = ({ data: { about } }) => (
+const Services = ({ data: { page } }) => (
     <Layout>
         <SiteNav></SiteNav>
         <div className="tabs is-medium is-centered">
@@ -36,7 +36,7 @@ const Services = ({ data: { about } }) => (
 
                         </div>
                         <div className="column is-4">
-                            <img src="https://www.datocms-assets.com/20955/1579120484-digital-business.png?fm=jpg&w=350"></img>
+                            <Img fluid={page.featuredMedia.fluid}/>
                         </div>
                     </div>
 
@@ -160,7 +160,7 @@ export default Services
 
 export const query = graphql`
   query ServicesPageQuery {
-    about: datoCmsPage(slug: {eq: "work"}) {
+    page: datoCmsPage(slug: {eq: "services"}) {
       
           seoMetaTags {
             ...GatsbyDatoCmsSeoMetaTags

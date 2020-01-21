@@ -22,8 +22,8 @@ const TemplateWrapper = ({ children }) => {
               faviconMetaTags {
                 ...GatsbyDatoCmsFaviconMetaTags
               }
-            }                        
-          }
+            }
+          }         
         `}
         render={data => (
           <div>

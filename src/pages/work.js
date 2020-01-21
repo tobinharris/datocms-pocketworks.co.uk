@@ -10,7 +10,7 @@ import CaseStudyCard from '../components/case-study-card'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 import Layout from '../components/layout'
 
-const Work = ({ data: { about, caseStudies } }) => (
+const Work = ({ data: { about, caseStudies, page } }) => (
     <Layout>
         <SiteNav></SiteNav>
         <div className="tabs is-medium is-centered">
@@ -35,7 +35,7 @@ const Work = ({ data: { about, caseStudies } }) => (
 
                         </div>
                         <div className="column is-4">
-                            <img src="https://www.datocms-assets.com/20955/1579120489-customerexperienceillustrationpocketworks.png?fm=jpg&w=450"></img>
+                        <Img fluid={page.featuredMedia.fluid}/>
                         </div>
                     </div>
                     <hr />
@@ -142,7 +142,7 @@ export default Work
 
 export const query = graphql`
   query WorkPageQuery {
-    about: datoCmsPage(slug: {eq: "work"}) {
+    page: datoCmsPage(slug: {eq: "work"}) {
       
           seoMetaTags {
             ...GatsbyDatoCmsSeoMetaTags
@@ -150,7 +150,7 @@ export const query = graphql`
           title   
           content   
           featuredMedia {
-            fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
+            fluid(maxWidth: 450, imgixParams: { fm: "jpg", auto: "compress" }) {
               ...GatsbyDatoCmsSizes
             }
         }      
