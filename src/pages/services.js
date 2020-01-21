@@ -5,11 +5,11 @@ import Img from 'gatsby-image'
 import SiteNav from '../components/navbar'
 import ArrowLink from '../components/link-with-arrow'
 import TeamQuote from '../components/team-quote'
-
+import Layout from '../components/layout'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
 const Services = ({ data: { about } }) => (
-    <div>
+    <Layout>
         <SiteNav></SiteNav>
         <div className="tabs is-medium is-centered">
             <ul>
@@ -149,11 +149,11 @@ const Services = ({ data: { about } }) => (
         </Section>
         <Section>
             <Container className="has-text-centered">
-                <ArrowLink to="/" className="is-info">Next: Workforce Productivity</ArrowLink>
+                <ArrowLink to="/technologies" className="is-info">Next: The Tech</ArrowLink>
             </Container>
         </Section>
 
-    </div>
+    </Layout>
 )
 
 export default Services

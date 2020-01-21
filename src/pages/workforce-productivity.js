@@ -7,10 +7,11 @@ import ArrowLink from '../components/link-with-arrow'
 import TeamQuote from '../components/team-quote'
 import CaseStudyHero from '../components/case-study-hero'
 import CaseStudyCard from '../components/case-study-card'
+import Layout from '../components/layout'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
 const WorkforceProductivity = ({ data: { about, caseStudies } }) => (
-    <div>
+    <Layout>
         <SiteNav></SiteNav>
         <div className="tabs is-medium is-centered">
             <ul>
@@ -137,7 +138,7 @@ const WorkforceProductivity = ({ data: { about, caseStudies } }) => (
             </Container>
         </Section>
 
-    </div>
+    </Layout>
 )
 
 export default WorkforceProductivity
