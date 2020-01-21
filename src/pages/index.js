@@ -61,7 +61,7 @@ const IndexPage = ({ data }) => (
             <Container>
                 <CaseStudyHero 
                     className="has-text-info"                    
-                    mainImage="https://www.datocms-assets.com/20955/1579120489-customerexperienceillustrationpocketworks.png?w=350&fm=jpg" 
+                    mainImage="https://www.datocms-assets.com/20955/1579120572-veezu-mockup.png?w=400&fm=jpg" 
                     titleHtml="Improve your <span class='has-text-info'>mobile customer experience</span> and drive <span class='has-text-info'>loyalty</span>." 
                     to="/work"
                     toText="Examples and more info" />
@@ -69,7 +69,7 @@ const IndexPage = ({ data }) => (
                 <CaseStudyHero 
                     className="has-text-success"
                     flipped                    
-                    mainImage="https://www.datocms-assets.com/20955/1579120475-jump.png?w=450&fm=jpg" 
+                    mainImage="https://www.datocms-assets.com/20955/1579449491-pgmo-mockup.jpeg?w=400&fm=jpg" 
                     titleHtml="Increase your productivity with <span class='has-text-success'>mobile working solutions.</span>" 
                     to="/workforce-productivity"
                     toText="Examples and more info" />

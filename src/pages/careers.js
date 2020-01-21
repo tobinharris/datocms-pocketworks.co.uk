@@ -10,7 +10,7 @@ const Careers = ({ data: { about } }) => (
     <SiteNav></SiteNav>
     <div className="tabs is-medium is-centered">
       <ul>
-      <li><Link to="/about">About</Link></li>        
+      <li><Link to="/about">Story</Link></li>        
         <li><Link to="/people">People</Link></li> 
         <li className="is-active"><a>Join Us</a></li>       
       </ul>
@@ -25,7 +25,7 @@ const Careers = ({ data: { about } }) => (
               <p class="is-size-4">
                 Pocketworks tries to do things a little differently; to gain long term clients with meaningful work where the outcomes are the most important thing.                 
               </p>
-              <p>You won't be dragged into long hours, rushing stuff out the door and taking every project that comes are way. </p>
+              <p>You won't be dragged into long hours, rushing stuff out the door and taking every project that comes our way. </p>
               
             </Columns.Column>
             <Columns.Column className="is-offset-1 is-4">

@@ -10,7 +10,7 @@ const People = ({ data: { people } }) => (
     <SiteNav></SiteNav>
     <div className="tabs is-medium is-centered">
       <ul>
-      <li><Link to="/about">About</Link></li>
+      <li><Link to="/about">Story</Link></li>
         <li className="is-active"><a>People</a></li>
         <li><Link to="/careers">Join Us</Link></li>        
       </ul>
