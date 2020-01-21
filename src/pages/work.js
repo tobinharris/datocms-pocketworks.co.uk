@@ -6,12 +6,13 @@ import SiteNav from '../components/navbar'
 import ArrowLink from '../components/link-with-arrow'
 import TeamQuote from '../components/team-quote'
 import CaseStudyHero from '../components/case-study-hero'
+import CaseStudyCard from '../components/case-study-card'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 import Layout from '../components/layout'
 
-const Work = ({ data: { about } }) => (
+const Work = ({ data: { about, caseStudies } }) => (
     <Layout>
-        <SiteNav></SiteNav>        
+        <SiteNav></SiteNav>
         <div className="tabs is-medium is-centered">
             <ul>
                 <li className="is-active"><a>Customer Loyalty</a></li>
@@ -25,16 +26,16 @@ const Work = ({ data: { about } }) => (
                 <Container className="content">
                     <div className="columns is-tablet">
                         <div className="column is-6 is-offset-1">
-                            <h1 className="title is-size-1 is-size-2-mobile">                            
-                            Effortless <span class="has-text-primary">customer experiences.</span>
+                            <h1 className="title is-size-1 is-size-2-mobile">
+                                Effortless <span class="has-text-primary">customer experiences.</span>
                             </h1>
                             <p className="is-size-4">
-                            These days, customers expect convenience. One-tap purchasing, speedy bookings and effortless checkout. If you get this right, you'll woo customers in and then earn their loyalty. That's the best mobile strategy.
+                                These days, customers expect convenience. One-tap purchasing, speedy bookings and effortless checkout. If you get this right, you'll woo customers in and then earn their loyalty. That's the best mobile strategy.
                             </p>
 
                         </div>
                         <div className="column is-4">
-                        <img src="https://www.datocms-assets.com/20955/1579120489-customerexperienceillustrationpocketworks.png?fm=jpg&w=450"></img>
+                            <img src="https://www.datocms-assets.com/20955/1579120489-customerexperienceillustrationpocketworks.png?fm=jpg&w=450"></img>
                         </div>
                     </div>
                     <hr />
@@ -43,35 +44,35 @@ const Work = ({ data: { about } }) => (
         </Hero>
         <Section>
             <Container>
-                <CaseStudyHero 
+                <CaseStudyHero
                     className="has-text-info"
-                    logo="https://www.datocms-assets.com/20955/1579120597-veezu-logo.png" 
-                    mainImage="https://www.datocms-assets.com/20955/1579120572-veezu-mockup.png?w=400&fm=jpg" 
-                    titleHtml="Supporting growth from zero to <span class='has-text-info'>6 million mobile bookings</span> a year." 
+                    logo="https://www.datocms-assets.com/20955/1579120597-veezu-logo.png"
+                    mainImage="https://www.datocms-assets.com/20955/1579120572-veezu-mockup.png?w=400&fm=jpg"
+                    titleHtml="Supporting growth from zero to <span class='has-text-info'>6 million mobile bookings</span> a year."
                     to="/case-studies/veezu-taxi-booking-mobile-apps" />
                 <img src="https://www.datocms-assets.com/20955/1579120592-link.png?w=1800"></img>
-                <CaseStudyHero 
+                <CaseStudyHero
                     className="has-text-success"
                     flipped
-                    logo="https://www.datocms-assets.com/20955/1579120601-travelodge-logo.png" 
-                    mainImage="https://www.datocms-assets.com/20955/1579120579-travelodge-mockup.png?w=400&fm=jpg" 
-                    titleHtml="Prototyping <span class='has-text-success'>new customer experiences</span> in hotel booking." 
+                    logo="https://www.datocms-assets.com/20955/1579120601-travelodge-logo.png"
+                    mainImage="https://www.datocms-assets.com/20955/1579120579-travelodge-mockup.png?w=400&fm=jpg"
+                    titleHtml="Prototyping <span class='has-text-success'>new customer experiences</span> in hotel booking."
                     to="/case-studies/travelodge-prototypes" />
             </Container>
         </Section>
         <TeamQuote
-            quote="One of the biggest challenges our clients face is discovering customer pain points. Once you understand those, it's much easier to design a solution that meets their needs." 
+            quote="One of the biggest challenges our clients face is discovering customer pain points. Once you understand those, it's much easier to design a solution that meets their needs."
             imgSrc="https://www.datocms-assets.com/20955/1579120437-anna.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"
             who="Anna, Digital Product Designer"
-            />        
+        />
         <Hero className="">
             <Hero.Body>
                 <Container className="content">
                     <Columns className="is-centered">
-                    <Columns.Column className="is-10 has-text-centered">
-                        <h2 className="is-size-3-mobile">Our <span className="has-text-success">approach</span> to creating customer-centric apps</h2>
-                        <br/><br/>
-                    </Columns.Column>
+                        <Columns.Column className="is-10 has-text-centered">
+                            <h2 className="is-size-3-mobile">Our <span className="has-text-success">approach</span> to creating customer-centric apps</h2>
+                            <br /><br />
+                        </Columns.Column>
                     </Columns>
                     <Columns className="is-centered">
                         <Columns.Column className="is-3">
@@ -88,9 +89,9 @@ const Work = ({ data: { about } }) => (
                         </Columns.Column>
                     </Columns>
                     <Columns>
-                    <Columns.Column className="is-offset-2 is-8 has-text-centered">
-                    <p><br/><Link to="/services" className="button is-primary is-leafy is-medium is-primary">View all our services</Link></p>
-                    </Columns.Column>
+                        <Columns.Column className="is-offset-2 is-8 has-text-centered">
+                            <p><br /><Link to="/services" className="button is-primary is-leafy is-medium is-primary">View all our services</Link></p>
+                        </Columns.Column>
                     </Columns>
                 </Container>
             </Hero.Body>
@@ -99,17 +100,40 @@ const Work = ({ data: { about } }) => (
             <Container className="has-text-centered">
                 <Columns>
                     <Columns.Column className="is-10 is-offset-1">
-                    <img src="https://www.datocms-assets.com/20955/1579120367-clients.png?fm=jpg"></img>
+                        <img src="https://www.datocms-assets.com/20955/1579120367-clients.png?fm=jpg"></img>
                     </Columns.Column>
                 </Columns>
-                
+
             </Container>
         </Section>
+        <hr/>
+        <Section className="is-small">
+            <Container className="content">
+                <Columns className="is-centered">
+                    <Columns.Column className="is-6 ">
+                        <h2 className="has-text-centered title is-size-3-mobile">More <span className="has-text-purple">case studies</span> for consumer apps</h2>
+                    </Columns.Column>
+                </Columns>
+                <Columns className="is-centered">
+                    <Columns.Column className="is-10">
+                        <Columns className="is-multiline is-centered">
+                            {caseStudies.edges.map(({ node: caseStudy }) => (
+                                <Columns.Column className="is-4">
+                                    <CaseStudyCard caseStudy={caseStudy}></CaseStudyCard>
+                                </Columns.Column>
+                            ))}
+                        </Columns>
+                    </Columns.Column>
+                </Columns>
+            </Container>
+        </Section>
+
         <Section>
             <Container className="has-text-centered">
                 <ArrowLink to="/workforce-productivity" className="is-info">Next: Workforce Productivity</ArrowLink>
             </Container>
         </Section>
+
 
     </Layout>
 )
@@ -131,6 +155,35 @@ export const query = graphql`
             }
         }      
       
+  }
+  caseStudies: allDatoCmsCasestudy(limit: 3, filter: {isFeatured: {eq: false}}){
+    edges {
+      node {
+        id
+        title          
+        slug          
+        heroBannerImage {
+          fixed(width: 350, imgixParams: {h: "300",fit: "clip", fm: "jpg", auto: "compress" }) {
+            ...GatsbyDatoCmsFixed
+          }
+          fluid(maxWidth: 800, imgixParams: {w: "1280", h: "960", fit: "crop", fm: "jpg", auto: "compress" }) {
+            ...GatsbyDatoCmsSizes
+          }
+        }
+        client{
+          companyName
+          logoLight {
+            url
+            fluid(maxWidth: 300, imgixParams: {fm: "jpg", auto: "compress" }) {
+              ...GatsbyDatoCmsSizes
+            }
+            fixed(width: 150, imgixParams: {fm: "jpg", auto: "compress" }) {
+                ...GatsbyDatoCmsFixed
+            }
+          }
+        }
+      }
+    }
   }
 }
 `

@@ -6,9 +6,10 @@ import SiteNav from '../components/navbar'
 import ArrowLink from '../components/link-with-arrow'
 import TeamQuote from '../components/team-quote'
 import CaseStudyHero from '../components/case-study-hero'
+import CaseStudyCard from '../components/case-study-card'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
-const WorkforceProductivity = ({ data: { about } }) => (
+const WorkforceProductivity = ({ data: { about, caseStudies } }) => (
     <div>
         <SiteNav></SiteNav>
         <div className="tabs is-medium is-centered">
@@ -99,6 +100,27 @@ const WorkforceProductivity = ({ data: { about } }) => (
                 </Container>
             </Hero.Body>
         </Hero>
+        <hr/>
+        <Section className="is-small">
+            <Container className="content">
+                <Columns className="is-centered">
+                    <Columns.Column className="is-6 ">
+                        <h2 className="has-text-centered title is-size-3-mobile">More <span className="has-text-purple">case studies</span> for workforce apps</h2>
+                    </Columns.Column>
+                </Columns>
+                <Columns className="is-centered">
+                    <Columns.Column className="is-10">
+                        <Columns className="is-multiline is-centered">
+                            {caseStudies.edges.map(({ node: caseStudy }) => (
+                                <Columns.Column className="is-4">
+                                    <CaseStudyCard caseStudy={caseStudy}></CaseStudyCard>
+                                </Columns.Column>
+                            ))}
+                        </Columns>
+                    </Columns.Column>
+                </Columns>
+            </Container>
+        </Section>
         <Section>
             <Container className="has-text-centered">
                 <Columns>
@@ -135,6 +157,35 @@ export const query = graphql`
             }
         }      
       
-  }
+    }
+    caseStudies: allDatoCmsCasestudy(limit: 3, filter: {isFeatured: {eq: true}}){
+        edges {
+          node {
+            id
+            title          
+            slug          
+            heroBannerImage {
+              fixed(width: 350, imgixParams: {h: "300",fit: "clip", fm: "jpg", auto: "compress" }) {
+                ...GatsbyDatoCmsFixed
+              }
+              fluid(maxWidth: 800, imgixParams: {w: "1280", h: "960", fit: "crop", fm: "jpg", auto: "compress" }) {
+                ...GatsbyDatoCmsSizes
+              }
+            }
+            client{
+              companyName
+              logoLight {
+                url
+                fluid(maxWidth: 300, imgixParams: {fm: "jpg", auto: "compress" }) {
+                  ...GatsbyDatoCmsSizes
+                }
+                fixed(width: 150, imgixParams: {fm: "jpg", auto: "compress" }) {
+                    ...GatsbyDatoCmsFixed
+                }
+              }
+            }
+          }
+        }
+      }
 }
 `
