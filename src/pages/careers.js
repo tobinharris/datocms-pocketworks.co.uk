@@ -11,7 +11,7 @@ const Careers = ({ data: { about } }) => (
     <div className="tabs is-medium is-centered">
       <ul>
       <li><Link to="/about">Story</Link></li>        
-        <li><Link to="/people">People</Link></li> 
+        <li><Link to="/people">Pocketeers</Link></li> 
         <li className="is-active"><a>Join Us</a></li>       
       </ul>
     </div>
@@ -21,7 +21,7 @@ const Careers = ({ data: { about } }) => (
         <Container class="container content">
           <Columns>
             <Columns.Column className="is-offset-1 is-6">
-              <h1 class="title is-size-1 is-size-3-mobile">Join the <span className="has-text-success">rebellion</span>. </h1>
+              <h1 class="title is-size-1 is-size-3-mobile">Join the <span className="has-text-success">rebellion.</span> </h1>
               <p class="is-size-4">
                 Pocketworks tries to do things a little differently; to gain long term clients with meaningful work where the outcomes are the most important thing.                 
               </p>

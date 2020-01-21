@@ -8,14 +8,20 @@ import { Tabs, Section, Container, Brand, Hero, Columns } from 'react-bulma-comp
 const Contact = ({ data: { about } }) => (
   <div>
     <SiteNav></SiteNav>
-    
+    <div className="tabs is-medium is-centered">
+            <ul>
+                <li className="is-active"><a>Details</a></li>
+                <li><Link to="/workforce-productivity">Enquiry Form</Link></li>
+                
+            </ul>
+        </div>
 
     <Hero className="is-small">
       <Hero.Body>
         <Container class="content">
           <Columns>
             <Columns.Column className="is-offset-1 is-5">
-              <h1 class="title is-size-1 is-size-3-mobile">Let's <span className="has-text-success">talk</span>. </h1>              
+              <h1 class="title is-size-1 is-size-3-mobile">Let's <span className="has-text-success">talk.</span> </h1>              
                         <p className="is-size-4">
                         <a href="tel:0113 466 0302">0113 466 0302</a>
                         <br/><a href="mailto:hello@pocketworks.co.uk">hello@pocketworks.co.uk</a>
@@ -23,17 +29,21 @@ const Contact = ({ data: { about } }) => (
                         <p>Pocketworks<br/>Ground Floor, Monarch House<br/>Queen Street, Leeds, LS1 2TW
                         </p>
                         <p>
+                          <span class="icon has-text-danger"><i class="fab fa-galactic-republic"></i></span> 
+                          &nbsp; Looking to <b>join the team?</b> Check out our <Link to="/careers">careers page</Link>.
+                        </p>
+                        <h3>Visiting Us?</h3>                          
+                        <p>
                           <span class="icon"><i class="fas fa-car"></i></span><a className="" href="https://goo.gl/maps/RMW3cCNdmCACSMKdA"> Find us on the map</a>
-                        </p>                            
+                        </p>  
+                        
                         <p>
                             <span class="icon"><i class="fas fa-parking"></i></span> Paid parking on the street directly outside. 
                         </p>
                         <p>
                           <span class="icon"><i class="fas fa-subway"></i></span> 5 minute walk from Leeds train station.
                         </p>
-                        <p>
-                          <span class="icon has-text-danger"><i class="fab fa-galactic-republic"></i></span> Looking to join the team? Check out our <Link to="/careers">careers page</Link>.
-                        </p>
+                        
                         
             </Columns.Column>
             <Columns.Column className="is-5">

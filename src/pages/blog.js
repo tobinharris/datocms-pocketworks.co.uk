@@ -17,10 +17,10 @@ const BlogPage = ({ data }) => (
     <div className="tabs is-medium is-centered">
       <ul>
         <li className="is-active"><a>Latest</a></li>
-        {/* <li><Link to="#">Strategy</Link></li>
+        <li><Link to="#">Strategy</Link></li>
         <li><Link to="#">Design</Link></li>
         <li><Link to="#">Technology</Link></li>
-        <li><Link to="#">Us</Link></li> */}
+        <li><Link to="#">PocketLife</Link></li>
       </ul>
     </div>
     <Hero className=" is-small">

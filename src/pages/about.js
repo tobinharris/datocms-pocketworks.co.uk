@@ -13,7 +13,7 @@ const About = ({ data: { about } }) => (
     <div className="tabs is-medium is-centered">
       <ul>
         <li className="is-active"><a>Story</a></li>
-        <li><Link to="/people">People</Link></li>
+        <li><Link to="/people">Pocketeers</Link></li>
         <li><Link to="/careers">Join Us</Link></li>
       </ul>
     </div>

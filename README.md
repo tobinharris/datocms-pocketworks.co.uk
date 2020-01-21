@@ -7,9 +7,14 @@
 # TODO
 
 * Ask Emmanuelle for IT'S A TRAPP [WIP]
+* Home phones center valign add subtitle
+* Button spaces are off
+* Center valigned heros
 * How to make all H1s is-size-2-mobile without having to do it explicitly?
 * Team Member Page
 * Case Study Page
+  * Quotes
+  * Ask Tom if too simple?
 * Favicon
 * Copy Case Studies Accross
   * PGMO
