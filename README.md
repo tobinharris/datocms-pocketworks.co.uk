@@ -53,6 +53,7 @@
   * /startups               -> ???
   * /digital-transformation -> /work/workforce-producitivity
   * /agencies               -> ???
+  * /ipad-sales-apps        -> ???
 
 * Check SEO won't totally tank
 * Find better BB8??

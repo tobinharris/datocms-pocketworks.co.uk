@@ -28,6 +28,13 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
+        allDatoCmsCategory{
+          edges{
+            node{
+              slug
+            }
+          }
+        }
       }
     `).then(result => {
       result.data.allDatoCmsPage.edges.map(({ node: work }) => {
@@ -54,6 +61,15 @@ exports.createPages = ({ graphql, actions }) => {
           component: path.resolve(`./src/templates/case-study.js`),
           context: {
             slug: casestudy.slug,
+          },
+        })
+      })
+      result.data.allDatoCmsCategory.edges.map(({ node: category }) => {
+        createPage({
+          path: `blog/categories/${category.slug}`,
+          component: path.resolve(`./src/templates/blog-category.js`),
+          context: {
+            slug: category.slug,            
           },
         })
       })

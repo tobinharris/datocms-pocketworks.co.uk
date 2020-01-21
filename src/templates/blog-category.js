@@ -4,23 +4,23 @@ import "../styles/index.sass";
 import "../styles/app.sass";
 import Layout from '../components/layout'
 import BlogCard from '../components/blog-card'
-import { Section, Container, Media, Card, Hero, Columns } from 'react-bulma-components';
+import { Section, Container, Tabs, Media, Card, Hero, Columns } from 'react-bulma-components';
 import Img from 'gatsby-image'
 import '@fortawesome/fontawesome-free/css/all.css'
 import SiteNav from '../components/navbar'
 
 //import Layout from "../components/layout"
 
-const BlogPage = ({ data }) => (
+const BlogCategoryPage = ({ data }) => (
   <Layout>
-    <SiteNav></SiteNav>
+    <SiteNav></SiteNav>    
     <div className="tabs is-medium is-centered">
-    <ul>
-        <li className="is-active"><Link to="/blog/">Latest</Link></li>
-        <li><Link to="/blog/categories/get-results-with-mobile">Strategy</Link></li>
-        <li><Link to="/blog/categories/improve-your-customer-experience" activeClassName="is-active">Design</Link></li>
-        <li><Link to="/blog/categories/understand-the-tech">Technology</Link></li>
-        <li><Link to="/blog/categories/get-to-know-pocketworks">PocketLife</Link></li>
+      <ul>
+        <li><Link to="/blog">Latest</Link></li>
+        <li className={ data.datoCmsCategory.slug == "get-results-with-mobile" ? "is-active" : "" }><Link to="/blog/categories/get-results-with-mobile">Strategy</Link></li>
+        <li className={ data.datoCmsCategory.slug == "improve-your-customer-experience" ? "is-active" : "" }><Link to="/blog/categories/improve-your-customer-experience">Design</Link></li>
+        <li className={ data.datoCmsCategory.slug == "understand-the-tech" ? "is-active" : "" }><Link to="/blog/categories/understand-the-tech">Technology</Link></li>
+        <li className={ data.datoCmsCategory.slug == "get-to-know-pocketworks" ? "is-active" : "" }><Link to="/blog/categories/get-to-know-pocketworks">PocketLife</Link></li>
       </ul>
     </div>
     <Hero className=" is-small">
@@ -29,8 +29,8 @@ const BlogPage = ({ data }) => (
           <div className="columns content is-vcentered">
             <div className="column is-6 is-offset-1">
 
-              <h1 className="title is-size-1 is-size-3-mobile">
-                Recent <span class="has-text-primary">news &amp; thoughts</span> about mobile.
+              <h1 className="title is-size-1 is-size-3-mobile" dangerouslySetInnerHTML={{__html: data.datoCmsCategory.description}}>
+                
           </h1>
 
 
@@ -48,7 +48,7 @@ const BlogPage = ({ data }) => (
         <Columns>
           <Columns.Column className="is-offset-1 is-10">
             <Columns className="is-centered">
-              {data.posts.edges.map(({ node: article }) => (
+              {data.allDatoCmsArticle.edges.map(({ node: article }) => (
                 <Columns.Column className="is-4 is-multiline">
                   <BlogCard article={article}></BlogCard>
                 </Columns.Column>
@@ -63,11 +63,16 @@ const BlogPage = ({ data }) => (
 
 )
 
-export default BlogPage
+export default BlogCategoryPage
 
 export const query = graphql`
-  query BlogQuery {
-    posts: allDatoCmsArticle(limit: 18, sort: {fields: [date], order: DESC}) {
+  query BlogCategoryQuery($slug: String) {
+    datoCmsCategory(slug: {eq: $slug}){
+        name
+        description
+        slug
+    }
+    allDatoCmsArticle(filter: {categories: {elemMatch: {slug: {eq: $slug}}}}, limit: 30, sort: {fields: [date], order: DESC}) {
       edges {
         node {
           id
@@ -87,6 +92,12 @@ export const query = graphql`
               name
               slug
           }
+          categories{
+              
+                      name
+                      slug
+                  }
+              
         }
       }
     }
