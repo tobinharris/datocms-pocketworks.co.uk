@@ -44,10 +44,10 @@ function SiteNav(props){
     
     <div id="site-menu" className="navbar-menu navbar-end">
       
-        <Navbar.Item className={props.className} renderAs="span"><Link to="/work" activeClassName="is-active" partiallyActive="true">Work</Link></Navbar.Item>
-        <Navbar.Item className={props.className} renderAs="span"><Link to="/about" activeClassName="is-active" partiallyActive="true">About</Link></Navbar.Item>
-        <Navbar.Item className={props.className} renderAs="span"><Link to="/blog" activeClassName="is-active" partiallyActive="true">Blog</Link></Navbar.Item>
-        <Navbar.Item className={props.className} renderAs="span"><Link to="/contact" activeClassName="is-active" partiallyActive="true">Contact</Link></Navbar.Item>        
+        <Navbar.Item className={props.className} renderAs="span"><Link to="/work" activeClassName="is-active" partiallyActive={true}>Work</Link></Navbar.Item>
+        <Navbar.Item className={props.className} renderAs="span"><Link to="/about" activeClassName="is-active" partiallyActive={true}>About</Link></Navbar.Item>
+        <Navbar.Item className={props.className} renderAs="span"><Link to="/blog" activeClassName="is-active" partiallyActive={true}>Blog</Link></Navbar.Item>
+        <Navbar.Item className={props.className} renderAs="span"><Link to="/contact" activeClassName="is-active" partiallyActive={true}>Contact</Link></Navbar.Item>        
       
     </div>
   </Navbar>

@@ -11,7 +11,7 @@ const Contact = ({ data: { about } }) => (
     <div className="tabs is-medium is-centered">
             <ul>
                 <li className="is-active"><a>Details</a></li>
-                <li><Link to="/workforce-productivity">Enquiry Form</Link></li>
+                <li><Link to="/contact/enquiry">Enquiry Form</Link></li>
                 
             </ul>
         </div>
