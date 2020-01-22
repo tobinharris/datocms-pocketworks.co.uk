@@ -50,14 +50,14 @@ const Technologies = ({ data: { about } }) => (
             <Hero className="">
                 <Hero.Body>
                     <Container className="content has-text-light">
-                        <Columns>
-                            <Columns.Column className="is-offset-1 is-10 has-text-centered">
+                        <Columns className="is-centered">
+                            <Columns.Column className="is-10 has-text-centered">
                                 <h2 className="is-size-3-mobile">Our <span className="has-text-info">appraoch</span></h2>
                                 <br /><br />
                             </Columns.Column>
                         </Columns>
-                        <Columns className="">
-                            <Columns.Column className="is-3 is-offset-2">
+                        <Columns className="is-centered">
+                            <Columns.Column className="is-3">
                                 <h3>Design Thinking</h3>
                                 <p>When creating any digital product, we use a combination of design-thinking and agile delivery. This is because we believe these globally accepted best practices give you the best shot of creating a product that actually gets results.</p>
                             </Columns.Column>
@@ -72,8 +72,8 @@ const Technologies = ({ data: { about } }) => (
                             </Columns.Column>
                         </Columns>
 
-                        <Columns className="">
-                            <Columns.Column className="is-3 is-offset-2">
+                        <Columns className="is-centered">
+                            <Columns.Column className="is-3">
                                 <h3>Unit Testing</h3>
                                 <p>We underpin our apps with just enough unit tests to give us confidence we don't break things when we refactor. We use Git Flow for managing branches and releases in different environments.</p>
                             </Columns.Column>
