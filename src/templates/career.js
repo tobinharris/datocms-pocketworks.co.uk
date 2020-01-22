@@ -24,7 +24,7 @@ export default ({ data }) => (
                 <Columns>
                   <Columns.Column className="is-offset-2 is-7 has-text-centered">
                     <h1 className="title is-size-1 is-size-3-mobile">
-                        Join Pocketworks<br/>{data.datoCmsCareer.title}
+                      Join Pocketworks<br />{data.datoCmsCareer.title}
                     </h1>
 
                   </Columns.Column>
@@ -34,17 +34,31 @@ export default ({ data }) => (
           </Container>
         </div>
       </Hero>
+
       <Section>
         <Container className="content">
-         
-         
+
+          <Columns className="is-flex-mobile is-vcentered">
+            <Columns.Column className="is-1 is-offset-3 has-centered-text">
+              <span className="has-text-success icon is-large">
+                <i className={data.datoCmsCareer.fontawesomeIconName + " fa-2x"}></i>
+              </span>
+            </Columns.Column>
+            <Columns.Column className="is-6 is-size-6 is-vcentered">
+              <b>{data.datoCmsCareer.title}</b>
+              <br/><b>On-site position</b> in Leeds City Center
+              <br/>Full time
+            </Columns.Column>
+          </Columns>
+          <hr />
+
           <Columns>
             <Columns.Column className="is-6 is-offset-3">
-              
+
               <div dangerouslySetInnerHTML={{ __html: data.datoCmsCareer.contentNode.childMarkdownRemark.html }}></div>
             </Columns.Column>
           </Columns>
-          <hr/>
+          <hr />
           <Columns className="is-flex-mobile is-vcentered">
             <Columns.Column className="is-offset-3 is-1">
               {(data.datoCmsCareer.author && data.datoCmsCareer.author.mainImage) ? (
@@ -56,8 +70,8 @@ export default ({ data }) => (
             </Columns.Column>
             <Columns.Column className="is-6 is-size-6 ">
               <h4>Interested? Please <a href="mailto:careers@pocketworks.co.uk">email {data.datoCmsCareer.author.name}</a> to setup a chat. {data.datoCmsCareer.date}</h4>
-              
-              
+
+
             </Columns.Column>
           </Columns>
         </Container>
@@ -75,7 +89,8 @@ export const query = graphql`
       title      
       slug
       dateCreated
-      closeDate        
+      closeDate  
+      fontawesomeIconName      
       contentNode{
         childMarkdownRemark {
             html            

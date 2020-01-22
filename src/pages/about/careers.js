@@ -44,8 +44,12 @@ const Careers = ({ data: { about, careers } }) => (
         <h2>We're hiring...</h2>
               {careers.edges.map(({ node: career }) => (
                 <span>
-                <Link class="tag is-medium is-success" to={"/careers/" + career.slug}>{career.title}</Link>
-                &nbsp;
+                <span className="tag is-large is-success">
+                <Link className="has-text-light" to={"/careers/" + career.slug}>
+                  <span className="icon has-text-light is-large"><i className={career.fontawesomeIconName}></i></span>
+                  &nbsp;{career.title}
+                  </Link>                
+                </span>&nbsp;&nbsp; 
                 </span>
               ))}              
               
@@ -77,6 +81,7 @@ export const query = graphql`
       node{
         slug
         title
+        fontawesomeIconName
       }
     }
   } 
