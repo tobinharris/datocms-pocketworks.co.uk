@@ -52,7 +52,7 @@ const Technologies = ({ data: { about } }) => (
                     <Container className="content has-text-light">
                         <Columns className="is-centered">
                             <Columns.Column className="is-10 has-text-centered">
-                                <h2 className="is-size-3-mobile">Our <span className="has-text-info">appraoch</span></h2>
+                                <h2 className="is-size-3-mobile">Our <span className="has-text-info">approach</span></h2>
                                 <br /><br />
                             </Columns.Column>
                         </Columns>
