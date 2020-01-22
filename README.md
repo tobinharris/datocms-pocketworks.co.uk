@@ -8,8 +8,8 @@
 
 * [WIP] Ask Emmanuelle for IT'S A TRAPP 
 * [X] Home phones center valign add subtitle
-* [ ] Button spaces are off
-* [ ] Center valigned heros
+* [X] Button spaces are off
+* [X] Center valigned heros
 * [ ] How to make all H1s is-size-2-mobile without having to do it explicitly?
 * [ ] Team Member Page
 * [WIP] Case Study Page

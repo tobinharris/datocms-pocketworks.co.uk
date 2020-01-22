@@ -2,10 +2,10 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
-import SiteNav from '../components/navbar'
-import ArrowLink from '../components/link-with-arrow'
-import TeamQuote from '../components/team-quote'
-import Layout from '../components/layout'
+import SiteNav from '../../components/navbar'
+import ArrowLink from '../../components/link-with-arrow'
+import TeamQuote from '../../components/team-quote'
+import Layout from '../../components/layout'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
 const Services = ({ data: { page } }) => (
@@ -14,9 +14,9 @@ const Services = ({ data: { page } }) => (
         <div className="tabs is-medium is-centered">
             <ul>
                 <li><Link to="/work">Customer Loyalty</Link></li>
-                <li><Link to="/workforce-productivity">Work Productivity</Link></li>
+                <li><Link to="/work/workforce-productivity">Work Productivity</Link></li>
                 <li className="is-active"><a>Services &amp; Packages</a></li>
-                <li><Link to="/technologies">The Tech</Link></li>
+                <li><Link to="/work/technologies">The Tech</Link></li>
             </ul>
         </div>
         <Hero className="is-small">
@@ -149,7 +149,7 @@ const Services = ({ data: { page } }) => (
         </Section>
         <Section>
             <Container className="has-text-centered">
-                <ArrowLink to="/technologies" className="is-info">Next: The Tech</ArrowLink>
+                <ArrowLink to="/work/technologies" className="is-info">Next: The Tech</ArrowLink>
             </Container>
         </Section>
 

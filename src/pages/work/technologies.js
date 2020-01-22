@@ -2,10 +2,10 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
-import SiteNav from '../components/navbar'
-import ArrowLink from '../components/link-with-arrow'
-import TeamQuote from '../components/team-quote'
-import Layout from '../components/layout'
+import SiteNav from '../../components/navbar'
+import ArrowLink from '../../components/link-with-arrow'
+import TeamQuote from '../../components/team-quote'
+import Layout from '../../components/layout'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
 const Technologies = ({ data: { about } }) => (
@@ -16,8 +16,8 @@ const Technologies = ({ data: { about } }) => (
                 <div className="tabs is-medium is-centered">
                     <ul>
                         <li><Link to="/work">Customer Loyalty</Link></li>
-                        <li><Link to="/workforce-productivity">Work Productivity</Link></li>
-                        <li><Link to="/services">Services &amp; Packages</Link></li>
+                        <li><Link to="/work/workforce-productivity">Work Productivity</Link></li>
+                        <li><Link to="/work/services">Services &amp; Packages</Link></li>
                         <li className="is-active"><a>The Tech</a></li>
                     </ul>
                 </div>

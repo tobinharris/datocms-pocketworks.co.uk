@@ -2,13 +2,13 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
-import SiteNav from '../components/navbar'
-import ArrowLink from '../components/link-with-arrow'
-import TeamQuote from '../components/team-quote'
-import CaseStudyHero from '../components/case-study-hero'
-import CaseStudyCard from '../components/case-study-card'
+import SiteNav from '../../components/navbar'
+import ArrowLink from '../../components/link-with-arrow'
+import TeamQuote from '../../components/team-quote'
+import CaseStudyHero from '../../components/case-study-hero'
+import CaseStudyCard from '../../components/case-study-card'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
-import Layout from '../components/layout'
+import Layout from '../../components/layout'
 
 const Work = ({ data: { about, caseStudies, page } }) => (
     <Layout>
@@ -16,9 +16,9 @@ const Work = ({ data: { about, caseStudies, page } }) => (
         <div className="tabs is-medium is-centered">
             <ul>
                 <li className="is-active"><a>Customer Loyalty</a></li>
-                <li><Link to="/workforce-productivity">Work Productivity</Link></li>
-                <li><Link to="/services">Services &amp; Packages</Link></li>
-                <li><Link to="/technologies">The Tech</Link></li>
+                <li><Link to="/work/workforce-productivity">Work Productivity</Link></li>
+                <li><Link to="/work/services">Services &amp; Packages</Link></li>
+                <li><Link to="/work/technologies">The Tech</Link></li>
             </ul>
         </div>
         <Hero className="is-small">
@@ -130,7 +130,7 @@ const Work = ({ data: { about, caseStudies, page } }) => (
 
         <Section>
             <Container className="has-text-centered">
-                <ArrowLink to="/workforce-productivity" className="is-info">Next: Workforce Productivity</ArrowLink>
+                <ArrowLink to="/work/workforce-productivity" className="is-info">Next: Workforce Productivity</ArrowLink>
             </Container>
         </Section>
 
@@ -150,7 +150,7 @@ export const query = graphql`
           title   
           content   
           featuredMedia {
-            fluid(maxWidth: 450, imgixParams: { fm: "jpg", auto: "compress" }) {
+            fluid(maxWidth: 450, imgixParams: { w: "450", fm: "jpg", auto: "compress" }) {
               ...GatsbyDatoCmsSizes
             }
         }      

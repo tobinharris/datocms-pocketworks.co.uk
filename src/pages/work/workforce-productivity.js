@@ -2,12 +2,12 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
-import SiteNav from '../components/navbar'
-import ArrowLink from '../components/link-with-arrow'
-import TeamQuote from '../components/team-quote'
-import CaseStudyHero from '../components/case-study-hero'
-import CaseStudyCard from '../components/case-study-card'
-import Layout from '../components/layout'
+import SiteNav from '../../components/navbar'
+import ArrowLink from '../../components/link-with-arrow'
+import TeamQuote from '../../components/team-quote'
+import CaseStudyHero from '../../components/case-study-hero'
+import CaseStudyCard from '../../components/case-study-card'
+import Layout from '../../components/layout'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
 const WorkforceProductivity = ({ data: { page, caseStudies } }) => (
@@ -17,8 +17,8 @@ const WorkforceProductivity = ({ data: { page, caseStudies } }) => (
             <ul>
                 <li><Link to="/work">Customer Loyalty</Link></li>
                 <li className="is-active"><a>Work Productivity</a></li>
-                <li><Link to="/services">Services &amp; Packages</Link></li>
-                <li><Link to="/technologies">The Tech</Link></li>
+                <li><Link to="/work/services">Services &amp; Packages</Link></li>
+                <li><Link to="/work/technologies">The Tech</Link></li>
             </ul>
         </div>
         <Hero className="is-small">
@@ -28,7 +28,7 @@ const WorkforceProductivity = ({ data: { page, caseStudies } }) => (
 
 
                     <div className="columns is-tablet is-vcentered">
-                        <div className="column is-6 is-offset-1">
+                        <div className="column is-5 is-offset-1">
                             <h1 className="title is-size-1 is-size-2-mobile">
                             Superpowers for <span class="has-text-primary">mobile workers.</span>
                             </h1>
@@ -37,7 +37,7 @@ const WorkforceProductivity = ({ data: { page, caseStudies } }) => (
                             </p>
 
                         </div>
-                        <div className="column is-4">
+                        <div className="column is-5">
                         <Img fluid={page.featuredMedia.fluid}/>
                         </div>
                     </div>
@@ -134,7 +134,7 @@ const WorkforceProductivity = ({ data: { page, caseStudies } }) => (
         </Section>
         <Section>
             <Container className="has-text-centered">
-                <ArrowLink to="/services" className="is-info">Next: Services &amp; Packages</ArrowLink>
+                <ArrowLink to="/work/services" className="is-info">Next: Services &amp; Packages</ArrowLink>
             </Container>
         </Section>
 
@@ -153,7 +153,7 @@ export const query = graphql`
           title   
           content   
           featuredMedia {
-            fluid(maxWidth: 450, imgixParams: { fm: "jpg", auto: "compress" }) {
+            fluid(maxWidth: 450, imgixParams: { w: "450", fm: "jpg", auto: "compress" }) {
               ...GatsbyDatoCmsSizes
             }
         }      

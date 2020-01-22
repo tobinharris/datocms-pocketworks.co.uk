@@ -117,7 +117,7 @@ export const query = graphql`
           slug
           excerpt
           featuredMedia {
-            fluid(maxWidth: 450, imgixParams: { fm: "jpg", auto: "compress" }) {
+            fluid(maxWidth: 450, imgixParams: { w: "450", fm: "jpg", auto: "compress" }) {
               ...GatsbyDatoCmsSizes
             }
           }
