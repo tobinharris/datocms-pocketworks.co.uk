@@ -6,7 +6,8 @@
 
 # TODO
 
-* [WIP] Ask Emmanuelle for IT'S A TRAPP 
+* [WIP] Emmanuelle for IT'S A TRAPP 
+* [WIP]  Emmanuelle Schematic illustration
 * [X] Home phones center valign add subtitle
 * [X] Button spaces are off
 * [X] Center valigned heros
@@ -17,32 +18,32 @@
   * [ ] Ask Tom if too simple?
 * [X] Favicon
 * Copy Case Studies Accross
-  * PGMO
-  * Veezu
-  * Energenie
-  * Fresenius
-  * Asda
+  * [X] PGMO
+  * [X] Veezu
+  * [X] Energenie
+  * [X] Fresenius
+  * [ ] Asda
 * [ ] Create Case Studies
-  * [ ] Travelodge
+  * [X] Travelodge
 * [ ] Check font sizes on mobile
 * [ ] Any way to make font sizes more consistant?
 * [ ] Add DMSans font
 * [X] Finish Home Page
 * [ ] Sort out Meta data and Twitter Card
-* [ ] Separate blog category pages
+* [X] Separate blog category pages
 * [ ] NDA
 * [ ] Blog show additional posts 
-* [ ] Blog show link to category page
+* [X] Blog show link to category page
 * [ ] Blog show reading time
 * [X] Social links
 
-* Fix sucky mobile rendering
-* Add Google Tracking Pixels?
-* Add Inspectlet?
-* Add Hotjar?
-* Add Google Analytics
-* Add Google Verification file?
-* Add Search Console script
+* [ ] Fix sucky mobile rendering
+* [ ] Add Google Tracking Pixels?
+* [ ] Add Inspectlet?
+* [ ] Add Hotjar?
+* [ ] Add Google Analytics
+* [ ] Add Google Verification file?
+* [ ] Add Search Console script
 * Rewrites
   * /clients                -> /work
   * /case-studies/slug      -> /work/case-studies/slug
@@ -56,9 +57,8 @@
   * /agencies               -> ???
   * /ipad-sales-apps        -> ???
 
-* Check SEO won't totally tank
-* Find better BB8??
-* Add contact form??
+* [ ] Check SEO won't totally tank
+* [X] Add contact form??
 
 * Push Live
   * DNS
@@ -67,6 +67,7 @@
 RELEASE 2
 
 * Look at using query fragments
+* Single query file
 * Slider with individual call to actions to relevant landing page
 
 
