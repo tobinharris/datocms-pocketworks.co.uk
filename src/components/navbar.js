@@ -28,10 +28,10 @@ function SiteNav(props){
     <Navbar.Brand>      
       <Navbar.Item renderAs="span">
       <Link to="/">
-        {props.className == 'is-light' ? (
-        <img src={props.fullLogo ? "https://www.datocms-assets.com/20955/1579120308-secondary-logo-white-v3.png": "https://www.datocms-assets.com/20955/1579431602-secondary-logo-small-square-white-v3a.png"}/>       
+        {props.className === 'is-light' ? (
+        <img src={props.fullLogo ? "https://www.datocms-assets.com/20955/1579120308-secondary-logo-white-v3.png": "https://www.datocms-assets.com/20955/1579431602-secondary-logo-small-square-white-v3a.png"} alt="Pocketworks Logo"/>       
         ) : (
-        <img src={props.fullLogo ? "https://www.datocms-assets.com/20955/1579120310-secondary-logo-small-v3.png" : "https://www.datocms-assets.com/20955/1579431570-secondary-logo-small-square-v3a.png"}/>       
+        <img src={props.fullLogo ? "https://www.datocms-assets.com/20955/1579120310-secondary-logo-small-v3.png" : "https://www.datocms-assets.com/20955/1579431570-secondary-logo-small-square-v3a.png"} alt="Pocketworks Logo"/>       
         )}
       </Link>           
       </Navbar.Item>   

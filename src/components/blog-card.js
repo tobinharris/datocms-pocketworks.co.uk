@@ -16,7 +16,7 @@ function BlogCard(props){
                     
                 </div>                    
                 ) : (
-                        <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=250" />
+                        <img src="https://www.datocms-assets.com/20955/1579120467-speedupillustrationpocketworks.png?fm=jpg&w=250" alt="Placeholder" />
                     )
                 }
                 </Link>

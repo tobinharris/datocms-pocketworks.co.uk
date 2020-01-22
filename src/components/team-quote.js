@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import {Hero,Columns,Container} from 'react-bulma-components';
 
 function TeamQuote(props){
