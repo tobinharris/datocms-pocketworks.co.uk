@@ -43,10 +43,10 @@ const TemplateWrapper = ({ children }) => {
                         <br/><a href="mailto:hello@pocketworks.co.uk">hello@pocketworks.co.uk</a>                        
                         </p>                        
                         <p>
-                          <a href=""><span className="icon is-medium has-text-dark"><i class="fab fa-twitter"></i></span></a>
-                          <a href=""><span className="icon is-medium has-text-dark"><i class="fab fa-linkedin-in"></i></span></a>
-                          <a href=""><span className="icon is-medium has-text-dark"><i class="fab fa-dribbble"></i></span></a>
-                          <a href=""><span className="icon is-medium has-text-dark"><i class="fab fa-github"></i></span></a>                          
+                          <a href="https://twitter.com/thepocketworks"><span className="icon is-medium has-text-dark"><i class="fab fa-twitter"></i></span></a>
+                          <a href="https://www.linkedin.com/company/pocketworks-mobile-ltd"><span className="icon is-medium has-text-dark"><i class="fab fa-linkedin-in"></i></span></a>
+                          <a href="https://dribbble.com/pocketworks"><span className="icon is-medium has-text-dark"><i class="fab fa-dribbble"></i></span></a>
+                          <a href="https://github.com/pocketworks"><span className="icon is-medium has-text-dark"><i class="fab fa-github"></i></span></a>                          
                         </p>
                         <p><span className="icon has-text-dark"><i class="fas fa-copyright"></i></span> 2020 Pocketworks Mobile Ltd</p>
                         
