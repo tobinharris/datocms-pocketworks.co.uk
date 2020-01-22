@@ -10,7 +10,7 @@ const Careers = ({ data: { about, careers } }) => (
     <div className="tabs is-medium is-centered">
       <ul>
       <li><Link to="/about/story">Story</Link></li>        
-        <li><Link to="/about/people">Pocketeers</Link></li> 
+        <li><Link to="/about/pocketeers">Pocketeers</Link></li> 
         <li className="is-active"><a href="#">Join Us</a></li>       
       </ul>
     </div>
