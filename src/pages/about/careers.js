@@ -6,7 +6,7 @@ import Layout from '../../components/layout'
 import SiteNav from '../../components/navbar'
 import { Tabs, Section, Container, Brand, Hero, Columns } from 'react-bulma-components';
 
-const Careers = ({ data: { about } }) => (
+const Careers = ({ data: { about, careers } }) => (
   <Layout>
     <SiteNav></SiteNav>
     <div className="tabs is-medium is-centered">
@@ -42,14 +42,13 @@ const Careers = ({ data: { about } }) => (
         <Columns>
         <Columns.Column className="content is-5 is-offset-1">
         <h2>We're hiring...</h2>
-              <p>
-                <span class="tag is-medium is-success">Mobile Tester</span>
+              {careers.edges.map(({ node: career }) => (
+                <span>
+                <Link class="tag is-medium is-success" to={"/careers/" + career.slug}>{career.title}</Link>
                 &nbsp;
-                <span class="tag is-medium is-success">Android Developer</span>
-              </p>  
-              <p>
-                Sorry, job descriptions coming soon, email <a href="careers@pocketworks.co.uk">careers@pocketworks.co.uk</a> if you'd like to learn more.
-              </p>
+                </span>
+              ))}              
+              
         </Columns.Column>
         </Columns>
       </Container>
@@ -61,19 +60,25 @@ export default Careers
 
 export const query = graphql`
   query CareersQuery {
-    about: datoCmsPage(slug: {eq: "why-pocketworks"}) {
-      
-          seoMetaTags {
-            ...GatsbyDatoCmsSeoMetaTags
-          }
-          title   
-          content   
-          featuredMedia {
-            fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
-              ...GatsbyDatoCmsSizes
-            }
-        }      
-      
+    about: datoCmsPage(slug: {eq: "why-pocketworks"}) {      
+      seoMetaTags {
+        ...GatsbyDatoCmsSeoMetaTags
+      }
+      title   
+      content   
+      featuredMedia {
+        fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
+          ...GatsbyDatoCmsSizes
+      }
+    }        
   }
+  careers: allDatoCmsCareer(filter: {isLive: {eq: true}}){
+    edges{
+      node{
+        slug
+        title
+      }
+    }
+  } 
 }
 `

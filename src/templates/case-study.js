@@ -54,6 +54,7 @@ export const query = graphql`
       contentNode{
         childMarkdownRemark {
             html
+            timeToRead
         }
       }  
       heroBannerImage {

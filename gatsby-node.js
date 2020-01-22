@@ -35,6 +35,13 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
+        allDatoCmsCareer{
+          edges{
+            node{
+              slug
+            }
+          }
+        }
       }
     `).then(result => {
       result.data.allDatoCmsPage.edges.map(({ node: work }) => {
@@ -70,6 +77,15 @@ exports.createPages = ({ graphql, actions }) => {
           component: path.resolve(`./src/templates/blog-category.js`),
           context: {
             slug: category.slug,            
+          },
+        })
+      })
+      result.data.allDatoCmsCareer.edges.map(({ node: career }) => {
+        createPage({
+          path: `/careers/${career.slug}`,
+          component: path.resolve(`./src/templates/career.js`),
+          context: {
+            slug: career.slug,            
           },
         })
       })
