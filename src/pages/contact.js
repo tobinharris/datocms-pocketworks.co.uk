@@ -30,7 +30,7 @@ const Contact = ({ data: { about } }) => (
                         </p>
                         <p>
                           <span class="icon has-text-danger"><i class="fab fa-galactic-republic"></i></span> 
-                          &nbsp; Looking to <b>join the team?</b> Check out our <Link to="/careers">careers page</Link>.
+                          &nbsp; Looking to <b>join the team?</b> Check out our <Link to="/about/careers">careers page</Link>.
                         </p>
                         <h3>Visiting Us?</h3>                          
                         <p>

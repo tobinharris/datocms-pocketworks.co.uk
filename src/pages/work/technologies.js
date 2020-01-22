@@ -127,7 +127,7 @@ const Technologies = ({ data: { about } }) => (
                         </Columns>
                         <Columns>
                             <Columns.Column className="is-offset-2 is-8 has-text-centered">
-                                <p><br /><Link to="/about" className="button is-primary is-outlined is-leafy is-medium">About Pocketworks</Link></p>
+                                <p><br /><Link to="/about/story" className="button is-primary is-outlined is-leafy is-medium">About Pocketworks</Link></p>
                             </Columns.Column>
                         </Columns>
                     </Container>

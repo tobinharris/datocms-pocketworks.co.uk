@@ -2,10 +2,10 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
-import SiteNav from '../components/navbar'
+import SiteNav from '../../components/navbar'
 import { Tabs, Section, Container, Brand, Hero, Columns } from 'react-bulma-components';
-import TeamQuote from '../components/team-quote'
-import Layout from '../components/layout'
+import TeamQuote from '../../components/team-quote'
+import Layout from '../../components/layout'
 
 const About = ({ data: { about } }) => (
   <Layout>
@@ -13,8 +13,8 @@ const About = ({ data: { about } }) => (
     <div className="tabs is-medium is-centered">
       <ul>
         <li className="is-active"><a>Story</a></li>
-        <li><Link to="/people">Pocketeers</Link></li>
-        <li><Link to="/careers">Join Us</Link></li>
+        <li><Link to="/about/people">Pocketeers</Link></li>
+        <li><Link to="/about/careers">Join Us</Link></li>
       </ul>
     </div>
 
@@ -24,7 +24,7 @@ const About = ({ data: { about } }) => (
           <Columns className="is-tablet">
             <Columns.Column className="is-6 is-offset-1">            
              <h1 class="title is-size-1 is-size-2-mobile">Delivering mobile success <span className="has-text-primary">since 2012</span>.</h1>
-             <p class="is-size-4">We are a digital product studio committed to helping organisations <span className="">use mobile technology to make life easier for their customers and staff</span>. The upshot for our clients is <Link to="/workforce-productivity">increased productivity</Link> and a <Link to="/work">growing, more loyal customer base</Link>.</p>
+             <p class="is-size-4">We are a digital product studio committed to helping organisations <span className="">use mobile technology to make life easier for their customers and staff</span>. The upshot for our clients is <Link to="/work/workforce-productivity">increased productivity</Link> and a <Link to="/work">growing, more loyal customer base</Link>.</p>
             </Columns.Column>
             <Columns.Column className="is-4">
                 <img src="https://www.datocms-assets.com/20955/1579120498-culture.png?fm=jpg&compress=auto&w=500"></img>

@@ -90,7 +90,7 @@ const Work = ({ data: { about, caseStudies, page } }) => (
                     </Columns>
                     <Columns>
                         <Columns.Column className="is-offset-2 is-8 has-text-centered">
-                            <p><br /><Link to="/services" className="button is-primary is-leafy is-medium is-primary">View all our services</Link></p>
+                            <p><br /><Link to="/work/services" className="button is-primary is-leafy is-medium is-primary">View all our services</Link></p>
                         </Columns.Column>
                     </Columns>
                 </Container>

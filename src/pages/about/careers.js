@@ -2,8 +2,8 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
-import Layout from '../components/layout'
-import SiteNav from '../components/navbar'
+import Layout from '../../components/layout'
+import SiteNav from '../../components/navbar'
 import { Tabs, Section, Container, Brand, Hero, Columns } from 'react-bulma-components';
 
 const Careers = ({ data: { about } }) => (
@@ -11,8 +11,8 @@ const Careers = ({ data: { about } }) => (
     <SiteNav></SiteNav>
     <div className="tabs is-medium is-centered">
       <ul>
-      <li><Link to="/about">Story</Link></li>        
-        <li><Link to="/people">Pocketeers</Link></li> 
+      <li><Link to="/about/story">Story</Link></li>        
+        <li><Link to="/about/people">Pocketeers</Link></li> 
         <li className="is-active"><a>Join Us</a></li>       
       </ul>
     </div>

@@ -75,8 +75,8 @@ const TemplateWrapper = ({ children }) => {
                     <Columns.Column className="is-3">
                     <h4>Company</h4>                        
                         <ul>
-                            <li><Link to="/about">About</Link></li>
-                            <li><Link to="/careers">Careers</Link></li>
+                            <li><Link to="/about/story">About</Link></li>
+                            <li><Link to="/about/careers">Careers</Link></li>
                             <li><Link to="/blog">Blog</Link></li>
                         </ul>
                         <h4>Packages</h4>
