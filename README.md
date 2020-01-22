@@ -32,6 +32,7 @@
 * [ ] Sort out Meta data and Twitter Card
 * [X] Separate blog category pages
 * [ ] NDA
+* [ ] HENEGHANS download page?
 * [ ] Blog show additional posts 
 * [X] Blog show link to category page
 * [ ] Blog show reading time

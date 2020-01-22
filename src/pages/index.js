@@ -1,18 +1,14 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import "../styles/index.sass";
 import "../styles/app.sass";
 import Layout from '../components/layout'
 import BlogCard from '../components/blog-card'
 import CaseStudyCard from '../components/case-study-card'
 import CaseStudyHero from '../components/case-study-hero'
-import { Section, Card, Container, Brand, Hero, Columns } from 'react-bulma-components';
+import { Section, Container, Hero, Columns } from 'react-bulma-components'
 import Img from 'gatsby-image'
 import '@fortawesome/fontawesome-free/css/all.css'
 import SiteNav from '../components/navbar'
-import ArrowLink from '../components/link-with-arrow';
-
-//import Layout from "../components/layout"
 
 const IndexPage = ({ data }) => (
   <Layout>
