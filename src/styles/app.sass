@@ -165,13 +165,15 @@ div.page.is-dark
         color: $light
 
     .hero.is-dark
-        .tabs
-            border-bottom: 1px solid $grey
+        .tabs ul
+            border-bottom: 1px solid $grey-dark            
         .tabs a:hover
-            border-bottom: 2px solid $cyan
+            border-bottom: 1px solid $cyan
+        .tabs a
+            border-bottom: none
         .tabs .is-active a            
             color: $info
-            border-bottom: 2px solid $cyan
+            border-bottom: 1px solid $cyan            
             
     hr        
         opacity: 0.2
