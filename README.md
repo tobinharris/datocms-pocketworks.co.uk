@@ -33,7 +33,8 @@
 * [ ] NDA
 * [ ] Blog show additional posts 
 * [ ] Blog show link to category page
-* [ ] Social links
+* [ ] Blog show reading time
+* [X] Social links
 
 * Fix sucky mobile rendering
 * Add Google Tracking Pixels?
