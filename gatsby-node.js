@@ -104,8 +104,9 @@ exports.createPages = ({ graphql, actions }) => {
         createRedirect({ fromPath: "/" + article.slug, toPath: "/blog/" + article.slug, isPermanent: true })
       })
       createRedirect({ fromPath: "/clients", toPath: "/work", isPermanent: true })
-      createRedirect({ fromPath: "/case-studies/.+", toPath: "/work/case-studies/.+", isPermanent: true })
-      createRedirect({ fromPath: "/perspectives/*", toPath: "/work/case-studies/*", isPermanent: true })
+      createRedirect({ fromPath: "/case-studies/*", toPath: "/work/case-studies/*", isPermanent: true })
+      createRedirect({ fromPath: "/perspectives/*", toPath: "/blog/*", isPermanent: true })
+      createRedirect({ fromPath: "/services", toPath: "/work/services", isPermanent: true })
       
       resolve()
     })
