@@ -4,6 +4,26 @@
 * Headless is https://www.datocms.com
 * Hosting is Netlify
 
+# Setting up for development
+
+### You will need
+
+* The DatoCms API token from the DatoCMS portal https://pocketworks-web.admin.datocms.com/admin/access_tokens. Check 1Password for user/pass.
+* `brew` and `yarn` installed on your laptop
+
+### Steps
+
+Check out this repo
+
+    git clone [repo]
+    cd [repo]
+    yarn install 
+    brew install gatsby-cli
+    echo "DATO_API_TOKEN=[INSERT READ-ONLY TOKEN]" > .env
+    yarn develop
+    
+That's it! You should be up and running. Note that you're showing live data, but since it's read only should be fine. 
+
 # TODO
 
 * [WIP] Emmanuelle for IT'S A TRAPP 
@@ -37,6 +57,9 @@
 * [X] Blog show link to category page
 * [ ] Blog show reading time
 * [X] Social links
+* [ ] Instagram feed
+* [ ] Culture panels
+* [ ] Quotes on home page
 
 * [ ] Fix sucky mobile rendering
 * [ ] Add Google Tracking Pixels?
