@@ -23,7 +23,9 @@ const People = ({ data: { people } }) => (
                     <Columns className="is-multiline">
                         {people.edges.map(({ node: person }) => ( 
                             <Columns.Column className="is-3 has-text-centered content">
-                                <Img fluid={person.mainImage.fluid}/>
+                                <Link to={"/about/pocketeers/" + person.slug}>
+                                  <Img fluid={person.mainImage.fluid}/>
+                                </Link>
                             <b>{person.firstName}</b>
                             <br/><span className="has-text-grey">{person.role}</span>
                             </Columns.Column>
@@ -54,6 +56,7 @@ export const query = graphql`
           node {
             id
             name
+            slug
             role
             firstName            
             mainImage{              

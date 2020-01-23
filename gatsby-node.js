@@ -16,6 +16,13 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
+        pocketeers: allDatoCmsAuthor{
+          edges{
+            node{
+              slug
+            }
+          }
+        }
         articles: allDatoCmsArticle{
           edges{
             node{
@@ -98,10 +105,22 @@ exports.createPages = ({ graphql, actions }) => {
           },
         })
       })
+      result.data.pocketeers.edges.map(({ node: pocketeer }) => {
+        createPage({
+          path: `/about/pocketeers/${pocketeer.slug}`,
+          component: path.resolve(`./src/templates/pocketeer.js`),
+          context: {
+            slug: pocketeer.slug,            
+          },
+        })
+      })
       // Old wordpress site had blogs at "/", but want them to be tucked under 
       // /blog path 
       result.data.oldArticles.edges.map(({node: article}) => {
         createRedirect({ fromPath: "/" + article.slug, toPath: "/blog/" + article.slug, isPermanent: true })
+      })
+      result.data.pocketeers.edges.map(({node: person}) => {
+        createRedirect({ fromPath: "/" + person.slug, toPath: "/about/pocketeers/" + person.slug, isPermanent: true })
       })
       createRedirect({ fromPath: "/clients", toPath: "/work", isPermanent: true })
       createRedirect({ fromPath: "/case-studies/*", toPath: "/work/case-studies/*", isPermanent: true })

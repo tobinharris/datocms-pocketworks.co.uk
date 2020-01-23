@@ -46,19 +46,23 @@
 * [ ] Add Google Verification file?
 * [ ] Add Search Console script
 * Rewrites
-  * /clients                -> /work
-  * /case-studies/slug      -> /work/case-studies/slug
-  * /perspectives           -> /blog
-  * /404 to blog/slug       -> exists, otherwise 404
-  * /services               -> /work/services
-  * /why-pocketworks        -> /about/story
-  
-  * /startups               -> ???
-  * /digital-transformation -> /work/workforce-producitivity
-  * /agencies               -> ???
-  * /ipad-sales-apps        -> ???
+  * [X] /clients                -> /work
+  * [X] /case-studies/slug      -> /work/case-studies/slug
+  * [X] /perspectives           -> /blog
+  * [X] /404 to blog/slug       -> exists, otherwise 404
+  * [X] /services               -> /work/services
+  * [X] /why-pocketworks        -> /about/story
+  * [X] /join-us                -> /about/careers
+  * [X] /ipad-sales-apps        -> /blog/ipad-sales-apps
+  * [X] /digital-transformation -> /work/workforce-producitivity
+  * [X] /team                   -> /about/pocketeers
 
-* [ ] Check SEO won't totally tank
+  * /startups               -> ???
+  * /iot                    -> ???
+  * /agencies               -> ???
+  * /field-service-apps     -> 
+  
+* [X] Check SEO won't totally tank
 * [X] Add contact form??
 
 * Push Live
