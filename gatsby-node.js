@@ -103,6 +103,9 @@ exports.createPages = ({ graphql, actions }) => {
       result.data.oldArticles.edges.map(({node: article}) => {
         createRedirect({ fromPath: "/" + article.slug, toPath: "/blog/" + article.slug, isPermanent: true })
       })
+      createRedirect({ fromPath: "/clients", toPath: "/work", isPermanent: true })
+      createRedirect({ fromPath: "/case-studies/.+", toPath: "/work/case-studies/.+", isPermanent: true })
+      createRedirect({ fromPath: "/perspectives/*", toPath: "/work/case-studies/*", isPermanent: true })
       
       resolve()
     })
