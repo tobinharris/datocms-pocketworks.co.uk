@@ -24,7 +24,7 @@ export default ({ data }) => (
                             <br/><br/><br/>
                             <h1 className="title is-size-1">{data.pocketeer.firstName} <span className="has-text-primary">{data.pocketeer.lastName}</span></h1>
                             <h3 className="subtitle">{data.pocketeer.role}</h3>
-                            <div dangerouslySetInnerHTML={{ __html: data.pocketeer.description }}></div>
+                            <div dangerouslySetInnerHTML={{ __html: data.pocketeer.description ? data.pocketeer.description : "Bear with us please, we're just preparing a bio for " + data.pocketeer.firstName + "."  }}></div>
                         </Columns.Column>
                         <Columns.Column className="is-5 is-vcentered">
                             <Img fluid={data.pocketeer.mainImage.fluid}></Img>
