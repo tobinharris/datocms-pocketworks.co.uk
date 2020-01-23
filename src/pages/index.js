@@ -13,7 +13,7 @@ import SiteNav from '../components/navbar'
 const IndexPage = ({ data }) => (
   <Layout>
     <SiteNav fullLogo="true"></SiteNav>
-    <Hero className="is-small">
+    <Hero className="is-medium is-fullheight-with-navbar">
       <Hero.Body>
         <Container>
           <div className="columns content is-vcentered">
