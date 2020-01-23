@@ -14,7 +14,7 @@ const NotFoundPage = () => (
           <Columns.Column className="is-offset-1 is-8">
           <h1 className="is-size-1 has-text-danger">Oh no!<sup><code className="is-size-6">404</code></sup></h1>
           <h2>Drat, we seem to have lost that page you wanted :(</h2>          
-          <p><a className="button is-leafy is-primary" id="lnk" href={'/blog' + window.location.pathname}>Please try this one</a></p>  
+          <p><a className="button is-leafy is-primary" id="lnk" href={'/blog' + (window ? window.location.pathname : '')}>Please try this one</a></p>  
           <p><br/>Or have a <a href="/">quick browse around.</a></p>        
           </Columns.Column>
           </Columns>
@@ -29,5 +29,15 @@ const NotFoundPage = () => (
   </Layout>
   
 )
+
+function componentDidMount() {
+  try {
+    var el = document.getElementById('lnk')
+    el.innerHTML = '/blog' + window.location.pathname
+    el.setAttribute('href', '/blog' + window.location.pathname)
+  } catch (e) {
+    console.error(e);
+  }
+}
 
 export default NotFoundPage
