@@ -108,12 +108,12 @@ const IndexPage = ({ data }) => (
           <Columns.Column className="is-10">
             <Columns className="is-multiline is-centered">
               {data.caseStudies.edges.map(({ node: caseStudy }) => (
-                <Columns.Column className="is-4">
+                <Columns.Column className="is-4" key="col1">
                   <CaseStudyCard caseStudy={caseStudy}></CaseStudyCard>
                 </Columns.Column>
               ))}
               {data.posts.edges.map(({ node: article }) => (
-                <Columns.Column className="is-4">
+                <Columns.Column className="is-4" key="col2">
                   <BlogCard article={article}></BlogCard>
                 </Columns.Column>
               ))}

@@ -110,7 +110,7 @@ const Work = ({ data: { about, caseStudies, page } }) => (
         <Section className="is-small">
             <Container className="content">
                 <Columns className="is-centered">
-                    <Columns.Column className="is-6 ">
+                    <Columns.Column className="is-6">
                         <h2 className="has-text-centered title is-size-3-mobile">More <span className="has-text-purple">case studies</span> for consumer apps</h2>
                     </Columns.Column>
                 </Columns>

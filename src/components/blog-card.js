@@ -24,13 +24,13 @@ function BlogCard(props){
         
         
         <Card.Content>
-            <p className="is-uppercase is-size-7"><span class="has-text-success">Blog</span> {props.article.author.name}, <time datetime={props.article.date}>{props.article.date}</time></p>
-            <h3><Link to={'blog/' + props.article.slug}>{props.article.title}</Link></h3>
+            <p className="is-uppercase is-size-7"><span class="has-text-success">Blog</span> {props.article.author.name}, {props.article.date}</p>
+            <h3><Link to={'/blog/' + props.article.slug}>{props.article.title}</Link></h3>
 
 
         </Card.Content>
         <Card.Footer className="is-hidden">
-            <ArrowLink className="card-footer-item" to={'blog/' + props.article.slug}>Read full article</ArrowLink>
+            <ArrowLink className="card-footer-item" to={'/blog/' + props.article.slug}>Read full article</ArrowLink>
         </Card.Footer>
     </Card>
     )

@@ -32,7 +32,7 @@ That's it! You should be up and running. Note that you're showing live data, but
 * [X] Button spaces are off
 * [X] Center valigned heros
 * [ ] How to make all H1s is-size-2-mobile without having to do it explicitly?
-* [ ] Team Member Page
+* [X] Team Member Page
 * [WIP] Case Study Page
   * [ ] Quotes
   * [ ] Ask Tom if too simple?
@@ -47,7 +47,7 @@ That's it! You should be up and running. Note that you're showing live data, but
   * [X] Travelodge
 * [ ] Check font sizes on mobile
 * [ ] Any way to make font sizes more consistant?
-* [ ] Add DMSans font
+* [XX] Add DMSans font
 * [X] Finish Home Page
 * [ ] Sort out Meta data and Twitter Card
 * [X] Separate blog category pages
@@ -60,6 +60,7 @@ That's it! You should be up and running. Note that you're showing live data, but
 * [ ] Instagram feed
 * [ ] Culture panels
 * [ ] Quotes on home page
+* [X] Lees thoughts on home
 
 * [ ] Fix sucky mobile rendering
 * [ ] Add Google Tracking Pixels?
