@@ -22,7 +22,7 @@ const Resources = ({ data: { about } }) => (
         <Container class="content">
           <Columns className="is-vcentered">
             <Columns.Column className="is-offset-1 is-6">
-              <h1 className="is-size-1 is-size-2-mobile"><span className="has-text-primary">Mutual</span> Non Disclosure Agreement</h1>
+              <h1 className="title is-size-1 is-size-2-mobile"><span className="has-text-primary">Mutual</span> Non Disclosure Agreement</h1>
               <p>Even without an NDA, we always protect the interests of our clients. This means not sharing their industry secrets with competitors. </p>
 
 <p>If possible, we suggest working without an NDA. The reason is that we have worked with many clients, and talk to dozens of potential clients each year. It is inevitable that we hear similar ideas. </p>

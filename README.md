@@ -43,7 +43,7 @@ That's it! You should be up and running. Note that you're showing live data, but
 * [ ] Check font sizes on mobile
 * [ ] Any way to make font sizes more consistant?
 * [ ] Sort out Meta data and Twitter Card
-* [ ] NDA
+* [X] NDA Page
 * [ ] HENEGHANS download page?
 * [ ] Blog show additional posts 
 * [ ] Instagram feed
