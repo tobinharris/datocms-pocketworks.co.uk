@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => (
         <Container>
           <div className="columns content is-vcentered">
             <div className="column is-6 is-offset-1">
-              <h1 className="is-size-1">
+              <h1 className="is-size-1 is-size-2-mobile">
                 Make <span className="has-text-primary">light work</span> of business.
               </h1>
               <p className="is-size-4">

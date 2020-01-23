@@ -12,7 +12,7 @@ const Contact = ({ data: { about } }) => (
             <ul>
                 <li className="is-active"><a>Details</a></li>
                 <li><Link to="/contact/enquiry">Enquiry Form</Link></li>
-                
+                <li><Link to="/contact/nda">NDA</Link></li>
             </ul>
         </div>
 
