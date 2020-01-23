@@ -65,7 +65,7 @@ const IndexPage = ({ data }) => (
           mainImage="https://www.datocms-assets.com/20955/1579449491-pgmo-mockup.jpeg?w=400&fm=jpg"
           titleHtml="Increase your productivity with <span class='has-text-success'>mobile working solutions.</span>"
           excerpt="Mobile is a great way to improve how employees work. Whether it be on-site, in-store or on-the-road."
-          to="/workforce-productivity"
+          to="/work/workforce-productivity"
           toText="Examples and more info" />
       </Container>
     </Section>
