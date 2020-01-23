@@ -18,14 +18,19 @@ const IndexPage = ({ data }) => (
         <Container>
           <div className="columns content is-vcentered">
             <div className="column is-6 is-offset-1">
-
-              <h2 className="title is-size-3-mobile">
+              <h1 className="is-size-1">
+                Make <span className="has-text-primary">light work</span> of business.
+              </h1>
+              <p className="is-size-4">
+              Work life is full of heavy lifting. So we design apps and mobile solutions that help you lighten the load.
+              </p>
+              <h2 className="title is-size-3-mobile is-hidden">
                 <span class="has-text-primary">Work life is full of heavy lifting.</span> So we design apps and mobile solutions that help you lighten the load.
-          </h2>
+              </h2>
 
               <p>
-                <Link to="/work" className="button is-primary is-leafy is-large is-flex-mobile">How we help</Link>&nbsp;&nbsp;
-            <Link to="/contact" className="button is-link is-leafy is-outlined is-large is-flex-mobile">Get in touch</Link>
+                <Link to="/work" className="button is-primary is-leafy is-medium is-flex-mobile">How we help</Link>&nbsp;&nbsp;
+                <Link to="/contact" className="button is-link is-leafy is-outlined is-medium is-flex-mobile">Get in touch</Link>
               </p>
 
               <div className="level is-size-3 is-mobile is-hidden">
@@ -46,9 +51,31 @@ const IndexPage = ({ data }) => (
 
         </Container>
       </Hero.Body>
-
     </Hero>
-    <hr />
+    
+    <Section>
+      <Container>
+        <Columns>
+          <Columns.Column className="is-offset-1 is-10">
+            <img src="https://www.datocms-assets.com/20955/1579120367-clients.png?fm=jpg"></img>
+            <hr />
+          </Columns.Column>
+        </Columns>
+      </Container>
+    </Section>
+
+    <Section className="is-hidden">
+      <Container>
+        <Columns>
+          <Columns.Column className="is-offset-3 is-6 has-text-centered">
+            <h2 className="title is-size-3-mobile">
+              <span class="has-text-primary">Work life is full of heavy lifting.</span> So we design apps and mobile solutions that help you lighten the load.
+            </h2>
+          </Columns.Column>
+        </Columns>
+      </Container>
+    </Section>
+
     <Section>
       <Container>
         <CaseStudyHero
@@ -95,7 +122,7 @@ const IndexPage = ({ data }) => (
         </Columns>
         <Columns className="is-centered is-vcentered">
           <Columns.Column className="is-6 has-text-centered">
-            <br/><Link to="/blog" className="button is-leafy is-medium is-success">More news from Pocketworks</Link>
+            <br /><Link to="/blog" className="button is-leafy is-medium is-success">More news from Pocketworks</Link>
           </Columns.Column>
         </Columns>
       </Container>
