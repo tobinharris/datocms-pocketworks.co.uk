@@ -93,7 +93,7 @@ const Services = ({ data: { page } }) => (
 
                     <Columns>
                     <Columns.Column className="is-offset-2 is-8 has-text-centered">
-                    <p><br/><Link to="/contact" className="button is-primary is-leafy is-medium is-primary">Book a package</Link></p>
+                    <p><br/><Link to="/contact" className="button is-primary is-leafy is-medium is-primary">Contact us to learn more</Link></p>
                     </Columns.Column>
                     </Columns>
                 </Container>
@@ -131,7 +131,7 @@ const Services = ({ data: { page } }) => (
                     </Columns>
                     <Columns>
                     <Columns.Column className="is-offset-2 is-8 has-text-centered">
-                    <p><br/><Link to="/" className="button is-primary is-outlined is-leafy is-medium is-primary">View all our services</Link></p>
+                    <p><br/><Link to="/" className="button is-primary is-outlined is-leafy is-medium is-primary">Find a package that works for you</Link></p>
                     </Columns.Column>
                     </Columns>
                 </Container>
