@@ -23,7 +23,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
-        oldArticles: allDatoCmsArticle(filter: {date: {gt: "2020-01-20"}}){
+        oldArticles: allDatoCmsArticle(filter: {date: {lt: "2020-01-20"}}){
           edges{
             node{
               slug
