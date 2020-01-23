@@ -48,21 +48,18 @@ const IndexPage = ({ data }) => (
               <Img fluid={data.page.featuredMedia.fluid} />
             </div>
           </div>
-
+          <div className="columns">
+            <div className="column is-offset-1 is-10">
+              <img src="https://www.datocms-assets.com/20955/1579120367-clients.png?fm=jpg"></img>
+              <hr/>
+            </div>
+          
+          </div>
+          
         </Container>
       </Hero.Body>
     </Hero>
     
-    <Section>
-      <Container>
-        <Columns>
-          <Columns.Column className="is-offset-1 is-10">
-            <img src="https://www.datocms-assets.com/20955/1579120367-clients.png?fm=jpg"></img>
-            <hr />
-          </Columns.Column>
-        </Columns>
-      </Container>
-    </Section>
 
     <Section className="is-hidden">
       <Container>
