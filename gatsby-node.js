@@ -107,7 +107,17 @@ exports.createPages = ({ graphql, actions }) => {
       createRedirect({ fromPath: "/case-studies/*", toPath: "/work/case-studies/*", isPermanent: true })
       createRedirect({ fromPath: "/perspectives/*", toPath: "/blog/*", isPermanent: true })
       createRedirect({ fromPath: "/services", toPath: "/work/services", isPermanent: true })
+      createRedirect({ fromPath: "/why-pocketworks", toPath: "/about/story", isPermanent: true })
+      createRedirect({ fromPath: "/join-us", toPath: "/about/careers", isPermanent: true })
+      createRedirect({ fromPath: "/digital-transformation", toPath: "/work/workforce-producitivity", isPermanent: true })
+      createRedirect({ fromPath: "/team", toPath: "/about/pocketeers", isPermanent: true })
+      createRedirect({ fromPath: "/field-service-apps", toPath: "/work/workforce-producitivity", isPermanent: true })
       
+      /* TODO
+      /iot
+      /startups
+      /agencies
+      */
       resolve()
     })
   })
