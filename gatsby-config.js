@@ -5,6 +5,11 @@ module.exports = {
     title: `Creative Portfolio`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options:{
+        generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+      }},
     `gatsby-plugin-react-helmet`,
     { 
       resolve: `gatsby-plugin-sass`,
