@@ -1,42 +1,45 @@
-import React from 'react'
+import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 import "../styles/app.sass";
 import Layout from '../components/layout'
 import Link from 'gatsby'
 import SiteNav from '../components/navbar'
 import { Columns, Hero, Container } from 'react-bulma-components'
-const NotFoundPage = () => (
-  <Layout>
-    <SiteNav fullLogo="true"></SiteNav>
-    <Hero>      
-        <Hero.Body>
-        <Container className="content">
-          <Columns>
-          <Columns.Column className="is-offset-1 is-8">
-          <h1 className="is-size-1 has-text-danger">Oh no!<sup><code className="is-size-6">404</code></sup></h1>
-          <h2>Drat, we seem to have lost that page you wanted :(</h2>          
-          <p><a className="button is-leafy is-primary" id="lnk" href={'/blog' + (window ? window.location.pathname : '')}>Please try this one</a></p>  
-          <p><br/>Or have a <a href="/">quick browse around.</a></p>        
-          </Columns.Column>
-          </Columns>
-          </Container>
-        </Hero.Body>
-        
-    </Hero>
-    <script>
-    {/* alert('/blog/' + window.location.pathname)
-    document.getElementById('lnk').innerHtml = "/blog/"" + window.location.pathname; */}
-    </script>
-  </Layout>
-  
-)
 
-function componentDidMount() {
-  try {
+
+
+class NotFoundPage extends React.Component {
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     width: window.innerWidth,
+  //   };
+  // }
+  componentDidMount() {
     var el = document.getElementById('lnk')
-    el.innerHTML = '/blog' + window.location.pathname
-    el.setAttribute('href', '/blog' + window.location.pathname)
-  } catch (e) {
-    console.error(e);
+    el.setAttribute('href', '/blog' + (window ? window.location.pathname : ''))
+    //el.innerHTML = '/blog' + (window ? window.location.pathname : '')    
+  }
+  render() {
+    return (
+      <Layout>
+        <SiteNav fullLogo="true"></SiteNav>
+        <Hero>
+          <Hero.Body>
+            <Container className="content">
+              <Columns>
+                <Columns.Column className="is-offset-1 is-8">
+                  <h1 className="is-size-1 has-text-danger">Oh no!<sup><code className="is-size-6">404</code></sup></h1>
+                  <h2>Your page has moved :(</h2>                  
+                  <p><a className="button is-leafy is-primary" id="lnk" href="/blog">Try this one?</a></p>
+                  <p><br />Or have a <a href="/">quick browse around.</a></p>
+                </Columns.Column>
+              </Columns>
+            </Container>
+          </Hero.Body>
+        </Hero>
+      </Layout>
+    )
   }
 }
 
