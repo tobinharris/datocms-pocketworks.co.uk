@@ -26,17 +26,12 @@ That's it! You should be up and running. Note that you're showing live data, but
 
 # TODO
 
-* [WIP] Emmanuelle for IT'S A TRAPP 
-* [WIP]  Emmanuelle Schematic illustration
-* [X] Home phones center valign add subtitle
-* [X] Button spaces are off
-* [X] Center valigned heros
+* [ ] Emmanuelle for IT'S A TRAPP 
+* [ ] Emmanuelle Schematic illustration
 * [ ] How to make all H1s is-size-2-mobile without having to do it explicitly?
-* [X] Team Member Page
 * [WIP] Case Study Page
   * [ ] Quotes
   * [ ] Ask Tom if too simple?
-* [X] Favicon
 * Copy Case Studies Accross
   * [X] PGMO
   * [X] Veezu
@@ -47,21 +42,13 @@ That's it! You should be up and running. Note that you're showing live data, but
   * [X] Travelodge
 * [ ] Check font sizes on mobile
 * [ ] Any way to make font sizes more consistant?
-* [XX] Add DMSans font
-* [X] Finish Home Page
 * [ ] Sort out Meta data and Twitter Card
-* [X] Separate blog category pages
 * [ ] NDA
 * [ ] HENEGHANS download page?
 * [ ] Blog show additional posts 
-* [X] Blog show link to category page
-* [ ] Blog show reading time
-* [X] Social links
 * [ ] Instagram feed
 * [ ] Culture panels
 * [ ] Quotes on home page
-* [X] Lees thoughts on home
-
 * [ ] Fix sucky mobile rendering
 * [ ] Add Google Tracking Pixels?
 * [ ] Add Inspectlet?
@@ -80,24 +67,33 @@ That's it! You should be up and running. Note that you're showing live data, but
   * [X] /ipad-sales-apps        -> /blog/ipad-sales-apps
   * [X] /digital-transformation -> /work/workforce-producitivity
   * [X] /team                   -> /about/pocketeers
-
-  * /startups               -> ???
-  * /iot                    -> ???
-  * /agencies               -> ???
-  * /field-service-apps     -> 
-  
+  * [ ] /startups               -> ???
+  * [ ] /iot                    -> ???
+  * [ ] /agencies               -> ???
+  * [ ] /field-service-apps     -> 
+* [X] Favicon
+* [X] Team Member Page
+* [X] Add DMSans font
+* [X] Finish Home Page
+* [X] Separate blog category pages
+* [X] Blog show link to category page
+* [X] Lees thoughts on home
+* [X] Social links
+* [X] Home phones center valign add subtitle
+* [X] Button spaces are off
+* [X] Center valigned heros  
 * [X] Check SEO won't totally tank
 * [X] Add contact form??
 
 * Push Live
-  * DNS
-  * Google Search 
+  * [ ] DNS
+  * [ ] Google Search 
 
 RELEASE 2
-
-* Look at using query fragments
-* Single query file
-* Slider with individual call to actions to relevant landing page
+* [ ] Blog show reading time
+* [ ] Look at using query fragments
+* [ ] Single query file
+* [ ] Slider with individual call to actions to relevant landing page
 
 
 # Gatsby Portfolio Website
