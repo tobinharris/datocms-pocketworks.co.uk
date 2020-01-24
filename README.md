@@ -41,6 +41,7 @@ That's it! You should be up and running. Note that you're showing live data, but
 * [ ] Add Google Analytics
 * [ ] Add Hotjar?
 * [ ] Add Google Verification file?
+* [ ] Instagram feed
 * [WIP] Case Study Page
   * [ ] Quotes
   * [ ] Ask Tom if too simple?
@@ -53,19 +54,6 @@ That's it! You should be up and running. Note that you're showing live data, but
   * [ ] Whitelocks???
   * [ ] Asda  
 * [X] NDA Page
-* [ ] Instagram feed
-* [ ] Add Google Tracking Pixels?
-* [ ] Add Inspectlet?
-* [ ] Add Search Console script
-* [ ] Check font sizes on mobile
-* [ ] Any way to make font sizes more consistant?
-* [ ] How to make all H1s is-size-2-mobile without having to do it explicitly?
-* [ ] Fix sucky mobile rendering
-* [ ] Blog show additional posts 
-* [ ] Culture panels
-* [ ] Quotes on home page
-
-
 * Rewrites
   * [X] /clients                -> /work
   * [X] /case-studies/slug      -> /work/case-studies/slug
@@ -80,7 +68,7 @@ That's it! You should be up and running. Note that you're showing live data, but
   * [ ] /startups               -> ???
   * [ ] /iot                    -> ???
   * [ ] /agencies               -> ???
-  * [ ] /field-service-apps     -> 
+  * [ ] /field-service-apps     -> ???
 * [X] Favicon
 * [X] Team Member Page
 * [X] Add DMSans font
@@ -100,6 +88,16 @@ That's it! You should be up and running. Note that you're showing live data, but
   * [ ] Google Search 
 
 RELEASE 2
+* [ ] Add Google Tracking Pixels?
+* [ ] Add Inspectlet?
+* [ ] Add Search Console script
+* [ ] Check font sizes on mobile
+* [ ] Any way to make font sizes more consistant?
+* [ ] How to make all H1s is-size-2-mobile without having to do it explicitly?
+* [ ] Fix sucky mobile rendering
+* [ ] Blog show additional posts 
+* [ ] Culture panels
+* [ ] Quotes on home page
 * [ ] Blog show reading time
 * [ ] Look at using query fragments
 * [ ] Single query file
