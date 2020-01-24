@@ -9,6 +9,9 @@ import Layout from '../../components/layout'
 
 const About = ({ data: { about } }) => (
   <Layout>
+    <HelmetDatoCms                        
+          seo={about.seoMetaTags}
+      />
     <SiteNav></SiteNav>
     <div className="tabs is-medium is-centered">
       <ul>
@@ -68,13 +71,12 @@ export default About
 
 export const query = graphql`
   query AboutQuery {
-    about: datoCmsPage(slug: {eq: "why-pocketworks"}) {
+    about: datoCmsPage(slug: {eq: "about"}) {
       
           seoMetaTags {
             ...GatsbyDatoCmsSeoMetaTags
           }
-          title   
-          content   
+          title             
           featuredMedia {
             fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
               ...GatsbyDatoCmsSizes

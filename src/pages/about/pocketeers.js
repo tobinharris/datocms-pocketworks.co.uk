@@ -6,8 +6,11 @@ import SiteNav from '../../components/navbar'
 import Layout from '../../components/layout'
 import { Tabs, Section, Container, Brand, Hero, Columns, Card } from 'react-bulma-components';
 
-const People = ({ data: { people } }) => (
+const People = ({ data: { people, page } }) => (
   <Layout>
+    <HelmetDatoCms                        
+          seo={page.seoMetaTags}
+      />
     <SiteNav></SiteNav>
     <div className="tabs is-medium is-centered">
       <ul>
@@ -51,6 +54,11 @@ export default People
 
 export const query = graphql`
   query PeopleQuery {
+    page: datoCmsPage(slug: {eq: "pocketeers"}){
+      seoMetaTags {
+        ...GatsbyDatoCmsSeoMetaTags
+      }
+    }
     people: allDatoCmsAuthor(limit: 30, sort: {fields: [name], order: ASC}, filter: {role: {ne: ""}}) {
         edges {
           node {
