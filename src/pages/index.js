@@ -81,8 +81,8 @@ const IndexPage = ({ data }) => (
         <CaseStudyHero
           className="has-text-info"
           mainImage="https://www.datocms-assets.com/20955/1579120572-veezu-mockup.png?w=400&fm=jpg"
-          titleHtml="Earn <span class='has-text-info'>loyalty</span> by putting mobile customers first."
-          excerpt="These days, customers expect speed and convenience. To acheive that, you have to listen to them. We help you earn loyalty by analysing and improving how customers engage."
+          titleHtml="Earn <span class='has-text-info'>customer loyalty.</span>"
+          excerpt="These days, customers expect speed and convenience. We help you earn loyalty by giving customers engaging tools that simplify their lives."
           to="/work"
           toText="Examples and more info" />
         <img src="https://www.datocms-assets.com/20955/1579120592-link.png?w=1800"></img>
@@ -90,8 +90,8 @@ const IndexPage = ({ data }) => (
           className="has-text-success"
           flipped
           mainImage="https://www.datocms-assets.com/20955/1579449491-pgmo-mockup.jpeg?w=400&fm=jpg"
-          titleHtml="Help <span class='has-text-success'>mobile workers</span> get more done with less friction"
-          excerpt="Professionals get frustrated when software slows them down. We help you develop apps to maximise work by involving your key people through the design and development process."
+          titleHtml="Accellerate <span class='has-text-success'>mobile working.</span>"
+          excerpt="Professionals get frustrated when software slows them down. We help you develop apps to maximise work giving your mobile teams the tools they deserve."
           to="/work/workforce-productivity"
           toText="Examples and more info" />
       </Container>
