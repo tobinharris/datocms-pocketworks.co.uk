@@ -8,8 +8,9 @@ import TeamQuote from '../../components/team-quote'
 import Layout from '../../components/layout'
 import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components';
 
-const Technologies = ({ data: { about } }) => (
+const Technologies = ({ data: { page } }) => (
     <Layout>
+        <HelmetDatoCms seo={page.seoMetaTags}/>
         <div className="page is-dark">
             <Hero className="is-small is-dark">
                 <SiteNav className="is-light"></SiteNav>
@@ -141,7 +142,7 @@ export default Technologies
 
 export const query = graphql`
   query TechnologiesPageQuery {
-    about: datoCmsPage(slug: {eq: "work"}) {
+    page: datoCmsPage(slug: {eq: "technologies"}) {
       
           seoMetaTags {
             ...GatsbyDatoCmsSeoMetaTags

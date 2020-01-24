@@ -12,6 +12,7 @@ import Layout from '../../components/layout'
 
 const Work = ({ data: { about, caseStudies, page } }) => (
     <Layout>
+        <HelmetDatoCms seo={page.seoMetaTags}/>
         <SiteNav></SiteNav>
         <div className="tabs is-medium is-centered">
             <ul>

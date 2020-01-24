@@ -10,6 +10,7 @@ import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components
 
 const Services = ({ data: { page } }) => (
     <Layout>
+        <HelmetDatoCms seo={page.seoMetaTags}/>
         <SiteNav></SiteNav>
         <div className="tabs is-medium is-centered">
             <ul>

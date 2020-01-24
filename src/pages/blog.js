@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import { HelmetDatoCms } from 'gatsby-source-datocms'
 import "../styles/index.sass";
 import "../styles/app.sass";
 import Layout from '../components/layout'
@@ -11,8 +12,9 @@ import SiteNav from '../components/navbar'
 
 //import Layout from "../components/layout"
 
-const BlogPage = ({ data }) => (
+const BlogPage = ({ data: {page, posts} }) => (
   <Layout>
+    <HelmetDatoCms seo={page.seoMetaTags}/>
     <SiteNav></SiteNav>
     <div className="tabs is-medium is-centered">
     <ul>
@@ -48,7 +50,7 @@ const BlogPage = ({ data }) => (
         <Columns>
           <Columns.Column className="is-offset-1 is-10">
             <Columns className="is-centered">
-              {data.posts.edges.map(({ node: article }) => (
+              {posts.edges.map(({ node: article }) => (
                 <Columns.Column className="is-4 is-multiline">
                   <BlogCard article={article}></BlogCard>
                 </Columns.Column>
@@ -67,6 +69,20 @@ export default BlogPage
 
 export const query = graphql`
   query BlogQuery {
+    page: datoCmsPage(slug: {eq: "blog"}) {
+      
+      seoMetaTags {
+        ...GatsbyDatoCmsSeoMetaTags
+      }
+      title   
+      content   
+      featuredMedia {
+        fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
+          ...GatsbyDatoCmsSizes
+        }
+    }      
+  
+}
     posts: allDatoCmsArticle(limit: 18, sort: {fields: [date], order: DESC}) {
       edges {
         node {

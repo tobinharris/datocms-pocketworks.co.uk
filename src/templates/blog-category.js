@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import { HelmetDatoCms } from 'gatsby-source-datocms'
 import "../styles/index.sass";
 import "../styles/app.sass";
 import Layout from '../components/layout'
@@ -13,6 +14,7 @@ import SiteNav from '../components/navbar'
 
 const BlogCategoryPage = ({ data }) => (
   <Layout>
+    <HelmetDatoCms seo={data.datoCmsCategory.seoMetaTags}/>
     <SiteNav></SiteNav>    
     <div className="tabs is-medium is-centered">
       <ul>

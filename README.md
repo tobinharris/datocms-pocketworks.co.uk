@@ -29,6 +29,14 @@ That's it! You should be up and running. Note that you're showing live data, but
 * [ ] Emmanuelle for IT'S A TRAPP 
 * [ ] Emmanuelle Schematic illustration
 * [ ] Sort out Meta data and Twitter Card
+  * [X] Home
+  * [X] About/Story/Team/Careers/ 
+  * [X] Loyalty/Productivity/Services/Tech
+  * [X] Blog/Category/Article
+  * [ ] Contact/Form/NDA
+  * [ ] Case Studies
+  * [ ] Add META Description to every blog article aaaagh
+  * [ ] Add META Description to every case study
 * [ ] HENEGHANS download page?
 * [ ] Add Google Analytics
 * [ ] Add Hotjar?
@@ -36,14 +44,14 @@ That's it! You should be up and running. Note that you're showing live data, but
 * [WIP] Case Study Page
   * [ ] Quotes
   * [ ] Ask Tom if too simple?
-* Copy Case Studies Accross
-  * [X] PGMO
-  * [X] Veezu
-  * [X] Energenie
-  * [X] Fresenius
-  * [ ] Asda
-* [ ] Create Case Studies
-  * [X] Travelodge
+* Studies Accross
+  * [X] PGMO (full)
+  * [X] Veezu (light)
+  * [X] Energenie (light)
+  * [X] Fresenius (light)
+  * [X] Travelodge (light)
+  * [ ] Whitelocks???
+  * [ ] Asda  
 * [X] NDA Page
 * [ ] Instagram feed
 * [ ] Add Google Tracking Pixels?

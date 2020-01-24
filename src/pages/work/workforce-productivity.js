@@ -12,6 +12,7 @@ import { Section, Columns, Container, Brand, Hero } from 'react-bulma-components
 
 const WorkforceProductivity = ({ data: { page, caseStudies } }) => (
     <Layout>
+        <HelmetDatoCms seo={page.seoMetaTags}/>
         <SiteNav></SiteNav>
         <div className="tabs is-medium is-centered">
             <ul>
