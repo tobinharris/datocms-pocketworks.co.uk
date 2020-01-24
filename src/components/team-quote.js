@@ -16,7 +16,7 @@ return (
                     <p className="is-size-4">
                     "{props.quote}"
                     </p>
-                    <p class="tag is-medium is-success">{props.who}</p>
+                    <p class="tag is-medium">{props.who}</p>
 
                 </Columns.Column>
             </Columns>

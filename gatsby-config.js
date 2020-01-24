@@ -34,6 +34,19 @@ module.exports = {
         id: 966695,
         sv: 6
       },
-    },  
+    },
+    {
+      resolve: 'gatsby-plugin-google-marketing-platform',
+      options: {
+        dataLayer: {
+          gaPropertyId: 'UA-48635439-2',
+        },
+        tagmanager: {
+          id: 'GTM-WVVXLVG'
+        },
+        analytics: {
+          id: 'UA-48635439-2'
+        }
+      },  
   ],
 }

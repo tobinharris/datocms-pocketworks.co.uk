@@ -5624,6 +5624,13 @@ gatsby-page-utils@^0.0.37:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-google-marketing-platform@^0.1.20:
+  version "0.1.20"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-marketing-platform/-/gatsby-plugin-google-marketing-platform-0.1.20.tgz#86c8ea07fec52c51ff6c8363997d73887a8ea09c"
+  integrity sha512-B9jRWTrRU3o1S3qqBwnwForpywNeSCyn9skMY58O35aBoVmSiue6ZTpo399JwSR8AJjYzyCyZI6q8CD48480BQ==
+  dependencies:
+    common-tags "^1.8.0"
+
 gatsby-plugin-hotjar@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-hotjar/-/gatsby-plugin-hotjar-1.0.1.tgz#f5703d7d2a354752e20230a0074d53c7287d8950"

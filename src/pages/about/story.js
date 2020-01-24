@@ -36,24 +36,35 @@ const About = ({ data: { about, instagram } }) => (
         </Container>
       </Hero.Body>
     </Hero>
-    
-    <Section>
-      <Columns className="is-mobile">
-        {instagram.edges.map(({ node: instaPost }) => (
-          <Columns.Column className="is-paddingless">
-            <a href={"https://www.instagram.com/p/" + instaPost.id + "/"} target="_blank">
-              <Img className="instagram-photo" fluid={instaPost.localFile.childImageSharp.fluid} title={instaPost.caption}></Img>
-            </a>
-          </Columns.Column>
-        ))}
-      </Columns>
-    </Section>
 
     <TeamQuote
       quote="Ultimately, my goal is to create things that are useful, which make us proud and benefit thousands or millions of people every day. That's the real significance of our company."
       imgSrc="https://www.datocms-assets.com/20955/1579120403-tobin.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"
       who="Tobin, Founder and Managing Director"
     />
+
+    <Section>
+      <Container className="container content">
+        <h2 className="title has-text-centered"><span className="has-text-primary">Life</span> at Pocketworks</h2>
+        <p>&nbsp;</p>
+        <Columns className="is-mobile">
+          <Columns.Column className="is-offset-1 is-10">
+            <Columns className="is-mobile">
+              {instagram.edges.map(({ node: instaPost }) => (
+                <Columns.Column className="is-3">
+                  <a href={"https://www.instagram.com/p/" + instaPost.id + "/"} target="_blank">
+                    <Img className="instagram-photo" fluid={instaPost.localFile.childImageSharp.fluid} title={instaPost.caption}></Img>
+                  </a>
+                </Columns.Column>
+              ))}
+            </Columns>
+          </Columns.Column>
+
+
+        </Columns>
+        <hr />
+      </Container>
+    </Section>
 
     <Section>
       <div class="content">
@@ -95,7 +106,7 @@ export const query = graphql`
         }
     }              
   }
-  instagram: allInstaNode(limit: 20, sort: {fields: [timestamp], order: DESC}) {
+  instagram: allInstaNode(filter: {dimensions: {height:{eq: 1080 }}}, limit: 8, sort: {fields: [timestamp], order: DESC}) {
     edges {
       node {
         id
