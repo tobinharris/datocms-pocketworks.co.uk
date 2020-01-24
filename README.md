@@ -28,7 +28,11 @@ That's it! You should be up and running. Note that you're showing live data, but
 
 * [ ] Emmanuelle for IT'S A TRAPP 
 * [ ] Emmanuelle Schematic illustration
-* [ ] How to make all H1s is-size-2-mobile without having to do it explicitly?
+* [ ] Sort out Meta data and Twitter Card
+* [ ] HENEGHANS download page?
+* [ ] Add Google Analytics
+* [ ] Add Hotjar?
+* [ ] Add Google Verification file?
 * [WIP] Case Study Page
   * [ ] Quotes
   * [ ] Ask Tom if too simple?
@@ -40,22 +44,20 @@ That's it! You should be up and running. Note that you're showing live data, but
   * [ ] Asda
 * [ ] Create Case Studies
   * [X] Travelodge
-* [ ] Check font sizes on mobile
-* [ ] Any way to make font sizes more consistant?
-* [ ] Sort out Meta data and Twitter Card
 * [X] NDA Page
-* [ ] HENEGHANS download page?
-* [ ] Blog show additional posts 
 * [ ] Instagram feed
-* [ ] Culture panels
-* [ ] Quotes on home page
-* [ ] Fix sucky mobile rendering
 * [ ] Add Google Tracking Pixels?
 * [ ] Add Inspectlet?
-* [ ] Add Hotjar?
-* [ ] Add Google Analytics
-* [ ] Add Google Verification file?
 * [ ] Add Search Console script
+* [ ] Check font sizes on mobile
+* [ ] Any way to make font sizes more consistant?
+* [ ] How to make all H1s is-size-2-mobile without having to do it explicitly?
+* [ ] Fix sucky mobile rendering
+* [ ] Blog show additional posts 
+* [ ] Culture panels
+* [ ] Quotes on home page
+
+
 * Rewrites
   * [X] /clients                -> /work
   * [X] /case-studies/slug      -> /work/case-studies/slug
