@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import "../styles/app.sass";
 import Layout from '../components/layout'
+import { HelmetDatoCms } from 'gatsby-source-datocms'
 import BlogCard from '../components/blog-card'
 import CaseStudyCard from '../components/case-study-card'
 import CaseStudyHero from '../components/case-study-hero'
@@ -11,7 +12,9 @@ import '@fortawesome/fontawesome-free/css/all.css'
 import SiteNav from '../components/navbar'
 
 const IndexPage = ({ data }) => (
-  <Layout>
+  <Layout>    
+    <HelmetDatoCms                        
+        seo={data.page.seoMetaTags} />
     <SiteNav fullLogo="true"></SiteNav>
     <Hero className="is-medium is-fullheight-with-navbar">
       <Hero.Body>
@@ -141,6 +144,9 @@ export const query = graphql`
             fluid(maxWidth: 450, imgixParams: { w: "450", fm: "jpg", auto: "compress" }) {
               ...GatsbyDatoCmsSizes
             }
+          }
+          seoMetaTags {
+            ...GatsbyDatoCmsSeoMetaTags
           }
         
     }   

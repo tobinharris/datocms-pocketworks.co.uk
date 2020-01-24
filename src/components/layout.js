@@ -9,8 +9,8 @@ import Container from 'react-bulma-components/lib/components/container';
 import "../styles/app.sass";
 import { Section, Columns } from "react-bulma-components";
 
-const TemplateWrapper = ({ children }) => {
-    const [showMenu, setShowMenu] = useState(false);
+const TemplateWrapper = ({ children }) => {  
+  const [showMenu, setShowMenu] = useState(false);
     return (
       <StaticQuery
         query={graphql`
@@ -30,6 +30,7 @@ const TemplateWrapper = ({ children }) => {
             <HelmetDatoCms
             favicon={data.datoCmsSite.faviconMetaTags}            
             />
+
             {children}
             <Footer>
               <Container>
