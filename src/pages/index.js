@@ -119,7 +119,7 @@ const IndexPage = ({ data }) => (
         </Columns>
         <Columns className="is-centered is-vcentered">
           <Columns.Column className="is-6 has-text-centered">
-            <br /><Link to="/blog" className="button is-leafy is-medium is-success">More news from Pocketworks</Link>
+            <br /><Link to="/blog" className="button is-leafy is-medium is-primary">More news from Pocketworks</Link>
           </Columns.Column>
         </Columns>
       </Container>

@@ -21,7 +21,7 @@ export default ({ data }) => (
           <Container>
             <Hero.Body>
               <Container className="content">
-                <Columns>
+                <Columns className="is-tablet is-vcentered">
                   <Columns.Column className="is-offset-2 is-7 has-text-centered">
                     <h1 className="title is-size-1 is-size-3-mobile">
                       Join Pocketworks<br />{data.datoCmsCareer.title}

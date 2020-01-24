@@ -20,11 +20,11 @@ const About = ({ data: { about } }) => (
 
     <Hero className="is-small">
       <Hero.Body>
-        <Container class="container content is-vcentered">
-          <Columns className="is-tablet">
+        <Container class="container content">
+          <Columns className="is-tablet is-vcentered">
             <Columns.Column className="is-6 is-offset-1">            
-             <h1 class="title is-size-1 is-size-2-mobile">Delivering mobile success <span className="has-text-primary">since 2012</span>.</h1>
-             <p class="is-size-4">We are a digital product studio committed to helping organisations <span className="">use mobile technology to make life easier for their customers and staff</span>. The upshot for our clients is <Link to="/work/workforce-productivity">increased productivity</Link> and a <Link to="/work">growing, more loyal customer base</Link>.</p>
+             <h1 class="title is-size-1 is-size-2-mobile">Mobile <span className="has-text-primary">since 2012.</span></h1>
+             <p class="is-size-4">We are a digital product studio committed to helping organisations <span className="">use mobile technology to make life easier for their customers and staff</span>. </p>
             </Columns.Column>
             <Columns.Column className="is-4">
                 <img src="https://www.datocms-assets.com/20955/1579120498-culture.png?fm=jpg&compress=auto&w=500"></img>
