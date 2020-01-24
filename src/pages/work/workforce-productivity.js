@@ -81,16 +81,16 @@ const WorkforceProductivity = ({ data: { page, caseStudies } }) => (
                     </Columns>
                     <Columns className="is-centered">
                         <Columns.Column className="is-3">
-                            <h3>Design</h3>
-                            <p>Your service offering starts before your app is downloaded, and continues after employees use your app. We look at the big picture so we can be sure everything fits together nicely and staff get the tools they really need. We'll take a good look at what your doing and design an app or platform that puts people at the centre..</p>
+                            <h3>Design for People</h3>
+                            <p>Professionals need tools that consider their needs to help them feel engaged, appreciated and motivated. Our design approach directly involves the people doing the work so that we can ensure the results help rather than hinder.</p>
                         </Columns.Column>
                         <Columns.Column className="is-3">
-                            <h3>Development</h3>
-                            <p>From native mobile apps on iOS and Android, to PWAs and beyond. There can be a lot of pieces to put in place; web portals, databases, APIs and integrations. Your organisation needs to be agile and ready for the future, which is where software architecture comes into play. Microservices? API-first? React? No-code? We'll architect and deliver all the building blocks needed to launch a successful app..</p>
+                            <h3>Mobile &amp; Cloud</h3>
+                            <p>From native mobile apps on iOS and Android, to PWAs and cloud. There can be a lot of pieces to put in place; web portals, databases, APIs and integrations. Your organisation needs to be agile and ready for the future, which is why we think about interoperability from the start. </p>
                         </Columns.Column>
                         <Columns.Column className="is-3">
-                            <h3>Rollout</h3>
-                            <p>Getting a well design and engeineered digital tool into peoples hands is often just the the beginning. To get the real value from any IT investment you need to monitor and improve. We can help. User feedback, measuring against KPIs, or making sure it's live 24x7? We'll help you do all that so you can keep it secure, healthy and moving in the right direction.</p>
+                            <h3>Rollout Support</h3>
+                            <p>Releasing a well design and engeineered digital tool into peoples hands is just the start. To get the real value from any IT investment you need to monitor and improve. We can help. User feedback, measuring against KPIs, or making sure it's live 24x7? We'll help you do all that so you can keep it secure, healthy and moving in the right direction.</p>
                         </Columns.Column>
                     </Columns>
                     <Columns>
