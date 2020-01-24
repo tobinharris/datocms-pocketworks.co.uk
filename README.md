@@ -41,7 +41,7 @@ That's it! You should be up and running. Note that you're showing live data, but
 * [ ] Add Google Analytics
 * [ ] Add Hotjar?
 * [ ] Add Google Verification file?
-* [ ] Instagram feed
+* [X] Instagram feed
 * [WIP] Case Study Page
   * [ ] Quotes
   * [ ] Ask Tom if too simple?

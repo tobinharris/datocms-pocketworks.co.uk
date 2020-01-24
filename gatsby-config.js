@@ -28,5 +28,12 @@ module.exports = {
         username: `pocketworks`,
       },
     },
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        id: 966695,
+        sv: 6
+      },
+    },  
   ],
 }
