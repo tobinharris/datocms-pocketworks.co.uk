@@ -87,7 +87,7 @@ export const query = graphql`
               ...GatsbyDatoCmsFixed
             }
             fluid(maxWidth: 800, imgixParams: {w: "1280", h: "960", fit: "crop", fm: "jpg", auto: "compress" }) {
-              ...GatsbyDatoCmsSizes
+              ...GatsbyDatoCmsFluid_tracedSVG
             }
           }
           author{

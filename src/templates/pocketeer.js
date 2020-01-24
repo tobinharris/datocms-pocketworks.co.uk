@@ -54,7 +54,7 @@ export const query = graphql`
       mainImage {
         url
         fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
-          ...GatsbyDatoCmsSizes
+          ...GatsbyDatoCmsFluid_tracedSVG
         }
       }
     }

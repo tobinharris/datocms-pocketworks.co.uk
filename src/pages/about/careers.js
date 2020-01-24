@@ -73,7 +73,7 @@ export const query = graphql`
       title         
       featuredMedia {
         fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
-          ...GatsbyDatoCmsSizes
+          ...GatsbyDatoCmsFluid_tracedSVG
       }
     }        
   }

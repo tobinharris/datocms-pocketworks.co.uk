@@ -78,7 +78,7 @@ export const query = graphql`
       content   
       featuredMedia {
         fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
-          ...GatsbyDatoCmsSizes
+          ...GatsbyDatoCmsFluid_tracedSVG
         }
     }      
   
@@ -96,7 +96,7 @@ export const query = graphql`
               ...GatsbyDatoCmsFixed
             }
             fluid(maxWidth: 800, imgixParams: {w: "1280", h: "960", fit: "crop", fm: "jpg", auto: "compress" }) {
-              ...GatsbyDatoCmsSizes
+              ...GatsbyDatoCmsFluid_tracedSVG
             }
           }
           author{

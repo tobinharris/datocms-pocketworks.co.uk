@@ -99,7 +99,7 @@ export const query = graphql`
       featuredMedia {
         url
         fluid(maxWidth: 1024, imgixParams: {fm: "jpg", auto: "compress" }) {
-          ...GatsbyDatoCmsSizes
+          ...GatsbyDatoCmsFluid_tracedSVG
         }
       }
       author{
@@ -108,7 +108,7 @@ export const query = graphql`
         mainImage{          
           url
           fluid(maxWidth: 200, imgixParams: { mask: "ellipse", fm: "jpg", auto: "compress", fit: "facearea", facepad: 3.0 }) {
-            ...GatsbyDatoCmsSizes
+            ...GatsbyDatoCmsFluid_tracedSVG
           }
         }
       }      

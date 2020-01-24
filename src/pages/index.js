@@ -141,8 +141,8 @@ export const query = graphql`
           slug
           excerpt
           featuredMedia {
-            fluid(maxWidth: 450, imgixParams: { w: "450", fm: "jpg", auto: "compress" }) {
-              ...GatsbyDatoCmsSizes
+            fluid(maxWidth: 450, imgixParams: { fm: "jpg", auto: "compress" }) {
+              ...GatsbyDatoCmsFluid_tracedSVG
             }
           }
           seoMetaTags {
@@ -163,7 +163,7 @@ export const query = graphql`
               ...GatsbyDatoCmsFixed
             }
             fluid(maxWidth: 800, imgixParams: {w: "1280", h: "960", fit: "crop", fm: "jpg", auto: "compress" }) {
-              ...GatsbyDatoCmsSizes
+              ...GatsbyDatoCmsFluid_tracedSVG
             }
           }
           author{
@@ -184,7 +184,7 @@ export const query = graphql`
               ...GatsbyDatoCmsFixed
             }
             fluid(maxWidth: 800, imgixParams: {w: "1280", h: "960", fit: "crop", fm: "jpg", auto: "compress" }) {
-              ...GatsbyDatoCmsSizes
+              ...GatsbyDatoCmsFluid_tracedSVG
             }
           }
           client{
@@ -192,7 +192,7 @@ export const query = graphql`
             logoLight {
               url
               fluid(maxWidth: 300, imgixParams: {fm: "jpg", auto: "compress" }) {
-                ...GatsbyDatoCmsSizes
+                ...GatsbyDatoCmsFluid_tracedSVG
               }
               fixed(width: 150, imgixParams: {fm: "jpg", auto: "compress" }) {
                   ...GatsbyDatoCmsFixed

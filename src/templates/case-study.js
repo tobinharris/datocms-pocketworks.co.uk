@@ -60,7 +60,7 @@ export const query = graphql`
       heroBannerImage {
         url
         fluid(maxWidth: 1024, imgixParams: {fm: "jpg", auto: "compress" }) {
-          ...GatsbyDatoCmsSizes
+          ...GatsbyDatoCmsFluid_tracedSVG
         }
       }
       client{
@@ -68,13 +68,13 @@ export const query = graphql`
           logo {
             url
             fluid(maxWidth: 1024, imgixParams: {fm: "jpg", auto: "compress" }) {
-              ...GatsbyDatoCmsSizes
+              ...GatsbyDatoCmsFluid_tracedSVG
             }
           }
           logoLight {
             url
             fluid(maxWidth: 300, imgixParams: {fm: "jpg", auto: "compress" }) {
-              ...GatsbyDatoCmsSizes
+              ...GatsbyDatoCmsFluid_tracedSVG
             }
             fixed(width: 150, imgixParams: {fm: "jpg", auto: "compress" }) {
                 ...GatsbyDatoCmsFixed
