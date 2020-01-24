@@ -94,7 +94,7 @@ const IndexPage = ({ data }) => (
       </Container>
     </Section>
     <hr />
-    <img className="side-plant" src="https://www.datocms-assets.com/20955/1579120450-plant-motif-left.png"></img>
+    <img className="side-plant is-hidden-mobile" src="https://www.datocms-assets.com/20955/1579120450-plant-motif-left.png"></img>
     <Section className="is-small">
       <Container className="content">
         <Columns className="is-centered">
