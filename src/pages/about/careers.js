@@ -1,11 +1,15 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Layout from '../../components/layout'
 import SiteNav from '../../components/navbar'
 import { Section, Container, Hero, Columns } from 'react-bulma-components';
 
-const Careers = ({ data: { about, careers } }) => (
+const Careers = ({ data: { page, careers } }) => (
   <Layout>
+    <HelmetDatoCms                        
+          seo={page.seoMetaTags}
+      />
     <SiteNav></SiteNav>
     <div className="tabs is-medium is-centered">
       <ul>
@@ -62,12 +66,11 @@ export default Careers
 
 export const query = graphql`
   query CareersQuery {
-    about: datoCmsPage(slug: {eq: "why-pocketworks"}) {      
+    page: datoCmsPage(slug: {eq: "careers"}) {      
       seoMetaTags {
         ...GatsbyDatoCmsSeoMetaTags
       }
-      title   
-      content   
+      title         
       featuredMedia {
         fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
           ...GatsbyDatoCmsSizes
