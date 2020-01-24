@@ -48,6 +48,7 @@ const TemplateWrapper = ({ children }) => {
                           <a href="https://www.linkedin.com/company/pocketworks-mobile-ltd"><span className="icon is-medium has-text-dark"><i class="fab fa-linkedin-in"></i></span></a>
                           <a href="https://dribbble.com/pocketworks"><span className="icon is-medium has-text-dark"><i class="fab fa-dribbble"></i></span></a>
                           <a href="https://github.com/pocketworks"><span className="icon is-medium has-text-dark"><i class="fab fa-github"></i></span></a>                          
+                          <a href="https://www.instagram.com/pocketworks/"><span className="icon is-medium has-text-dark"><i class="fab fa-instagram"></i></span></a>                                                    
                         </p>
                         <p><span className="icon has-text-dark"><i class="fas fa-copyright"></i></span> 2020 Pocketworks Mobile Ltd</p>
                         
