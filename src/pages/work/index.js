@@ -27,12 +27,14 @@ const Work = ({ data: { about, caseStudies, page } }) => (
                 <Container className="content">
                     <div className="columns is-tablet is-vcentered">
                         <div className="column is-6 is-offset-1">
-                            <h1 className="title is-size-1 is-size-2-mobile">
-                                Putting <span class="has-text-primary">mobile customers</span> first. 
-                            </h1>
-                            <p className="is-size-4">
-                                These days, customers expect convenience. One-tap purchasing, speedy bookings and effortless checkout. If you get this right, you'll woo customers in and then earn their loyalty. That's the best mobile strategy.
-                            </p>
+
+                            <h1 
+                                className="title is-size-1 is-size-2-mobile" 
+                                dangerouslySetInnerHTML={{__html: page.title}}/>
+                            <p 
+                                className="is-size-4"
+                                dangerouslySetInnerHTML={{__html: page.excerpt}} 
+                            />  
 
                         </div>
                         <div className="column is-4">
@@ -149,7 +151,7 @@ export const query = graphql`
             ...GatsbyDatoCmsSeoMetaTags
           }
           title   
-          content   
+          excerpt   
           featuredMedia {
             fluid(maxWidth: 450, imgixParams: { w: "450", fm: "jpg", auto: "compress" }) {
               ...GatsbyDatoCmsFluid_tracedSVG

@@ -30,12 +30,16 @@ const WorkforceProductivity = ({ data: { page, caseStudies } }) => (
 
                     <div className="columns is-tablet is-vcentered">
                         <div className="column is-5 is-offset-1">
-                            <h1 className="title is-size-1 is-size-2-mobile">
-                            Superpowers for <span class="has-text-primary">mobile workers.</span>
-                            </h1>
-                            <p className="is-size-4">                                
-                            Mobile is a great way to improve how employees work. Whether it be on-site, in-store or on-the-road. We help organisations design and launch mobile solutions that speed up work. The upshot is reduced operating costs and happier staff.
-                            </p>
+                            <h1 
+                                className="title is-size-1 is-size-2-mobile" 
+                                dangerouslySetInnerHTML={{__html: page.title}}
+                            />
+                            
+                            <p 
+                                className="is-size-4"
+                                dangerouslySetInnerHTML={{__html: page.excerpt}} 
+                            />                                                            
+                            
 
                         </div>
                         <div className="column is-5">
@@ -152,7 +156,7 @@ export const query = graphql`
             ...GatsbyDatoCmsSeoMetaTags
           }
           title   
-          content   
+          excerpt  
           featuredMedia {
             fluid(maxWidth: 450, imgixParams: { w: "450", fm: "jpg", auto: "compress" }) {
               ...GatsbyDatoCmsFluid_tracedSVG
