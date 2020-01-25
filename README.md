@@ -28,7 +28,8 @@ That's it! You should be up and running. Note that you're showing live data, but
 
 * [ ] Emmanuelle for IT'S A TRAPP 
 * [ ] Emmanuelle Schematic illustration
-* [ ] Sort out Meta data and Twitter Card
+* [ ] Google Sitemap (hmm)
+* [X] Sort out Meta data and Twitter Card
   * [X] Home
   * [X] About/Story/Team/Careers/Profiles
   * [X] Loyalty/Productivity/Services/Tech
@@ -37,7 +38,6 @@ That's it! You should be up and running. Note that you're showing live data, but
   * [ ] Talk to adam about the distributions folder
 * [X] Add Google Analytics
 * [X] Add Hotjar
-* [ ] Add Google Verification file?
 * [X] Instagram feed
 * [WIP] Case Study Page
   * [ ] Quotes
@@ -68,7 +68,7 @@ That's it! You should be up and running. Note that you're showing live data, but
   * [ ] /iot                    -> ???
   * [ ] /agencies               -> ???
   * [X] /field-service-apps     -> /work/workforce-producitivity
-  * [ ] /pocketmedia            -> ???
+  * [X] /pocketmedia            -> https://pocketmedia.io
 * [X] Favicon
 * [X] Team Member Page
 * [X] Add DMSans font
@@ -85,7 +85,8 @@ That's it! You should be up and running. Note that you're showing live data, but
 
 * Push Live
   * [ ] DNS
-  * [ ] Google Search 
+  * [ ] Google Search integration?
+  * [ ] Add Goole Verification Page?
   * [ ] Talk to Boutique about Tag Manager
 
 RELEASE 2

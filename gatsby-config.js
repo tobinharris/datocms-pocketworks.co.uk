@@ -2,7 +2,8 @@ require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
-    title: `Creative Portfolio`,
+    title: `Pocketworks`,
+    sieUrl: 'https://pocketworks.co.uk'
   },
   plugins: [
     `gatsby-plugin-netlify`,
@@ -39,15 +40,16 @@ module.exports = {
       resolve: 'gatsby-plugin-google-marketing-platform',
       options: {
         dataLayer: {
-          gaPropertyId: '[Google Analytics ID]',
+          gaPropertyId: 'UA-48635439-2',
         },
         tagmanager: {
-          id: '[Google Tag Manager ID]'
+          id: 'GTM-WVVXLVG'
         },
         analytics: {
-          id: '[Google Analytics ID]'
+          id: 'UA-48635439-2'
         }
       },
-    }
+    },
+    //`gatsby-plugin-advanced-sitemap`
   ],
 }
