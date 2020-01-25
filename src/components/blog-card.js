@@ -8,7 +8,7 @@ function BlogCard(props){
     return (
     <Card className="is-blog">
         
-        <Link to={'blog/' + props.article.slug}>
+        <Link to={'/blog/' + props.article.slug}>
                 {props.article.featuredMedia ? (
                 <div class="card-image">
                     

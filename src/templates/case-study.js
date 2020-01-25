@@ -8,7 +8,7 @@ import SiteNav from '../components/navbar'
 export default ({ data }) => (
   <div className="case-study">
     <HelmetDatoCms seo={data.caseStudy.seoMetaTags}/>
-    <Hero className="has-bg-image is-medium blog-hero" style={{ backgroundImage: "url(" + (data.caseStudy.heroBannerImage ? data.caseStudy.heroBannerImage.fluid.src : '' )+ "&fm=jpg&w=1800&blend=http%3A%2F%2Fassets.imgix.net%2Fblog%2Fblog-blends.pdf%3Fpage%3D1%26fm%3Dpng&blend-mode=multiply&blend-w=3600&blend-fit=clamp&blend-align=left,center&blend-crop=bottom,center" }} id="blog-hero">
+    <Hero className="has-bg-image is-medium blog-hero" style={{ backgroundImage: "url(" + (data.caseStudy.heroBannerImage ? data.caseStudy.heroBannerImage.fluid.src : '' )+ "&fm=jpg&w=1800&blend=http%3A%2F%2Fassets.imgix.net%2Fblog%2Fblog-blends.pdf%3Fpage%3D1%26fm%3Dpng&blend-mode=multiply&blend-w=3600&blend-fit=clamp&blend-align=left,center&blend-crop=bottom,center)" }} id="blog-hero">
       
         <Hero.Head>
           <SiteNav className="is-light" fullLogo></SiteNav>
