@@ -9,7 +9,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    { 
+    {
       resolve: `gatsby-plugin-sass`,
       options: {
         includePaths: ["./src"],
@@ -39,14 +39,15 @@ module.exports = {
       resolve: 'gatsby-plugin-google-marketing-platform',
       options: {
         dataLayer: {
-          gaPropertyId: 'UA-48635439-2',
+          gaPropertyId: '[Google Analytics ID]',
         },
         tagmanager: {
-          id: 'GTM-WVVXLVG'
+          id: '[Google Tag Manager ID]'
         },
         analytics: {
-          id: 'UA-48635439-2'
+          id: '[Google Analytics ID]'
         }
-      },  
+      },
+    }
   ],
 }
