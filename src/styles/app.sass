@@ -10,53 +10,58 @@
 
 @font-face 
     font-family: "Circular Book"
-    src: url("../fonts/circularstd-book.otf") format('truetype'),
+    font-style: normal    
+    src: local('Circular Book'), url("../fonts/circularstd-book.otf") format('truetype'),
     url("../fonts/circularstd-book.otf") format('opentype')
-    font-display: auto
+    font-display: swap
 
 @font-face 
     font-family: "Circular Book Italic"
-    src: url("../fonts/circularstd-bookitalic.otf") format('truetype'),
+    font-style: italic
+    src: local('Circular Book Italic'), url("../fonts/circularstd-bookitalic.otf") format('truetype'),
     url("../fonts/circularstd-bookitalic.otf") format('opentype')
-    font-display: auto
+    font-display: swap
 
-@font-face 
-    font-family: "Circular Bold"
-    src: url("../fonts/circularstd-bold.otf") format('truetype'),
-    url("../fonts/circularstd-bold.otf") format('opentype')
-    font-display: auto
     
+@font-face 
+    font-family: "Circular Book Italic"
+    font-style: italic
+    src: local('Circular Book Italic'), url("../fonts/circularstd-bookitalic.otf") format('opentype')
+    font-display: swap
+
 @font-face 
     font-family: "Circular Bold Italic"
-    src:url("../fonts/circularstd-bolditalic.otf") format('truetype'), url(/fonts/circularstd-bolditalic.otf) format('opentype')
-    font-display: auto
-    
-
+    font-style: bold-italic
+    src: local('Circular Bold Italic'), url("../fonts/circularstd-bolditalic.otf") format('truetype'), url(/fonts/circularstd-bolditalic.otf) format('opentype')
+    font-display: swap
     
 @font-face 
-    font-family: "Circular Book Italic"
-    src:url("../fonts/circularstd-bookitalic.otf") format('opentype')
-    font-display: auto
+    font-family: "Circular Bold"
+    font-style: bold
+    src: local('Circular Bold'), url("../fonts/circularstd-bold.otf") format('truetype'),
+    url("../fonts/circularstd-bold.otf") format('opentype')
+    font-display: swap
 
 @font-face 
     font-family: "DM Sans Bold"
-    src:url(https://www.datocms-assets.com/20955/1579120323-dmsans-bold.ttf) format('truetype')
-    font-display: auto
+    font-style: bold
+    src: local('DM Sans Bold'), url(https://www.datocms-assets.com/20955/1579120323-dmsans-bold.ttf) format('truetype')
+    font-display: swap
 
 @font-face 
     font-family: "DM Sans Bold Italic"
-    src:url(https://www.datocms-assets.com/20955/1579120316-dmsans-bolditalic.ttf) format('truetype')
-    font-display: auto
+    src:local('DM Sans Bold Italic'), url(https://www.datocms-assets.com/20955/1579120316-dmsans-bolditalic.ttf) format('truetype')
+    font-display: swap
 
 @font-face 
     font-family: "DM Sans Regular"
-    src:url(https://www.datocms-assets.com/20955/1579120325-dmsans-regular.ttf) format('truetype')
-    font-display: auto
+    src:local('DM Sans'),local('DM Sans Regular'), url(https://www.datocms-assets.com/20955/1579120325-dmsans-regular.ttf) format('truetype')
+    font-display: swap
 
 @font-face 
     font-family: "DM Sans Regular Italic"
-    src:url("https://www.datocms-assets.com/20955/1579120324-dmsans-italic.ttf") format('truetype')
-    font-display: auto
+    src: local('DM Sans Regular Italic'), url("https://www.datocms-assets.com/20955/1579120324-dmsans-italic.ttf") format('truetype')
+    font-display: swap
 
 
 h1, h1.title, h2, h2.title, h3, h3.title

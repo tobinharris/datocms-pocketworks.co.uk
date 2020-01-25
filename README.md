@@ -33,11 +33,8 @@ That's it! You should be up and running. Note that you're showing live data, but
   * [X] About/Story/Team/Careers/Profiles
   * [X] Loyalty/Productivity/Services/Tech
   * [X] Blog/Category/Article
-  * [ ] Contact/Form/NDA
-  * [ ] Case Studies
-  * [ ] Add META Description to every blog article aaaagh
-  * [ ] Add META Description to every case study
 * [ ] HENEGHANS download page?
+  * [ ] Talk to adam about the distributions folder
 * [X] Add Google Analytics
 * [X] Add Hotjar
 * [ ] Add Google Verification file?
@@ -70,7 +67,7 @@ That's it! You should be up and running. Note that you're showing live data, but
   * [ ] /startups               -> ???
   * [ ] /iot                    -> ???
   * [ ] /agencies               -> ???
-  * [ ] /field-service-apps     -> ???
+  * [X] /field-service-apps     -> /work/workforce-producitivity
   * [ ] /pocketmedia            -> ???
 * [X] Favicon
 * [X] Team Member Page
@@ -92,6 +89,12 @@ That's it! You should be up and running. Note that you're showing live data, but
   * [ ] Talk to Boutique about Tag Manager
 
 RELEASE 2
+* SEO Meta
+  * [ ] Contact/Form/NDA
+  * [ ] Case Studies
+  * [ ] Add META Description to every blog article aaaagh
+  * [ ] Add META Description to every case study
+
 * [ ] Add Google Tracking Pixels?
 * [ ] Add Inspectlet?
 * [ ] Add Search Console script
