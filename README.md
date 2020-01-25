@@ -30,7 +30,7 @@ That's it! You should be up and running. Note that you're showing live data, but
 * [ ] Emmanuelle Schematic illustration
 * [ ] Sort out Meta data and Twitter Card
   * [X] Home
-  * [X] About/Story/Team/Careers/ 
+  * [X] About/Story/Team/Careers/Profiles
   * [X] Loyalty/Productivity/Services/Tech
   * [X] Blog/Category/Article
   * [ ] Contact/Form/NDA
@@ -38,8 +38,8 @@ That's it! You should be up and running. Note that you're showing live data, but
   * [ ] Add META Description to every blog article aaaagh
   * [ ] Add META Description to every case study
 * [ ] HENEGHANS download page?
-* [ ] Add Google Analytics
-* [ ] Add Hotjar?
+* [X] Add Google Analytics
+* [X] Add Hotjar
 * [ ] Add Google Verification file?
 * [X] Instagram feed
 * [WIP] Case Study Page
@@ -65,10 +65,13 @@ That's it! You should be up and running. Note that you're showing live data, but
   * [X] /ipad-sales-apps        -> /blog/ipad-sales-apps
   * [X] /digital-transformation -> /work/workforce-producitivity
   * [X] /team                   -> /about/pocketeers
+  * [ ] /ipad-forms             -> ???
+  * [ ] /mobile-strategy        -> ???
   * [ ] /startups               -> ???
   * [ ] /iot                    -> ???
   * [ ] /agencies               -> ???
   * [ ] /field-service-apps     -> ???
+  * [ ] /pocketmedia            -> ???
 * [X] Favicon
 * [X] Team Member Page
 * [X] Add DMSans font
@@ -86,6 +89,7 @@ That's it! You should be up and running. Note that you're showing live data, but
 * Push Live
   * [ ] DNS
   * [ ] Google Search 
+  * [ ] Talk to Boutique about Tag Manager
 
 RELEASE 2
 * [ ] Add Google Tracking Pixels?
