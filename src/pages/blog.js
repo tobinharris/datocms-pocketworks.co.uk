@@ -32,14 +32,14 @@ const BlogPage = ({ data: {page, posts} }) => (
             <div className="column is-6 is-offset-1">
 
               <h1 className="title is-size-1 is-size-3-mobile">
-                Recent <span class="has-text-primary">news &amp; thoughts</span> about mobile.
+                Recent <span class="has-text-primary">articles</span> about mobile.
           </h1>
 
 
 
             </div>
-            <div className="column is-5">
-              <img src="https://www.datocms-assets.com/20955/1579120516-blog.png?fm=jpg&w=350" />
+            <div className="column is-4">
+              <img src="https://www.datocms-assets.com/20955/1579120516-blog.png?fm=jpg&w=450" />
             </div>
           </div>
         </Container>

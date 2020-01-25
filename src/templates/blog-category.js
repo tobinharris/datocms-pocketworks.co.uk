@@ -38,8 +38,8 @@ const BlogCategoryPage = ({ data }) => (
 
 
             </div>
-            <div className="column is-5">
-              <img src="https://www.datocms-assets.com/20955/1579120516-blog.png?fm=jpg&w=350" />
+            <div className="column is-4">
+              <img src="https://www.datocms-assets.com/20955/1579120516-blog.png?fm=jpg&w=450" />
             </div>
           </div>
         </Container>
