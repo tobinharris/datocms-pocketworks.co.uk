@@ -18,15 +18,14 @@ export default ({ data }) => (
         </div>
         <Hero className="is-small">
             <Hero.Body>
-                <Container className="content">
+                <Container className="container content">
                     <Columns>
-                        <Columns.Column className="is-offset-2 is-5 is-vcentered">
-                            <br/><br/><br/>
+                        <Columns.Column className="is-offset-1 is-6 is-vcentered">                            
                             <h1 className="title is-size-1">{data.pocketeer.firstName} <span className="has-text-primary">{data.pocketeer.lastName}</span></h1>
                             <h3 className="subtitle">{data.pocketeer.role}</h3>
-                            <div dangerouslySetInnerHTML={{ __html: data.pocketeer.description ? data.pocketeer.description : "Bear with us please, we're just preparing a bio for " + data.pocketeer.firstName + "."  }}></div>
+                            <div className="is-size-4" dangerouslySetInnerHTML={{ __html: data.pocketeer.description ? data.pocketeer.description : "Bear with us please, we're just preparing a bio for " + data.pocketeer.firstName + "."  }}></div>
                         </Columns.Column>
-                        <Columns.Column className="is-5 is-vcentered">
+                        <Columns.Column className="is-4 is-vcentered">
                             <Img fluid={data.pocketeer.mainImage.fluid}></Img>
                         </Columns.Column>
                     </Columns>
@@ -53,7 +52,7 @@ export const query = graphql`
       role      
       mainImage {
         url
-        fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
+        fluid(maxWidth: 600, imgixParams: { fit: "crop", crop: "bottom", w: "1080", h: "900", fm: "jpg", auto: "compress" }) {
           ...GatsbyDatoCmsFluid_tracedSVG
         }
       }
