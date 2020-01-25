@@ -37,13 +37,26 @@ const About = ({ data: { about, instagram } }) => (
       </Hero.Body>
     </Hero>
 
+    <Section className="is-paddingless instagram-strip">
+        <Columns className="is-mobile is-gapless">
+          {instagram.edges.map(({ node: instaPost }) => (
+            <Columns.Column className="is-1">
+              <a href={"https://www.instagram.com/p/" + instaPost.id + "/"} target="_blank">
+                <Img className="instagram-photo" fluid={instaPost.localFile.childImageSharp.fluid} title={instaPost.caption}></Img>
+              </a>
+            </Columns.Column>
+          ))}
+        </Columns>
+      </Section>
+
     <TeamQuote
+      nobTopBorder
       quote="Ultimately, my goal is to create things that are useful, which make us proud and benefit thousands or millions of people every day. That's the real significance of our company."
       imgSrc="https://www.datocms-assets.com/20955/1579120403-tobin.jpg?w=300&fit=facearea&facepad=5&mask=ellipse"
       who="Tobin, Founder and Managing Director"
     />
 
-    <Section>
+    <Section className="is-hidden">
       <Container className="container content">
         <h2 className="title has-text-centered"><span className="has-text-primary">Life</span> at Pocketworks</h2>
         <p>&nbsp;</p>
@@ -104,7 +117,7 @@ export const query = graphql`
         }
     }              
   }
-  instagram: allInstaNode(filter: {dimensions: {height:{eq: 1080 }}}, limit: 8, sort: {fields: [timestamp], order: DESC}) {
+  instagram: allInstaNode(limit: 12, sort: {fields: [timestamp], order: DESC}) {
     edges {
       node {
         id

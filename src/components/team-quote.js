@@ -6,7 +6,12 @@ return (
 <Hero className="is-small">
     <Hero.Body>
         <Container className="content">
-        <hr/>
+        {props.nobTopBorder ? (
+            <span className="is-hidden"></span>
+        ) : (
+            <hr/>
+        )}
+        
             <Columns className="is-inline-flex">
                 <Columns.Column className="is-3 is-offset-1">
                     <img src={props.imgSrc}></img>
