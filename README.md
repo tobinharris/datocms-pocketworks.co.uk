@@ -49,7 +49,7 @@ That's it! You should be up and running. Note that you're showing live data, but
   * [X] Fresenius (light)
   * [X] Travelodge (light)
   * [ ] Whitelocks???
-  * [ ] Asda  
+  * [X] Asda  
 * [X] NDA Page
 * Rewrites
   * [X] /clients                -> /work

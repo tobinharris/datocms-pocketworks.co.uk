@@ -164,7 +164,7 @@ export const query = graphql`
         }      
       
     }
-    caseStudies: allDatoCmsCasestudy(limit: 3, filter: {isFeatured: {eq: true}}){
+    caseStudies: allDatoCmsCasestudy(limit: 6, filter: {tags: {elemMatch: {slug: {eq: "mobile-working"}}}}){
         edges {
           node {
             id
@@ -189,6 +189,10 @@ export const query = graphql`
                     ...GatsbyDatoCmsFixed
                 }
               }
+            }
+            tags{
+                name
+                slug
             }
           }
         }

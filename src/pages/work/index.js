@@ -159,7 +159,7 @@ export const query = graphql`
         }      
       
   }
-  caseStudies: allDatoCmsCasestudy(limit: 3, filter: {isFeatured: {eq: false}}){
+  caseStudies: allDatoCmsCasestudy(limit: 6, filter: {tags: {elemMatch: {slug: {eq: "mobile-loyalty"}}}}){
     edges {
       node {
         id
@@ -184,6 +184,10 @@ export const query = graphql`
                 ...GatsbyDatoCmsFixed
             }
           }
+        }
+        tags{
+            name
+            slug
         }
       }
     }
