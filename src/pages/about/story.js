@@ -25,11 +25,11 @@ const About = ({ data: { about, instagram } }) => (
       <Hero.Body>
         <Container class="container content">
           <Columns className="is-tablet is-vcentered">
-            <Columns.Column className="is-6 is-offset-1">
+            <Columns.Column className="is-5 is-offset-1">
               <h1 class="title is-size-1 is-size-2-mobile"><span class="has-text-primary">People-first mobile</span> since 2012.</h1>
               <p class="is-size-4">We are a software design and development studio committed to helping organisations <span className="">use mobile technology to make life easier for their customers and staff</span>. </p>
             </Columns.Column>
-            <Columns.Column className="is-4">
+            <Columns.Column className="is-5">
               <img src="https://www.datocms-assets.com/20955/1579120498-culture.png?fm=jpg&compress=auto&w=500"></img>
             </Columns.Column>
           </Columns>
