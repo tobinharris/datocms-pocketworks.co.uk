@@ -59,8 +59,6 @@ const About = ({ data: { about, instagram } }) => (
               ))}
             </Columns>
           </Columns.Column>
-
-
         </Columns>
         <hr />
       </Container>

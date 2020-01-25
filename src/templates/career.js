@@ -12,7 +12,6 @@ export default ({ data }) => (
       seo={data.datoCmsCareer.seoMetaTags}
     />
     <div className="article">
-
       <Hero className="has-bg-image is-medium is-success blog-hero" style={{ backgroundImage: "url(" + (data.datoCmsCareer.featuredMedia ? data.datoCmsCareer.featuredMedia.fluid.src : '') + "&bri=-10&blend=http%3A%2F%2Fassets.imgix.net%2Fblog%2Fblog-blends.pdf%3Fpage%3D1%26fm%3Dpng&blend-mode=multiply&blend-w=1500&blend-h=1000&blend-fit=crop&blend-align=left,center&blend-crop=left,center&fit=facearea&w=1000&h=500&facepad=7.0)" }} id="blog-hero">
         <div className="background-overlay">
           <Hero.Head>
@@ -22,9 +21,9 @@ export default ({ data }) => (
             <Hero.Body>
               <Container className="content">
                 <Columns className="is-tablet is-vcentered">
-                  <Columns.Column className="is-offset-2 is-7 has-text-centered">
+                  <Columns.Column className="is-offset-2 is-8 has-text-centered">
                     <h1 className="title is-size-1 is-size-3-mobile">
-                      Join Pocketworks<br />{data.datoCmsCareer.title}
+                      <small className="subtitle is-size-2">Join Pocketworks</small><br />{data.datoCmsCareer.title}
                     </h1>
 
                   </Columns.Column>
@@ -34,6 +33,8 @@ export default ({ data }) => (
           </Container>
         </div>
       </Hero>
+      
+      
 
       <Section>
         <Container className="content">
@@ -46,8 +47,8 @@ export default ({ data }) => (
             </Columns.Column>
             <Columns.Column className="is-6 is-size-6 is-vcentered">
               <b>{data.datoCmsCareer.title}</b>
-              <br/><b>On-site position</b> in Leeds City Center
-              <br/>Full time
+              <br /><b>On-site position</b> in Leeds City Center
+              <br />Full time
             </Columns.Column>
           </Columns>
           <hr />
@@ -75,6 +76,18 @@ export default ({ data }) => (
             </Columns.Column>
           </Columns>
         </Container>
+      </Section>
+
+      <Section className="is-paddingless instagram-strip">
+        <Columns className="is-mobile is-gapless">
+          {data.instagram.edges.map(({ node: instaPost }) => (
+            <Columns.Column className="is-1">
+              <a href={"https://www.instagram.com/p/" + instaPost.id + "/"} target="_blank">
+                <Img className="instagram-photo" fluid={instaPost.localFile.childImageSharp.fluid} title={instaPost.caption}></Img>
+              </a>
+            </Columns.Column>
+          ))}
+        </Columns>
       </Section>
     </div>
   </Layout>
@@ -112,6 +125,40 @@ export const query = graphql`
           }
         }
       }      
+    }
+    instagram: allInstaNode(limit: 12, sort: {fields: [timestamp], order: DESC}) {
+      edges {
+        node {
+          id
+          likes
+          comments
+          mediaType
+          preview
+          original
+          timestamp
+          caption
+          localFile {
+            childImageSharp {
+              fluid(maxHeight: 250){
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+              fixed(width: 250, height: 250) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+          # Only available with the public api scraper
+          thumbnails {
+            src
+            config_width
+            config_height
+          }
+          dimensions {
+            height
+            width
+          }
+        }
+      }
     }
   }
 `
