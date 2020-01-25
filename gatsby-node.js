@@ -121,6 +121,7 @@ exports.createPages = ({ graphql, actions }) => {
       })
       result.data.pocketeers.edges.map(({node: person}) => {
         createRedirect({ fromPath: "/" + person.slug, toPath: "/about/pocketeers/" + person.slug, isPermanent: true })
+        createRedirect({ fromPath: "/team/" + person.slug, toPath: "/about/pocketeers/" + person.slug, isPermanent: true })
       })
       createRedirect({ fromPath: "/clients", toPath: "/work", isPermanent: true })
       createRedirect({ fromPath: "/case-studies/*", toPath: "/work/case-studies/*", isPermanent: true })
