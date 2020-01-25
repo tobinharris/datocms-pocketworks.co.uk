@@ -8,6 +8,7 @@ import Layout from '../components/layout'
 
 export default ({ data }) => (
     <Layout>
+      <HelmetDatoCms seo={data.pocketeer.seoMetaTags}/>
         <SiteNav></SiteNav>
         <div className="tabs is-medium is-centered">
             <ul>
