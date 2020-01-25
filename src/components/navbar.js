@@ -49,7 +49,7 @@ class SiteNav extends React.Component {
   }
   render() {
     return (
-      <Navbar className={"is-spaced" + this.props.className}>
+      <Navbar className={"is-spaced " + this.props.className}>
         <Navbar.Brand>
           <Navbar.Item renderAs="span">
             <Link to="/">
