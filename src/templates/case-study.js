@@ -67,16 +67,16 @@ export const query = graphql`
           companyName
           logo {
             url
-            fluid(maxWidth: 1024, imgixParams: {fm: "jpg", auto: "compress" }) {
-              ...GatsbyDatoCmsFluid_tracedSVG
+            fluid(maxWidth: 1024, imgixParams: {fm: "png", auto: "compress" }) {
+              ...GatsbyDatoCmsFluid_noBase64
             }
           }
           logoLight {
             url
-            fluid(maxWidth: 150, imgixParams: {fm: "jpg", auto: "compress" }) {
-              ...GatsbyDatoCmsFluid_tracedSVG
+            fluid(maxWidth: 150, imgixParams: {fm: "png", auto: "compress" }) {
+              ...GatsbyDatoCmsFluid_noBase64
             }
-            fixed(width: 150, imgixParams: {fm: "jpg", auto: "compress" }) {
+            fixed(width: 150, imgixParams: {fm: "png", auto: "compress" }) {
                 ...GatsbyDatoCmsFixed
               }
           }
