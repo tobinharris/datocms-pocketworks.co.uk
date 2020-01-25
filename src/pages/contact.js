@@ -21,7 +21,7 @@ const Contact = ({ data: { about } }) => (
       <Hero.Body>
         <Container class="container content">
           <Columns className="is-tablet is-vcentered">
-            <Columns.Column className="is-6 is-offset-1">
+            <Columns.Column className="is-5 is-offset-1">
               <h1 class="title is-size-1 is-size-3-mobile">
                 Let's <span className="has-text-success">talk.</span>
               </h1>
@@ -38,7 +38,7 @@ const Contact = ({ data: { about } }) => (
                         </p>
 
             </Columns.Column>
-            <Columns.Column className="is-4">
+            <Columns.Column className="is-5">
               <img src="https://www.datocms-assets.com/20955/1579120498-culture.png?fm=jpg&compress=auto&w=500"></img>
             </Columns.Column>
           </Columns>
