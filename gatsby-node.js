@@ -132,8 +132,9 @@ exports.createPages = ({ graphql, actions }) => {
       createRedirect({ fromPath: "/digital-transformation", toPath: "/work/workforce-producitivity", isPermanent: true })
       createRedirect({ fromPath: "/field-service-apps", toPath: "/work/workforce-producitivity", isPermanent: true })
       createRedirect({ fromPath: "/team", toPath: "/about/pocketeers", isPermanent: true })
+      createRedirect({ fromPath: "/mobile-strategy", toPath: "/blog/mobile-strategy", isPermanent: true })
       createRedirect({ fromPath: "/pocketmedia", toPath: "https://pocketmedia.io", isPermanent: true })
-      
+            
       /* TODO
       /iot
       /startups

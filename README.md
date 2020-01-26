@@ -77,7 +77,7 @@ Simply push your code to github. Netflify will auto-build and deploy.
   * [X] /digital-transformation -> /work/workforce-producitivity
   * [X] /team                   -> /about/pocketeers
   * [ ] /ipad-forms             -> ???
-  * [ ] /mobile-strategy        -> ???
+  * [X] /mobile-strategy        -> ???
   * [ ] /startups               -> ???
   * [ ] /iot                    -> ???
   * [ ] /agencies               -> ???
