@@ -26,7 +26,7 @@ const About = ({ data: { about, instagram } }) => (
         <Container class="container content">
           <Columns className="is-tablet is-vcentered">
             <Columns.Column className="is-5 is-offset-1">
-              <h1 class="title is-size-1 is-size-2-mobile"><span class="has-text-primary">People-first mobile</span> since 2012.</h1>
+              <h1 class="title is-size-1 is-size-2-mobile"><span class="has-text-primary">Human-centred mobile</span> since 2012.</h1>
               <p class="is-size-4">We are a software design and development studio committed to helping organisations <span className="">use mobile technology to make life easier for their customers and staff</span>. </p>
             </Columns.Column>
             <Columns.Column className="is-5">
