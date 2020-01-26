@@ -13,16 +13,30 @@
 
 ### Steps
 
-Check out this repo
+Check out this repo. Have your TOKEN at the ready (see above)
 
-    git clone [repo]
-    cd [repo]
-    yarn install 
+    git clone https://github.com/pocketworks/pocketworks-web.git
+    cd pocketworks-web
     brew install gatsby-cli
+    brew install yarn
+    yarn install     
     echo "DATO_API_TOKEN=[INSERT READ-ONLY TOKEN]" > .env
     yarn develop
     
 That's it! You should be up and running. Note that you're showing live data, but since it's read only should be fine. 
+
+In a separate console tab
+
+    open http://localhost:8000
+
+Optional: At some point, you can preview a static build.
+
+    yarn build && yarn serve
+
+### Deploying
+
+Simply push your code to github. Netflify will auto-build and deploy.
+
 
 # TODO
 
