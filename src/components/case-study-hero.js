@@ -21,13 +21,13 @@ return (
             )}
             <p><ArrowLink to={props.to} className={props.className + ' is-size-4'}>{ props.toText ? props.toText : 'Read the case study'}</ArrowLink></p>                        
         </Columns.Column>
-        <Columns.Column className="is-4">
+        <Columns.Column className="is-4 is-hidden-mobile">
             <img src={props.mainImage} alt="Main image"></img>
         </Columns.Column>
     </Columns>                       
     ) : (
     <Columns className="content is-vcentered">
-        <Columns.Column className="is-4 is-offset-0">
+        <Columns.Column className="is-4 is-hidden-mobile">
             <img src={props.mainImage} alt="Main Image"></img>
         </Columns.Column>
         <Columns.Column className="is-6">
