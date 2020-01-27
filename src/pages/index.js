@@ -15,8 +15,11 @@ const IndexPage = ({ data }) => (
   <Layout>    
     <HelmetDatoCms                        
         seo={data.page.seoMetaTags} />
-    <SiteNav fullLogo="true"></SiteNav>
-    <Hero className="is-medium is-fullheight-with-navbar">
+    
+    <Hero className="is-fullheight-with-navbar">
+      <Hero.Head>
+        <SiteNav fullLogo="true"></SiteNav>
+      </Hero.Head>
       <Hero.Body>
         <Container>
           <div className="columns content is-vcentered">
