@@ -35,8 +35,8 @@ const IndexPage = ({ data }) => (
               </h2>
 
               <p>
-                <Link to="/work" className="button is-primary is-leafy is-medium is-flex-mobile">How we help</Link>&nbsp;&nbsp;
-                <Link to="/contact" className="button is-link is-leafy is-outlined is-medium is-flex-mobile">Get in touch</Link>
+                <Link to="/work" className="button is-primary is-leafy is-medium">How we help</Link>&nbsp;&nbsp;
+                <Link to="/contact" className="button is-link is-leafy is-outlined is-medium is-hidden-mobile">Get in touch</Link>
               </p>
 
               <div className="level is-size-3 is-mobile is-hidden">
